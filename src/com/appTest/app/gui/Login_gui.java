@@ -80,11 +80,12 @@ public class Login_gui extends SideMenuNov {
                 } else {
                     ArrayList<User> u = Ges_User.getInstance().getUserbyMail(tMail.getText());
                     FLogIns_gui.userCon = u.get(0);
+                    ip.dispose();
                     if (rem.isSelected()) {
                         System.out.println("********************REM connection fil sqlite");
                         boolean b = Dialog.show("Sécurité", "Voulez ajouter une authentification simplifiée", "Oui", "Non");
                         if (b) {//Oui
-
+                            
                             tfcodeO1.setHint("Entrer un Code");
                             tfcodeO2.setHint("Confirmer le Code");
                             tfcodeO1.setConstraint(TextField.PASSWORD);
@@ -96,7 +97,7 @@ public class Login_gui extends SideMenuNov {
                                 public void actionPerformed(ActionEvent evt) {
                                     if (tfcodeO1.getText().equals(tfcodeO2.getText())) {
                                         Ges_User.getInstance().insertRemWCode(Integer.toString(u.get(0).getId()), "26/26", tfcodeO1.getText());
-                                        ip.dispose();
+                                        
                                         new Home_gui().show();
                                     } else {
                                         Dialog.show("Erreur", "Code non identique !", new Command("ok"));
@@ -111,9 +112,6 @@ public class Login_gui extends SideMenuNov {
                         }
                     } else {
                         System.out.println("******************** NOREM");
-                        //ArrayList<User> u = Ges_User.getInstance().getUserbyId(user);
-                        //userCon = u.get(0);
-                        ip.dispose();
                         new Home_gui().show();
                     }
                     //goTopage ili feha kolchay

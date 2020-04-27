@@ -5,6 +5,7 @@
  */
 package com.appTest.app.gui;
 
+import com.appTest.app.services.Ges_User;
 import com.codename1.ui.Container;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
@@ -76,22 +77,23 @@ public class SideMenuNov extends Form {
                 new ProfilUser_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Cagnotte", FontImage.MATERIAL_ALARM, (ActionListener) (ActionEvent evt) -> {
-                new Login_gui().show();
+                new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Aide", FontImage.MATERIAL_KEYBOARD, (ActionListener) (ActionEvent evt) -> {
-                new Login_gui().show();
+                new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Emploi", FontImage.MATERIAL_ANDROID, (ActionListener) (ActionEvent evt) -> {
-                new Login_gui().show();
+                new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Resto Don", FontImage.MATERIAL_MAIL, (ActionListener) (ActionEvent evt) -> {
-                new Login_gui().show();
+                new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Resto Organisation", FontImage.MATERIAL_HELP, (ActionListener) (ActionEvent evt) -> {
-                new Login_gui().show();
+                new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" LogOut", FontImage.MATERIAL_LOGOUT, (ActionListener) (ActionEvent evt) -> {
                 FLogIns_gui.userCon = null;
+                Ges_User.getInstance().deleteDb();
                 new FLogIns_gui().show();
             });
         }

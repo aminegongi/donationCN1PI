@@ -34,7 +34,7 @@ public class FLogIns_gui extends Form {
         Button btInscri = new Button("Inscription");
         Button btLogin = new Button("Login");
 
-        //Ges_User.getInstance().deleteDb();
+        
         int cor = Ges_User.getInstance().checkOneRem();
         if (cor == -1) {
             btLogin.addActionListener(new ActionListener() {
