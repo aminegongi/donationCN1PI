@@ -128,8 +128,9 @@ public class Inscrition_gui extends SideMenuNov {
                     } else {
                         Dialog.show("Bravo !", "Inscription reussi il ne vous rest qu'a le valider", new Command("OK"));
                         tomail=tMail.getText();
-                        new activation_gui().show();
                         ip.dispose();
+                        new activation_gui().show();
+                        
                     }
                     System.out.println(i);
                     lpass.setHidden(true);
