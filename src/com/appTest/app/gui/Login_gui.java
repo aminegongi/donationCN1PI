@@ -6,6 +6,7 @@
 package com.appTest.app.gui;
 
 import com.appTest.app.entities.User;
+import static com.appTest.app.gui.FLogIns_gui.userCon;
 import com.appTest.app.services.Ges_User;
 import com.codename1.components.InfiniteProgress;
 import com.codename1.components.SpanLabel;
@@ -77,14 +78,13 @@ public class Login_gui extends SideMenuNov {
                     Dialog.show("Erreur !", "mot de passe ou @Mail incorrect", new Command("OK"));
                     ip.dispose();
                 } else {
-
                     ArrayList<User> u = Ges_User.getInstance().getUserbyMail(tMail.getText());
                     FLogIns_gui.userCon = u.get(0);
                     if (rem.isSelected()) {
                         System.out.println("********************REM connection fil sqlite");
                         boolean b = Dialog.show("Sécurité", "Voulez ajouter une authentification simplifiée", "Oui", "Non");
                         if (b) {//Oui
-                            
+
                             tfcodeO1.setHint("Entrer un Code");
                             tfcodeO2.setHint("Confirmer le Code");
                             tfcodeO1.setConstraint(TextField.PASSWORD);
@@ -96,6 +96,7 @@ public class Login_gui extends SideMenuNov {
                                 public void actionPerformed(ActionEvent evt) {
                                     if (tfcodeO1.getText().equals(tfcodeO2.getText())) {
                                         Ges_User.getInstance().insertRemWCode(Integer.toString(u.get(0).getId()), "26/26", tfcodeO1.getText());
+                                        ip.dispose();
                                         new Home_gui().show();
                                     } else {
                                         Dialog.show("Erreur", "Code non identique !", new Command("ok"));
@@ -106,11 +107,17 @@ public class Login_gui extends SideMenuNov {
 
                         } else { //Non
                             Ges_User.getInstance().insertRem(Integer.toString(u.get(0).getId()), "26/26");
+                            new Home_gui().show();
                         }
+                    } else {
+                        System.out.println("******************** NOREM");
+                        //ArrayList<User> u = Ges_User.getInstance().getUserbyId(user);
+                        //userCon = u.get(0);
+                        ip.dispose();
+                        new Home_gui().show();
                     }
                     //goTopage ili feha kolchay
-                    new Home_gui().show();
-                    ip.dispose();
+                    
                 }
                 System.out.println(i);
 

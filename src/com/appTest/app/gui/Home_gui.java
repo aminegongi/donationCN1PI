@@ -15,6 +15,7 @@ public class Home_gui extends SideMenuNov {
 
     public Home_gui() {
         addSideMenu();
+        setTitle("Home");
         add(new Label("Houni nal9aw les intefaces el kol :) :) "));
     }
     

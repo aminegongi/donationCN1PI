@@ -33,8 +33,6 @@ public class FLogIns_gui extends Form {
 
         Button btInscri = new Button("Inscription");
         Button btLogin = new Button("Login");
-        btInscri.setUIID("LoginButton");
-        btLogin.setUIID("HamzaButton");
 
         //Ges_User.getInstance().deleteDb();
         int cor = Ges_User.getInstance().checkOneRem();
