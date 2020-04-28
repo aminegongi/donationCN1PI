@@ -64,7 +64,7 @@ public class FLogIns_gui extends Form {
 
         Button fb = new Button("Se connecter avec FaceBook");
         Button google = new Button("Se connecter avec Google");
-
+        
         Container xx = new Container(GridLayout.autoFit());
 
         btInscri.addActionListener(new ActionListener() {
