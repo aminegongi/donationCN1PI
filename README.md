@@ -20,5 +20,5 @@ I ask you to : select statics.java -> git -> ignore -> exclude from commit
 ## java structure:
 - respect the packaging guys 
 - for the connected user entity is "FLogIns_gui.userCon" as usual
-- in statics.java : change the BASE_URL http://localhost/donationLastTry/web/app_dev.php -> http://localhost/yourSymfonyProjectFolder/web/app_dev.php   // if you got a problem give this a try BASE_URL="http://127.0.0.1:8000"
+- in statics.java : change the BASE_URL http://localhost/donationLastTry/web/app_dev.php -> http://localhost/yourSymfonyProjectFolder/web/app_dev.php   // if you got a problem give this a try BASE_URL="http://127.0.0.1:8000" 7elou serveur phpStorm
 
