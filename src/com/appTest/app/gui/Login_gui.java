@@ -62,7 +62,10 @@ public class Login_gui extends SideMenuNov {
 
         tMail.setHint("votre Adresse Mail :");
         tPass.setHint("votre Mot de Passe :");
-
+        
+        tMail.setUIID("TextFieldBlack");
+        tPass.setUIID("TextFieldBlack");
+        
         tPass.setConstraint(TextField.PASSWORD);
 
         v = new Validator();

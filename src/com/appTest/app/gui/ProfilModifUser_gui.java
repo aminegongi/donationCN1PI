@@ -7,14 +7,17 @@ package com.appTest.app.gui;
 
 import com.appTest.app.entities.User;
 import com.appTest.app.utils.Statics;
+import com.codename1.capture.Capture;
 import com.codename1.components.ImageViewer;
 import com.codename1.components.Switch;
+import com.codename1.components.ToastBar;
 import com.codename1.ui.Button;
 import com.codename1.ui.CheckBox;
 import com.codename1.ui.ComboBox;
 import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Image;
@@ -26,6 +29,7 @@ import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.spinner.Picker;
 import java.io.IOException;
 
@@ -83,8 +87,36 @@ public class ProfilModifUser_gui extends SideMenuNov {
         btCam.setUIID("SkipButton");
         btGal.setUIID("SkipButton");
 
+        btCam.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                String path = Capture.capturePhoto();
+                if (path == null) {
+                    showToast("User canceled Camera");
+                    return;
+                }
+                setImage(path, imgv);
+            }
+        });
+
+        btGal.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                Display.getInstance().openGallery(e -> {
+                    if (e == null || e.getSource() == null) {
+                        showToast("User canceled Gallery");
+                        return;
+                    }
+                    String filePath = (String) e.getSource();
+                    setImage(filePath, imgv);
+                }, Display.GALLERY_IMAGE);
+            }
+        });
+
         y.addAll(btGal, btCam);
-        x.addAll(imgv,y);
+        x.addAll(imgv, y);
         add(BorderLayout.center(x));
         add(createLineSeparator(0xeeeeee));
 
@@ -134,11 +166,11 @@ public class ProfilModifUser_gui extends SideMenuNov {
             add(xx);
 
         } else if (t == 2) {
-            TextField tfPageFb = new TextField();
-            TextField tfsWeb = new TextField();
-            TextArea taDesc = new TextArea();
-            TextField tfLong = new TextField();
-            TextField tfLat = new TextField();
+            TextField tfPageFb = new TextField(u.getPageFB(), "Facebook");
+            TextField tfsWeb = new TextField(u.getSiteWeb(), "Site Web");
+            TextField taDesc = new TextField(u.getDescription(), "Déscription");
+            TextField tfLong = new TextField(Float.toString(u.getLongitude()), "Longitude");
+            TextField tfLat = new TextField(Float.toString(u.getLatitude()), "Latitude");
 
             addStringValue("Facebook", tfPageFb);
             addStringValue("Site Web", tfsWeb);
@@ -148,6 +180,25 @@ public class ProfilModifUser_gui extends SideMenuNov {
 
         }
 
+    }
+
+    private void showToast(String text) {
+        Image errorImage = FontImage.createMaterial(FontImage.MATERIAL_ERROR, UIManager.getInstance().getComponentStyle("Title"), 4);
+        ToastBar.Status status = ToastBar.getInstance().createStatus();
+        status.setMessage(text);
+        status.setIcon(errorImage);
+        status.setExpires(2000);
+        status.show();
+    }
+
+    private void setImage(String filePath, ImageViewer iv) {
+        try {
+            Image i1 = Image.createImage(filePath);
+            iv.setImage(i1);
+            iv.getParent().revalidate();
+        } catch (Exception ex) {
+            Dialog.show("Error", "Error during image loading: " + ex, "OK", null);
+        }
     }
 
     private void addStringValue(String s, Component v) {

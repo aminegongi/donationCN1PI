@@ -255,6 +255,28 @@ public class User {
     public User() {
     }
 
+    public User(int id, String username, String email, String roles, String nom, String numTel, Adresse adresse, String image, int pointXP, String prenom, String genre, Date dateNaissance, String pageFB, String siteWeb, String description, float longitude, float latitude, int yesNews) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.roles = roles;
+        this.nom = nom;
+        this.numTel = numTel;
+        this.adresse = adresse;
+        this.image = image;
+        this.pointXP = pointXP;
+        this.prenom = prenom;
+        this.genre = genre;
+        this.dateNaissance = dateNaissance;
+        this.pageFB = pageFB;
+        this.siteWeb = siteWeb;
+        this.description = description;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.yesNews = yesNews;
+    }
+
+    
     public User(String username, String email, String password, String roles, String numTel, int yesNews) {
         this.username = username;
         this.email = email;
