@@ -89,7 +89,7 @@ public class SideMenuNov extends Form {
                 new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Resto Organisation", FontImage.MATERIAL_HELP, (ActionListener) (ActionEvent evt) -> {
-                new Home_gui().show();
+                new ListPublicationsForm().show();
             });
             tb.addMaterialCommandToSideMenu(" LogOut", FontImage.MATERIAL_LOGOUT, (ActionListener) (ActionEvent evt) -> {
                 FLogIns_gui.userCon = null;
