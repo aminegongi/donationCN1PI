@@ -60,7 +60,7 @@ public class ListPublicationsForm extends SideMenuNov{
         Label userNameLabel = new Label(p.getAjoutePar().getUsername());
         Label phoneNumberLabel =new Label(p.getAjoutePar().getNumTel());
         Label titreLabel =new Label(p.getTitre());
-        Label desLabel =new Label(p.getTitre());
+        Label desLabel =new Label(p.getDescription());
         Label besoinLabel = new Label();
         System.out.println("X"+p.getType());
         if (p.getType().equals("AppelAuDon")){

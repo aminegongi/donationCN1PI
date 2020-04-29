@@ -97,26 +97,31 @@ public class ServicePublication {
                 if(obj.get("nbrePlat")!=null)
                 t.setNbrePlat((int)Float.parseFloat(obj.get("nbrePlat").toString()));
 
-//                Code hedha a changer 
-                String s=obj.get("ajoutePar").toString();
-                String requiredString = s.substring(s.indexOf("=") + 1, s.indexOf(","));
-                float f = Float.parseFloat(requiredString);
-                int i = (int)f ;
-                ArrayList<User> users =Ges_User.getInstance().getUserbyId(i);
-                t.setAjoutePar(users.get(0));
-//                Code hedha a changer 
+////                Code hedha a changer 
+//                String s=obj.get("ajoutePar").toString();
+//                String requiredString = s.substring(s.indexOf("=") + 1, s.indexOf(","));
+//                float f = Float.parseFloat(requiredString);
+//                int i = (int)f ;
+//                ArrayList<User> users =Ges_User.getInstance().getUserbyId(i);
+//                t.setAjoutePar(users.get(0));
+////                Code hedha a changer 
                 
                 
-//                Map<String, Object> content = (Map<String, Object>) obj.get("ajoutePar");
-//                ArrayList myList = new ArrayList(content.get("id"));
-//                System.out.println(myList);
+                try {
+                    Map<String, Object> content = (Map<String, Object>) obj.get("ajoutePar");
+                    User u = new User();
+                    System.out.println(content.get("id"));
+                    u.setId((int) Float.parseFloat(content.get("id").toString()));
+                    u.setUsername( content.get("username").toString());
+                    u.setNumTel( content.get("numTel").toString());
+                    u.setRoles(content.get("roles").toString());
+                    
+                    t.setAjoutePar(u);
+                } catch (Exception e) {
+                }
 
-//                System.out.println("16 "+myList.get(16));
-////                System.out.println("25 "+myList.get(25));
-//                System.out.println("tel "+myList.get(2));
 
 
-//                t.setAjoutePar(new User);
                 
 
 
