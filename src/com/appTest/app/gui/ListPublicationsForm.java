@@ -15,22 +15,29 @@ import com.appTest.app.entities.Publication;
 import com.appTest.app.services.ServicePublication;
 import com.appTest.app.utils.Statics;
 import com.codename1.components.ImageViewer;
+import com.codename1.ui.Button;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.Image;
+import com.codename1.ui.Toolbar;
 import com.codename1.ui.URLImage;
+import com.codename1.ui.events.ActionEvent;
+import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BorderLayout;
 import java.io.IOException;
 import java.util.ArrayList;
+import javafx.scene.control.ToolBar;
 import javafx.scene.shape.Circle;
 
 /**
  *
  * @author Ahmed Fourati
  */
-public class ListPublicationsForm extends Form{
+public class ListPublicationsForm extends SideMenuNov{
     EncodedImage enc;
     ImageViewer imgv;
     Image img;
+    public Button modifierButton ; 
+    Toolbar ajouter ;
     
     public Container constructPublication(Publication p  )
     {
@@ -38,7 +45,7 @@ public class ListPublicationsForm extends Form{
         Container line1Container = new Container (new BorderLayout(),null);
         Container imageUserNameContainer = new Container (BoxLayout.x(),null);
         Container line2Container = new Container (BoxLayout.y(),null);
-        Container line3Container = new Container (BoxLayout.x(),null);
+        Container line3Container = new Container (new BorderLayout(),null);
         
         try {
         enc = EncodedImage.create("/enc.png");
@@ -68,13 +75,28 @@ public class ListPublicationsForm extends Form{
        if (p.getType().equals("AppelAuDon")){
        line2Container.add(besoinLabel);
        }
-       line3Container.addAll(dateLabel);
+       line3Container.add(BorderLayout.WEST,dateLabel);
+       if(p.getAjoutePar().getId()==FLogIns_gui.userCon.getId())
+       {
+            modifierButton = new Button("Modifier");
+           line3Container.add(BorderLayout.EAST,modifierButton);
+           modifierButton.addActionListener((ActionListener) (ActionEvent evt) -> {
+               new EditPublicationForm(p).show();
+            });
+           
+       }
        publicationContainer.addAll(line1Container,line2Container,line3Container);
         return publicationContainer;
     }
     
     public ListPublicationsForm() {
-        setTitle("List pub");
+        addSideMenu();
+        ajouter = getToolbar();
+        ajouter.addMaterialCommandToRightBar("", FontImage.MATERIAL_ADD , (ActionListener) (ActionEvent evt) -> {
+            new AddPublicationForm().show();
+        });
+        
+        setTitle("Les dernières publications !");
         
         SpanLabel sp = new SpanLabel();
 //        sp.setText(ServicePublication.getInstance().getAllPublications().toString());
@@ -87,9 +109,7 @@ public class ListPublicationsForm extends Form{
         
             add(constructPublication(tab.get(i)));
         }
-        
-        
-        
 
     }
+
 }

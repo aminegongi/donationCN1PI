@@ -44,7 +44,7 @@ public class ServicePublication {
     }
         
             public boolean addPublication(Publication t) {
-        String url = Statics.BASE_URL + "/RestoOrg/addPublicationApi?"+"titre="+t.getTitre()+"&description="+t.getDescription()+"&ajoutePar="+t.getAjoutePar()+"&nbrePlat="+t.getNbrePlat();
+        String url = Statics.BASE_URL + "/RestoOrg/addPublicationApi?"+"titre="+t.getTitre()+"&description="+t.getDescription()+"&ajoutePar="+t.getAjoutePar().getId()+"&nbrePlat="+t.getNbrePlat();
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
@@ -56,14 +56,34 @@ public class ServicePublication {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return resultOK;
     }
+            
+                public boolean editPublication(Publication t) {
+        String url = Statics.BASE_URL + "/RestoOrg/editPublicationApi?"+"titre="+t.getTitre()+"&description="+t.getDescription()+"&nbrePlat="+t.getNbrePlat()+"&id="+t.getId();
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
+    }        
+            
+            
+            
+            
+            
         
             public ArrayList<Publication> parsePublications(String jsonText){
                 
         try {
+            
             publications=new ArrayList<>();
             JSONParser j = new JSONParser();
             Map<String,Object> publicationsListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
-            System.out.println(publicationsListJson);
+//            System.out.println(publicationsListJson);
             List<Map<String,Object>> list = (List<Map<String,Object>>)publicationsListJson.get("root");
             for(Map<String,Object> obj : list){
                 Publication t = new Publication();
@@ -85,6 +105,20 @@ public class ServicePublication {
                 ArrayList<User> users =Ges_User.getInstance().getUserbyId(i);
                 t.setAjoutePar(users.get(0));
 //                Code hedha a changer 
+                
+                
+//                Map<String, Object> content = (Map<String, Object>) obj.get("ajoutePar");
+//                ArrayList myList = new ArrayList(content.get("id"));
+//                System.out.println(myList);
+
+//                System.out.println("16 "+myList.get(16));
+////                System.out.println("25 "+myList.get(25));
+//                System.out.println("tel "+myList.get(2));
+
+
+//                t.setAjoutePar(new User);
+                
+
 
                 
                 publications.add(t);
