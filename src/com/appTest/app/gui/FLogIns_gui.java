@@ -28,7 +28,7 @@ public class FLogIns_gui extends Form {
 
     public FLogIns_gui() {
         current = this;
-
+        
         setLayout(BoxLayout.y());
 
         Button btInscri = new Button("Inscription");
