@@ -29,6 +29,7 @@ import com.codename1.ui.Label;
 import com.codename1.ui.URLImage;
 import com.codename1.ui.geom.Dimension;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  *
@@ -39,6 +40,8 @@ public class RestoDon_Don extends SideMenuNov{
     EncodedImage enc;
     ImageViewer imgv;
     Image img;
+    ArrayList<String> list;
+    
     public RestoDon_Don(Form previous) {
         /*
         Le paramètre previous définit l'interface(Form) précédente.
@@ -86,14 +89,19 @@ public class RestoDon_Don extends SideMenuNov{
                 else{
                     try {
                         DonRestaurant don = new DonRestaurant(FLogIns_gui.userCon.getId(), tfDonator.getText(), Float.parseFloat(tfMontant.getText()));
-                        if( ServiceDonRestaurant.getInstance().newMobileDon(don) ){
-                            Dialog.show("Success","Connection accepted",new Command("OK"));
+                        list = ServiceDonRestaurant.getInstance().newMobileDon(don);
+                        if( list.get(0).contains("true") ){
+                            if (list.get(1).contains("null")){
+                                Dialog.show("Bravo !","Un nouveau don de "+ tfMontant.getText() + " dinars par "+ tfDonator.getText() +" a été enregistrer avec success",new Command("D'accord"));
+                            }else{
+                             if(list.get(1).contains("user")){Dialog.show("Malheureusement","Le pseudoname " + tfDonator.getText() +" n'existe pas !",new Command("D'accord"));}
+                            }
                             tfDonator.setText("");
                             tfMontant.setText("");
                         }else
-                            Dialog.show("ERROR", "Server error", new Command("OK"));
+                            Dialog.show("ERREUR", "Problème de connexion", new Command("OK"));
                     } catch (NumberFormatException e) {
-                        Dialog.show("ERROR", "Status must be a number", new Command("OK"));
+                        Dialog.show("ERREUR", "Le montant doit être numérique", new Command("OK"));
                     }
                
                 }   

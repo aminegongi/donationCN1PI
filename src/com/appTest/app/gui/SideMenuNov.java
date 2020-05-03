@@ -86,7 +86,11 @@ public class SideMenuNov extends Form {
                 new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Resto Don", FontImage.MATERIAL_MAIL, (ActionListener) (ActionEvent evt) -> {
-                new RestoDon_HomeResto().show();
+                if(FLogIns_gui.userCon.getRoles().contains("RES")){
+                    new RestoDon_HomeResto().show();
+                }else{
+                new RestoDon_MapResto().show();
+                }
             });
             tb.addMaterialCommandToSideMenu(" Resto Organisation", FontImage.MATERIAL_HELP, (ActionListener) (ActionEvent evt) -> {
                 new ListPublicationsForm().show();

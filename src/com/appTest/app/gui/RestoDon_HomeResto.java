@@ -44,6 +44,7 @@ import java.util.List;
 public class RestoDon_HomeResto extends SideMenuNov {
 
     Form current;
+    ArrayList<String> list;
     /*Garder traçe de la Form en cours pour la passer en paramètres 
     aux interfaces suivantes pour pouvoir y revenir plus tard en utilisant
     la méthode showBack*/
@@ -132,8 +133,9 @@ public class RestoDon_HomeResto extends SideMenuNov {
                        
                     
                         RepasServi repasServi = new RepasServi(1);
-                        if( ServiceRepasServi.getInstance().newMobileRepas(repasServi) ){
-                            TarifResto t = new TarifResto(1);
+                        list = ServiceRepasServi.getInstance().newMobileRepas(FLogIns_gui.userCon.getId());
+                        if( list.get(0).contains("true") ){
+                            TarifResto t = new TarifResto(FLogIns_gui.userCon.getId());
                             String newPorteF = Float.toString(ServiceTarifResto.getInstance().getTarifResto(t).get(0).getPortefeuilleVirtuel());
                             porteFeuille.setText(newPorteF);
                              if(Float.parseFloat(porteFeuille.getText()) > Float.parseFloat(tarif.getText())){
@@ -142,9 +144,10 @@ public class RestoDon_HomeResto extends SideMenuNov {
                             }else{
                                 restoDon_RepasFAB.setBadgeText("");
                             }
-                            Dialog.show("Success","Connection accepted",new Command("OK"));
+                             if (list.get(1).contains("null")){Dialog.show("Bravo !","Vous avez servis un repas",new Command("D'accord"));}
+                             if(list.get(1).contains("solde")){Dialog.show("Malheureusement","Votre solde est insuffisant",new Command("D'accord"));}
                         }else
-                            Dialog.show("ERROR", "Server error", new Command("OK"));
+                            Dialog.show("ERROR", "problème de connexion", new Command("D'accord"));
                     
                
              

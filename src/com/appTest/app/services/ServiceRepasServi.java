@@ -11,8 +11,14 @@ import com.codename1.io.NetworkManager;
 import com.codename1.ui.events.ActionListener;
 import com.appTest.app.entities.DonRestaurant;
 import com.appTest.app.entities.RepasServi;
+import com.appTest.app.entities.TarifResto;
+import com.appTest.app.gui.FLogIns_gui;
 import com.appTest.app.utils.Statics;
+import com.codename1.io.CharArrayReader;
+import com.codename1.io.JSONParser;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  *
@@ -20,6 +26,8 @@ import java.util.ArrayList;
  */
 public class ServiceRepasServi {
     public ArrayList<RepasServi> repasServi;
+    
+    String erreur;
     
     public static ServiceRepasServi instance=null;
     public boolean resultOK;
@@ -36,8 +44,9 @@ public class ServiceRepasServi {
         return instance;
     }
     
-    public boolean newMobileRepas(RepasServi repasServi) {
-        String url = Statics.BASE_URL + "/RestoDon/newRepasMobile?resto=" + repasServi.getIdResto(); //création de l'URL
+    public ArrayList<String> newMobileRepas(int idResto) {
+        ArrayList<String> erreurList = new ArrayList<String>();
+        String url = Statics.BASE_URL + "/RestoDon/newRepasMobile?resto=" + idResto; //création de l'URL
         System.out.println(url);
         req.setUrl(url);// Insertion de l'URL de notre demande de connexion
         req.setPost(true);
@@ -45,7 +54,10 @@ public class ServiceRepasServi {
             @Override
             public void actionPerformed(NetworkEvent evt) {
                 resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
-                req.removeResponseListener(this); //Supprimer cet actionListener
+                erreur = parseTasks(new String(req.getResponseData()));
+                req.removeResponseListener(this);
+                
+                //Supprimer cet actionListener
                 /* une fois que nous avons terminé de l'utiliser.
                 La ConnectionRequest req est unique pour tous les appels de 
                 n'importe quelle méthode du Service task, donc si on ne supprime
@@ -55,6 +67,49 @@ public class ServiceRepasServi {
             }
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
-        return resultOK;
+        if ( resultOK == true ){
+            erreurList.add("true");
+        }else{
+            erreurList.add("false");
+        }
+                erreurList.add(erreur);
+        return erreurList;
+    }
+    
+     public String parseTasks(String jsonText){
+         
+        try {
+             // celle que vas etre afficher
+            JSONParser j = new JSONParser();// Instanciation d'un objet JSONParser permettant le parsing du résultat json
+
+            Map<String,Object> reponseServeur = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
+            
+            
+
+                erreur = reponseServeur.get("erreur").toString();
+                
+
+            
+            
+        } catch (IOException ex) {
+            
+        }
+        
+        return erreur;
     }
 }
+//    public String getTarifResto(){
+//        String url = Statics.BASE_URL+"/RestoDon/getTarifMobile?resto="+ FLogIns_gui.userCon.getId();
+//        req.setUrl(url);
+//        req.setPost(true);
+//        req.addResponseListener(new ActionListener<NetworkEvent>() {
+//            @Override
+//            public void actionPerformed(NetworkEvent evt) {
+//                erreur = parseTasks(new String(req.getResponseData()));
+//                req.removeResponseListener(this);
+//            }
+//        });
+//        NetworkManager.getInstance().addToQueueAndWait(req);
+//        return erreur;
+//    }
+//}

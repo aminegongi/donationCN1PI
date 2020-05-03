@@ -47,7 +47,7 @@ public class RestoDon_ServirRepas extends SideMenuNov{
                
                     
                         RepasServi repasServi = new RepasServi(FLogIns_gui.userCon.getId());
-                        if( ServiceRepasServi.getInstance().newMobileRepas(repasServi) )
+                        if( ServiceRepasServi.getInstance().newMobileRepas(FLogIns_gui.userCon.getId()).get(0).contains("true") )
                             Dialog.show("Success","Connection accepted",new Command("OK"));
                         else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
