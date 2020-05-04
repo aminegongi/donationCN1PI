@@ -6,15 +6,27 @@
 package com.appTest.app.gui;
 
 import com.appTest.app.services.Ges_User;
+import com.appTest.app.utils.Statics;
+import com.codename1.components.ImageViewer;
+import com.codename1.components.ScaleImageLabel;
+import com.codename1.ui.Component;
 import com.codename1.ui.Container;
+import com.codename1.ui.Display;
+import com.codename1.ui.EncodedImage;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.Toolbar;
+import com.codename1.ui.URLImage;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.layouts.FlowLayout;
+import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.layouts.Layout;
+import com.codename1.ui.plaf.Style;
+import java.io.IOException;
 
 /**
  *
@@ -65,10 +77,43 @@ public class SideMenuNov extends Form {
             });
         } else {
             tb.removeAll();
+
             Container c = new Container(BoxLayout.x());
             Label Nom = new Label("Username");
             c.add(Nom);
+            EncodedImage enc = null;
+            ImageViewer imgv;
+            ImageViewer bv;
+            Image img;
+            try {
+                enc = EncodedImage.create("/giphy.gif");
+            } catch (IOException ex) {
+                System.out.println("enc ERR");
+            }
 
+            String urlImg = Statics.BASE_URL_Image_User + FLogIns_gui.userCon.getImage();
+            Image i = null;
+            try {
+                 i =Image.createImage("/bgBBP.png");
+            } catch (IOException ex) {
+            }
+
+            img = URLImage.createToStorage(enc, urlImg, urlImg, URLImage.RESIZE_SCALE);
+            if (i.getHeight() > Display.getInstance().getDisplayHeight() / 3) {
+                i = i.scaledHeight(Display.getInstance().getDisplayHeight() / 3);
+            }
+            ScaleImageLabel sl = new ScaleImageLabel(i);
+            sl.setUIID("BottomPad");
+            sl.setBackgroundType(Style.BACKGROUND_IMAGE_SCALED_FILL);
+            tb.addComponentToSideMenu(LayeredLayout.encloseIn(
+                    sl,
+                    FlowLayout.encloseBottom(
+                            new Label(img, "PictureWhiteBackgrond")),
+                    FlowLayout.encloseCenterBottom(
+                             new Label(FLogIns_gui.userCon.getUsername(),"labelSidePictureAmine")
+                    )
+                   
+            ));
             tb.addComponentToSideMenu(c);
             tb.addMaterialCommandToSideMenu(" Home", FontImage.MATERIAL_HOME, (ActionListener) (ActionEvent evt) -> {
                 new Home_gui().show();
@@ -101,8 +146,17 @@ public class SideMenuNov extends Form {
                 new FLogIns_gui().show();
             });
         }
+
         
 
+    }
+    
+    public Component createLineSeparator(int color) {
+        Label separator = new Label("", "WhiteSeparator");
+        separator.getUnselectedStyle().setBgColor(color);
+        separator.getUnselectedStyle().setBgTransparency(255);
+        separator.setShowEvenIfBlank(true);
+        return separator;
     }
 
 }

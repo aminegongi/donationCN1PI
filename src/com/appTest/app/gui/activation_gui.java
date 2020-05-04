@@ -28,16 +28,24 @@ public class activation_gui extends SideMenuNov {
     Button btVal = new Button("Activer");
 
     public activation_gui() {
-        addSideMenu();
+        getToolbar().setUIID("VioletBgBlanc");
         if (Inscrition_gui.tomail != null) {
             tMail.setText(Inscrition_gui.tomail);
             tMail.setEditable(false);
+            tMail.setHidden(true);
         }
         current = this;
+
+        tMail.setUIID("textfieldBgTranspRondAmine");
+        tToken.setUIID("textfieldBgTranspRondAmine");
+        btVal.setUIID("ButtonInscriptionAmine");
+
         setLayout(BoxLayout.y());
         setTitle("Activation Compte");
+        setUIID("bgThankYouAmine");
+
         tMail.setHint("votre adresse mail :");
-        tMail.setHidden(true);
+
         tToken.setHint("Code de confirmation : ");
 
         btVal.addActionListener(new ActionListener() {
@@ -47,19 +55,27 @@ public class activation_gui extends SideMenuNov {
                 if (i == -1) {
                     Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
                 } else {
-                    Dialog.show("Success", "Compte Activer", new Command("OK"));
+                    Dialog.show("Bravo", "Compte Activer", new Command("OK"));
                     new FLogIns_gui().show();
                 }
             }
         });
+
         if (SMSInterceptor.isSupported()) {
+            String tt = Ges_User.getInstance().getTokenMail(tMail.getText());
+            System.out.println("*****Token: " + tt);
             addShowListener(evt -> {
-
                 SMSInterceptor.grabNextSMS((value) -> {
-                    if (value.contains("code")) { //check if the sms contains the code that was sent to user phone number
-                        
+                    if (value.contains(tt)) {
+                        int i = Ges_User.getInstance().activerCompte(tMail.getText(), tToken.getText());
+                        if (i == -1) {
+                            Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
+                        } else {
+                            Dialog.show("Bravo", "Compte Activer", new Command("OK"));
+                            new FLogIns_gui().show();
+                        }
                     } else {
-
+                        Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
                     }
                 });
 

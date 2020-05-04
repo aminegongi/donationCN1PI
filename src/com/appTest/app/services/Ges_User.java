@@ -41,6 +41,7 @@ public class Ges_User {
     String res;
     private ConnectionRequest req;
     private Database db;
+    String token;
 
     private Ges_User() {
         req = new ConnectionRequest();
@@ -265,6 +266,38 @@ public class Ges_User {
                 req.removeResponseListener(this);
             }
         });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return users;
+    }
+    
+    public String getTokenMail(String mail) {
+        String url = Statics.BASE_URL + "/user/api/tokenMail?mail=" + mail;
+        req.setUrl(url);
+        req.setPost(false);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                token = new String(req.getResponseData());
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return token;
+    }
+    
+    public ArrayList<User> ModifierUS(User u) {
+        String url = Statics.BASE_URL + "/user/api/modus?id="+u.getId()+"&no="+u.getNom()+"&pr="+u.getPrenom()+"&ge="+u.getGenre()+"&im="+u.getImage(); //&pa="+u.getAdresse().getPays()+"&vi="+u.getAdresse().getVille()+"
+        req.setUrl(url);
+
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                String r = "["+new String(req.getResponseData())+"]";
+                users = JsonToUserParser(r);
+                req.removeResponseListener(this);
+            }
+        });
+
         NetworkManager.getInstance().addToQueueAndWait(req);
         return users;
     }

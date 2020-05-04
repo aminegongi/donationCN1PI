@@ -6,6 +6,8 @@
 package com.appTest.app.gui;
 
 import com.appTest.app.entities.User;
+import com.appTest.app.services.Ges_User;
+import com.appTest.app.utils.Adresse;
 import com.appTest.app.utils.Statics;
 import com.codename1.capture.Capture;
 import com.codename1.components.ImageViewer;
@@ -32,6 +34,8 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.spinner.Picker;
 import java.io.IOException;
+import java.util.ArrayList;
+import rest.file.uploader.tn.FileUploader;
 
 /**
  *
@@ -43,8 +47,23 @@ public class ProfilModifUser_gui extends SideMenuNov {
     ImageViewer imgv;
     Image img;
     int save = 0;
+    String sub;
+
+    TextField tfnom;
+    TextField tfprenom;
+    //TextField tfdateNaissance = new TextField(u.getDateNaissance(), "Date Naissance");
+    Switch sGenre;
+
+    FileUploader file;
+    String fns;
+    String imgp = null;
 
     public ProfilModifUser_gui() {
+        setTitle("Modification Profil");
+        setLayout(BoxLayout.y());
+        User u = FLogIns_gui.userCon;
+        sub = u.getRoles().substring(1, u.getRoles().indexOf(","));
+
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, new ActionListener() {
 
             @Override
@@ -60,13 +79,35 @@ public class ProfilModifUser_gui extends SideMenuNov {
             @Override
             public void actionPerformed(ActionEvent evt) {
                 //el traitement t3awed ta3mel user + getUser FLoginC
-                new ProfilUser_gui().show();
+                System.out.println(sub);
+                if (sub.equals("Utilisateur Simple")) {
+                    String gg = new String();
+                    if (sGenre.isOn()) {
+                        gg = "Femme";
+                    } else if (sGenre.isOff()) {
+                        gg = "Homme";
+                    }
+                    if (imgp == null) {
+                        imgp = FLogIns_gui.userCon.getImage();
+                    } else {
+                        String l = imgp.toString();
+                        int p = l.indexOf("/", 2);
+                        String n = l.substring(p + 2, l.length());
+
+                        FileUploader f = new FileUploader(Statics.BASE_URL_Upload_Image_User);
+                        try {
+                            fns = f.upload(n);
+                        } catch (Exception ex) {
+                            System.out.println("errrrr");
+                        }
+                    }
+                    User um = new User(FLogIns_gui.userCon.getId(), tfnom.getText(), null, fns, tfprenom.getText(), gg, null);
+                    ArrayList<User> u = Ges_User.getInstance().ModifierUS(um);
+                    FLogIns_gui.userCon = u.get(0);
+                    new ProfilUser_gui().show();
+                }
             }
         });
-
-        setTitle("Modification Profil");
-        setLayout(BoxLayout.y());
-        User u = FLogIns_gui.userCon;
 
         try {
             enc = EncodedImage.create("/giphy.gif");
@@ -91,12 +132,12 @@ public class ProfilModifUser_gui extends SideMenuNov {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                String path = Capture.capturePhoto();
-                if (path == null) {
+                imgp = Capture.capturePhoto();
+                if (imgp == null) {
                     showToast("User canceled Camera");
                     return;
                 }
-                setImage(path, imgv);
+                setImage(imgp, imgv);
             }
         });
 
@@ -109,8 +150,8 @@ public class ProfilModifUser_gui extends SideMenuNov {
                         showToast("User canceled Gallery");
                         return;
                     }
-                    String filePath = (String) e.getSource();
-                    setImage(filePath, imgv);
+                    String imgp = (String) e.getSource();
+                    setImage(imgp, imgv);
                 }, Display.GALLERY_IMAGE);
             }
         });
@@ -120,7 +161,6 @@ public class ProfilModifUser_gui extends SideMenuNov {
         add(BorderLayout.center(x));
         add(createLineSeparator(0xeeeeee));
 
-        String sub = u.getRoles().substring(1, u.getRoles().indexOf(","));
         int t = -1;
         if (sub.equals("ROLE_RES")) {
             sub = "Restaurant";
@@ -140,12 +180,12 @@ public class ProfilModifUser_gui extends SideMenuNov {
         }
 
         if (t == 1) {
-            TextField tfnom = new TextField(u.getNom(), "Nom");
+            tfnom = new TextField(u.getNom(), "Nom");
             tfnom.setUIID("TextFieldBlack");
-            TextField tfprenom = new TextField(u.getPrenom(), "Prénom");
+            tfprenom = new TextField(u.getPrenom(), "Prénom");
             tfprenom.setUIID("TextFieldBlack");
             //TextField tfdateNaissance = new TextField(u.getDateNaissance(), "Date Naissance");
-            Switch sGenre = new Switch();
+            sGenre = new Switch();
 
             Container xx = new Container(BoxLayout.xCenter());
 
@@ -158,10 +198,13 @@ public class ProfilModifUser_gui extends SideMenuNov {
             /*if (u.getDateNaissance() != null) {
              addStringValue("date Naissance", tfdateNaissance);
              }*/
-            if (u.getGenre().contains("Homme")) {
-                sGenre.setOff();
-            } else if (u.getGenre().contains("Femme")) {
-                sGenre.setOn();
+            if (u.getGenre() != null) {
+
+                if (u.getGenre().contains("Homme")) {
+                    sGenre.setOff();
+                } else if (u.getGenre().contains("Femme")) {
+                    sGenre.setOn();
+                }
             }
             add(xx);
 
@@ -207,11 +250,4 @@ public class ProfilModifUser_gui extends SideMenuNov {
         add(createLineSeparator(0xeeeeee));
     }
 
-    private Component createLineSeparator(int color) {
-        Label separator = new Label("", "WhiteSeparator");
-        separator.getUnselectedStyle().setBgColor(color);
-        separator.getUnselectedStyle().setBgTransparency(255);
-        separator.setShowEvenIfBlank(true);
-        return separator;
-    }
 }

@@ -15,6 +15,8 @@ import com.codename1.ui.CN;
 import com.codename1.ui.Command;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
+import com.codename1.ui.Display;
+import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
 import com.codename1.ui.TextField;
@@ -42,20 +44,36 @@ public class SecuCon_gui extends Form {
     Button bt8 = new Button("8");
     Button bt9 = new Button("9");
     Button bt0 = new Button("0");
-    Button bt = new Button("");
-    Button btt = new Button("");
+    Button bt = new Button("Oubilée");
+    Button btt = new Button(FontImage.MATERIAL_ARROW_UPWARD);
 
     TextField tCode = new TextField();
-    SpanLabel sl = new SpanLabel("Merci d'enter votre code ou d'utiliser votre empreinte !");
+    Label sl = new Label("Code ou Empreinte");
 
-    Label sep = new Label(" ");
 
     int ic = 0;
 
     public SecuCon_gui(String code, int user) {
         setLayout(new BorderLayout());
+        bt1.setUIID("ButtonCode");
+        bt2.setUIID("ButtonCode");
+        bt3.setUIID("ButtonCode");
+        bt4.setUIID("ButtonCode");
+        bt5.setUIID("ButtonCode");
+        bt6.setUIID("ButtonCode");
+        bt7.setUIID("ButtonCode");
+        bt8.setUIID("ButtonCode");
+        bt9.setUIID("ButtonCode");
+        bt0.setUIID("ButtonCode");
+        bt.setUIID("ButtonCode");
+        btt.setUIID("ButtonCode");
+        tCode.setUIID("textfieldAmine");
+        sl.setUIID("LabelCenterBlancTranspAmine");
+        setUIID("bgSecCodeAmine");
+        getToolbar().setUIID("LabelCenterBlancTranspAmine");
         
-        tCode.setHint("Vote code :");
+        
+        tCode.setConstraint(TextField.PASSWORD);
         tCode.setEditable(false);
 
         if (Fingerprint.isAvailable()) {
@@ -68,7 +86,7 @@ public class SecuCon_gui extends Form {
                 Dialog.show("Erreur", "Merci d'utiliser votre Code", new Command("ok"));
             });
         } else {
-            sl.setText("Vous n'avez pas un capteur d'empreinte donc Merci d'entrer votre code :) ");
+            sl.setText("Votre Code");
         }
 
         Container t = new Container(BoxLayout.y());
@@ -107,6 +125,15 @@ public class SecuCon_gui extends Form {
         bt0.addActionListener((ActionListener) (ActionEvent evt) -> {
             zidChiffre("0", code, user);
         });
+        bt.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                FLogIns_gui.userCon = null;
+                Ges_User.getInstance().deleteDb();
+                Dialog.show("Sécurité", "Vous allez être rediriger vers l'interface de login", new Command("OK"));
+                new Login_gui().show();
+            }
+        });
 
         add(BorderLayout.NORTH, t);
 
@@ -127,6 +154,8 @@ public class SecuCon_gui extends Form {
             }
             ic = 0;
             tCode.clear();
+            sl.setText("Code erroné");
+            Display.getInstance().vibrate(500);
         }
     }
 

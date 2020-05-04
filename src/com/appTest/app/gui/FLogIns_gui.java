@@ -11,6 +11,7 @@ import com.codename1.ui.Button;
 import com.codename1.ui.Container;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
+import com.codename1.ui.animations.CommonTransitions;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
@@ -28,7 +29,7 @@ public class FLogIns_gui extends Form {
 
     public FLogIns_gui() {
         current = this;
-        
+
         setLayout(BoxLayout.y());
 
         Button btInscri = new Button("Inscription");
@@ -74,7 +75,7 @@ public class FLogIns_gui extends Form {
                 new Inscrition_gui().show();
             }
         });
-
+        //setTransitionOutAnimator(CommonTransitions.createFade(200));
         xx.addAll(btLogin, btInscri);
         addAll(xx, fb, google);
     }

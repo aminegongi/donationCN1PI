@@ -12,4 +12,5 @@ package com.appTest.app.utils;
 public class Statics {
     public static final String BASE_URL="http://localhost/donationLastTry/web/app_dev.php";
     public static final String BASE_URL_Image_User="http://localhost/donationLastTry/web/uploads/UserImg/";
+    public static final String BASE_URL_Upload_Image_User="http://localhost/donationLastTry/web/uploads/UserImg";
 }

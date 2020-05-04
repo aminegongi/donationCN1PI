@@ -286,6 +286,18 @@ public class User {
         this.yesNews = yesNews;
     }
 
+    public User(int id, String nom, Adresse adresse, String image, String prenom, String genre, Date dateNaissance) {
+        this.id = id;
+        this.nom = nom;
+        this.adresse = adresse;
+        this.image = image;
+        this.prenom = prenom;
+        this.genre = genre;
+        this.dateNaissance = dateNaissance;
+    }
+    
+    
+
     @Override
     public String toString() {
         return "User{" + "id=" + id + ", username=" + username + ", username_canonical=" + username_canonical + ", email=" + email + ", email_canonical=" + email_canonical + ", enabled=" + enabled + ", salt=" + salt + ", password=" + password + ", last_login=" + last_login + ", confirmation_token=" + confirmation_token + ", password_requested_at=" + password_requested_at + ", roles=" + roles + ", nom=" + nom + ", numTel=" + numTel + ", adresse=" + adresse + ", image=" + image + ", pointXP=" + pointXP + ", prenom=" + prenom + ", genre=" + genre + ", dateNaissance=" + dateNaissance + ", pageFB=" + pageFB + ", siteWeb=" + siteWeb + ", description=" + description + ", longitude=" + longitude + ", latitude=" + latitude + ", yesNews=" + yesNews + '}';

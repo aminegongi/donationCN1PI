@@ -188,11 +188,4 @@ public class ProfilUser_gui extends SideMenuNov {
         add(createLineSeparator(0xeeeeee));
     }
 
-    private Component createLineSeparator(int color) {
-        Label separator = new Label("", "WhiteSeparator");
-        separator.getUnselectedStyle().setBgColor(color);
-        separator.getUnselectedStyle().setBgTransparency(255);
-        separator.setShowEvenIfBlank(true);
-        return separator;
-    }
 }
