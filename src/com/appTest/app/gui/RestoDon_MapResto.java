@@ -38,6 +38,8 @@ import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.TextField;
 import com.codename1.ui.URLImage;
+import com.codename1.ui.events.ActionEvent;
+import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.events.FocusListener;
 import com.codename1.ui.geom.Rectangle;
 import com.codename1.ui.layouts.BorderLayout;
@@ -67,6 +69,13 @@ public class RestoDon_MapResto extends SideMenuNov {
     public RestoDon_MapResto(){
         current = this;
 //        setLayout(new BorderLayout());
+        getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_MONEY, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                //el traitement t3awed ta3mel user + getUser FLoginC
+                new RestoDon_DonUserSimple().show();
+            }
+        });
         getToolbar().setTitleCentered(true);
         setTitle("Nos restaurants");  
         getToolbar().setUIID("RestoDon-Toolbar");

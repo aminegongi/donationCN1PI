@@ -3,7 +3,9 @@
 <resource majorVersion="1" minorVersion="11" useXmlUI="false">
     <image name="activation-background.jpg"  />
     <image name="activation-background.jpg1"  />
+    <image name="activation-background.jpg11"  />
     <image name="activation-background.jpg2"  />
+    <image name="activation-background.jpg3"  />
     <image name="bgThankCard"  />
     <image name="bgThankYou"  />
     <image name="BleuD&#xe9;grad&#xe9;"  />
@@ -37,61 +39,97 @@
     <image name="charityBg"  />
     <image name="confirmation-background.jpg"  />
     <image name="confirmation-background.jpg1"  />
+    <image name="confirmation-background.jpg11"  />
     <image name="confirmation-background.jpg2"  />
+    <image name="confirmation-background.jpg3"  />
     <image name="dog.jpg"  />
     <image name="dog.jpg1"  />
+    <image name="dog.jpg11"  />
     <image name="dog.jpg2"  />
+    <image name="dog.jpg3"  />
     <image name="facebook-logo.png" type="multi"  />
     <image name="facebook-logo.png1" type="multi"  />
+    <image name="facebook-logo.png11" type="multi"  />
     <image name="facebook-logo.png2" type="multi"  />
+    <image name="facebook-logo.png3" type="multi"  />
     <image name="Image 1"  />
     <image name="Image 2"  />
     <image name="Logo.png" type="multi"  />
     <image name="Logo.png1" type="multi"  />
+    <image name="Logo.png11" type="multi"  />
     <image name="Logo.png2" type="multi"  />
+    <image name="Logo.png3" type="multi"  />
     <image name="news-item-1.jpg"  />
     <image name="news-item-1.jpg1"  />
+    <image name="news-item-1.jpg11"  />
     <image name="news-item-1.jpg2"  />
+    <image name="news-item-1.jpg3"  />
     <image name="news-item-2.jpg"  />
     <image name="news-item-2.jpg1"  />
+    <image name="news-item-2.jpg11"  />
     <image name="news-item-2.jpg2"  />
+    <image name="news-item-2.jpg3"  />
     <image name="news-item-3.jpg"  />
     <image name="news-item-3.jpg1"  />
+    <image name="news-item-3.jpg11"  />
     <image name="news-item-3.jpg2"  />
+    <image name="news-item-3.jpg3"  />
     <image name="news-item-4.jpg"  />
     <image name="news-item-4.jpg1"  />
+    <image name="news-item-4.jpg11"  />
     <image name="news-item-4.jpg2"  />
+    <image name="news-item-4.jpg3"  />
     <image name="news-item.jpg"  />
     <image name="news-item.jpg1"  />
+    <image name="news-item.jpg11"  />
     <image name="news-item.jpg2"  />
+    <image name="news-item.jpg3"  />
     <image name="news-tab-down-arrow.png" type="multi"  />
     <image name="news-tab-down-arrow.png1" type="multi"  />
+    <image name="news-tab-down-arrow.png11" type="multi"  />
     <image name="news-tab-down-arrow.png2" type="multi"  />
+    <image name="news-tab-down-arrow.png3" type="multi"  />
     <image name="news-tab-down.png" type="multi"  />
     <image name="news-tab-down.png1" type="multi"  />
+    <image name="news-tab-down.png11" type="multi"  />
     <image name="news-tab-down.png2" type="multi"  />
+    <image name="news-tab-down.png3" type="multi"  />
     <image name="on-off-off.png" type="multi"  />
     <image name="on-off-off.png1" type="multi"  />
+    <image name="on-off-off.png11" type="multi"  />
     <image name="on-off-off.png2" type="multi"  />
+    <image name="on-off-off.png3" type="multi"  />
     <image name="on-off-on.png" type="multi"  />
     <image name="on-off-on.png1" type="multi"  />
+    <image name="on-off-on.png11" type="multi"  />
     <image name="on-off-on.png2" type="multi"  />
+    <image name="on-off-on.png3" type="multi"  />
     <image name="profile-background.jpg"  />
     <image name="profile-background.jpg1"  />
+    <image name="profile-background.jpg11"  />
     <image name="profile-background.jpg2"  />
+    <image name="profile-background.jpg3"  />
     <image name="profile-pic.jpg" type="multi"  />
     <image name="profile-pic.jpg1" type="multi"  />
+    <image name="profile-pic.jpg11" type="multi"  />
     <image name="profile-pic.jpg2" type="multi"  />
+    <image name="profile-pic.jpg3" type="multi"  />
     <image name="SecCodeBack.jpg"  />
     <image name="signin-background.jpg"  />
     <image name="signin-background.jpg1"  />
+    <image name="signin-background.jpg11"  />
     <image name="signin-background.jpg2"  />
+    <image name="signin-background.jpg3"  />
     <image name="signup-background.jpg"  />
     <image name="signup-background.jpg1"  />
+    <image name="signup-background.jpg11"  />
     <image name="signup-background.jpg2"  />
+    <image name="signup-background.jpg3"  />
     <image name="smily.png" type="multi"  />
     <image name="smily.png1" type="multi"  />
+    <image name="smily.png11" type="multi"  />
     <image name="smily.png2" type="multi"  />
+    <image name="smily.png3" type="multi"  />
     <image name="SolBleuDeg"  />
     <theme name="Theme">
         <val key="@includeNativeBool" value="true" />
@@ -334,11 +372,42 @@
         <val key="RestoDon-FAB.transparency" value="0" />
         <val key="RestoDon-Label.dis#derive" value="RestoDon-Label" />
         <val key="RestoDon-Label.fgColor" value="79eeac" />
-        <font key="RestoDon-Label.font" type="ttf" face="0" style="0" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <font key="RestoDon-Label.font" type="ttf" face="0" style="0" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="80.0" />
         <val key="RestoDon-Label.margin" value="0.0,0.0,20.0,0.0" />
         <val key="RestoDon-Label.press#derive" value="RestoDon-Label" />
         <val key="RestoDon-Label.sel#derive" value="RestoDon-Label" />
         <val key="RestoDon-Label.transparency" value="0" />
+        <val key="RestoDon-LabelHistorique.dis#derive" value="RestoDon-LabelHistorique" />
+        <val key="RestoDon-LabelHistorique.fgColor" value="9987c" />
+        <font key="RestoDon-LabelHistorique.font" type="ttf" face="0" style="0" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <val key="RestoDon-LabelHistorique.margin" value="0.0,0.0,20.0,0.0" />
+        <val key="RestoDon-LabelHistorique.press#derive" value="RestoDon-LabelHistorique" />
+        <val key="RestoDon-LabelHistorique.sel#derive" value="RestoDon-LabelHistorique" />
+        <val key="RestoDon-LabelHistorique.transparency" value="0" />
+        <val key="RestoDon-Tab.align" value="4" />
+        <val key="RestoDon-Tab.bgColor" value="79eeac" />
+        <gradient key="RestoDon-Tab.bgGradient" color1="7990956" color2="7990956" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="RestoDon-Tab.bgType" value="7" />
+        <border key="RestoDon-Tab.border" type="line" millimeters="false" thickness="3.0" color="7990956" />
+        <val key="RestoDon-Tab.dis#derive" value="RestoDon-Tab" />
+        <val key="RestoDon-Tab.fgColor" value="ffffff" />
+        <font key="RestoDon-Tab.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="35.0" />
+        <val key="RestoDon-Tab.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="RestoDon-Tab.padding" value="100.0,100.0,20.0,20.0" />
+        <val key="RestoDon-Tab.press#derive" value="RestoDon-Tab" />
+        <val key="RestoDon-Tab.sel#derive" value="RestoDon-Tab" />
+        <val key="RestoDon-TabInactif.align" value="4" />
+        <val key="RestoDon-TabInactif.bgColor" value="ffffff" />
+        <gradient key="RestoDon-TabInactif.bgGradient" color1="16777215" color2="16777215" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="RestoDon-TabInactif.bgType" value="7" />
+        <border key="RestoDon-TabInactif.border" type="line" millimeters="false" thickness="3.0" color="7990956" />
+        <val key="RestoDon-TabInactif.dis#derive" value="RestoDon-TabInactif" />
+        <val key="RestoDon-TabInactif.fgColor" value="79eeac" />
+        <font key="RestoDon-TabInactif.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="80.0" />
+        <val key="RestoDon-TabInactif.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="RestoDon-TabInactif.padding" value="100.0,100.0,20.0,20.0" />
+        <val key="RestoDon-TabInactif.press#derive" value="RestoDon-TabInactif" />
+        <val key="RestoDon-TabInactif.sel#derive" value="RestoDon-TabInactif" />
         <val key="RestoDon-TextField.align" value="1" />
         <val key="RestoDon-TextField.bgColor" value="ffffff" />
         <gradient key="RestoDon-TextField.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
@@ -668,20 +737,32 @@
     </theme>
     <image name="timeline-background.jpg"  />
     <image name="timeline-background.jpg1"  />
+    <image name="timeline-background.jpg11"  />
     <image name="timeline-background.jpg2"  />
+    <image name="timeline-background.jpg3"  />
     <image name="twitter-logo.png" type="multi"  />
     <image name="twitter-logo.png1" type="multi"  />
+    <image name="twitter-logo.png11" type="multi"  />
     <image name="twitter-logo.png2" type="multi"  />
+    <image name="twitter-logo.png3" type="multi"  />
     <image name="welcome-background.jpg"  />
     <image name="welcome-background.jpg1"  />
+    <image name="welcome-background.jpg11"  />
     <image name="welcome-background.jpg2"  />
+    <image name="welcome-background.jpg3"  />
     <image name="welcome-slide-1.png" type="multi"  />
     <image name="welcome-slide-1.png1" type="multi"  />
+    <image name="welcome-slide-1.png11" type="multi"  />
     <image name="welcome-slide-1.png2" type="multi"  />
+    <image name="welcome-slide-1.png3" type="multi"  />
     <image name="welcome-slide-2.png" type="multi"  />
     <image name="welcome-slide-2.png1" type="multi"  />
+    <image name="welcome-slide-2.png11" type="multi"  />
     <image name="welcome-slide-2.png2" type="multi"  />
+    <image name="welcome-slide-2.png3" type="multi"  />
     <image name="welcome-slide-3.png" type="multi"  />
     <image name="welcome-slide-3.png1" type="multi"  />
+    <image name="welcome-slide-3.png11" type="multi"  />
     <image name="welcome-slide-3.png2" type="multi"  />
+    <image name="welcome-slide-3.png3" type="multi"  />
 </resource>

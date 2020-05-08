@@ -87,8 +87,14 @@ public class ProfilModifUser_gui extends SideMenuNov {
                     } else if (sGenre.isOff()) {
                         gg = "Homme";
                     }
+                    System.out.println("********************Before");
+                    System.out.println(imgp);
+                    System.out.println("************************");
+                    System.out.println("********************");
+                    System.out.println(FLogIns_gui.userCon.getImage());
+                    System.out.println("************************");
                     if (imgp == null) {
-                        imgp = FLogIns_gui.userCon.getImage();
+                        fns = FLogIns_gui.userCon.getImage();
                     } else {
                         String l = imgp.toString();
                         int p = l.indexOf("/", 2);
@@ -101,6 +107,8 @@ public class ProfilModifUser_gui extends SideMenuNov {
                             System.out.println("errrrr");
                         }
                     }
+                    System.out.println("********************After");
+                    System.out.println(imgp);
                     User um = new User(FLogIns_gui.userCon.getId(), tfnom.getText(), null, fns, tfprenom.getText(), gg, null);
                     ArrayList<User> u = Ges_User.getInstance().ModifierUS(um);
                     FLogIns_gui.userCon = u.get(0);

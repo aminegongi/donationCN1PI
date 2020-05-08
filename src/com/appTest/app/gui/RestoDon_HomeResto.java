@@ -51,6 +51,13 @@ public class RestoDon_HomeResto extends SideMenuNov {
     
     public RestoDon_HomeResto() {
         addSideMenu();
+        getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_DASHBOARD, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                //el traitement t3awed ta3mel user + getUser FLoginC
+                new RestoDon_Dashboard().show();
+            }
+        });
         getToolbar().setUIID("RestoDon-Toolbar");
         ArrayList<TarifResto> tarifResto;
         
@@ -91,13 +98,25 @@ public class RestoDon_HomeResto extends SideMenuNov {
         cntPorteF.addAll(labelPorteF, porteFeuille);
         
         TarifResto t = new TarifResto(FLogIns_gui.userCon.getId());
-        tarifResto= ServiceTarifResto.getInstance().getTarifResto(t);
+        tarifResto= ServiceTarifResto.getInstance().getTarifResto(t);//cette ligne s'enleve
+          
+//        float value_tarif = tarifResto.getTarif();
+//        float value_portefeuille = tarifResto.getPortefeuilleVirtuel();
+
         float value_tarif = tarifResto.get(0).getTarif();
         float value_portefeuille = tarifResto.get(0).getPortefeuilleVirtuel();
+
+//        float value_tarif = tarifInit;
+//        float value_portefeuille = PortefeuilleInit;
         tarif.setText(Float.toString(value_tarif));
 //        mbTarif.setTextLine2(Float.toString(value_tarif));
         porteFeuille.setText(Float.toString(value_portefeuille));
         
+//        Button btnGenerate = new Button("generate");
+//        btnGenerate.addActionListener(e->{
+//        new RestoDon_QRGenerate().show();
+//        });
+//        
         
         current = this; //Récupération de l'interface(Form) en cours
         
@@ -130,12 +149,14 @@ public class RestoDon_HomeResto extends SideMenuNov {
         restoDon_RepasFAB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                       
-                    
-                        RepasServi repasServi = new RepasServi(1);
+                       Command  dg = Dialog.show("Vérification", "Veuillez confirmer pour servir un repas", new Command("Annuler"), new Command("Confirmer"));
+                    if (dg.getCommandName().equalsIgnoreCase("Confirmer")){
+                        RepasServi repasServi = new RepasServi(FLogIns_gui.userCon.getId());
                         list = ServiceRepasServi.getInstance().newMobileRepas(FLogIns_gui.userCon.getId());
                         if( list.get(0).contains("true") ){
                             TarifResto t = new TarifResto(FLogIns_gui.userCon.getId());
+//                            TarifResto tarif_resto = (TarifResto) ServiceTarifResto.getInstance().getTarifResto(t).get("tarifResto");
+//                            String newPorteF = Float.toString(tarif_resto.getPortefeuilleVirtuel());
                             String newPorteF = Float.toString(ServiceTarifResto.getInstance().getTarifResto(t).get(0).getPortefeuilleVirtuel());
                             porteFeuille.setText(newPorteF);
                              if(Float.parseFloat(porteFeuille.getText()) > Float.parseFloat(tarif.getText())){
@@ -148,7 +169,7 @@ public class RestoDon_HomeResto extends SideMenuNov {
                              if(list.get(1).contains("solde")){Dialog.show("Malheureusement","Votre solde est insuffisant",new Command("D'accord"));}
                         }else
                             Dialog.show("ERROR", "problème de connexion", new Command("D'accord"));
-                    
+                    }
                
              
             }});

@@ -22,6 +22,8 @@ import com.appTest.app.services.ServiceRepasServi;
 import com.appTest.app.services.ServiceTarifResto;
 import com.appTest.app.utils.Statics;
 import com.codename1.components.ImageViewer;
+import com.codename1.ext.codescan.CodeScanner;
+import com.codename1.ext.codescan.ScanResult;
 import com.codename1.ui.Container;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.Image;
@@ -30,6 +32,7 @@ import com.codename1.ui.URLImage;
 import com.codename1.ui.geom.Dimension;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  *
@@ -41,6 +44,7 @@ public class RestoDon_Don extends SideMenuNov{
     ImageViewer imgv;
     Image img;
     ArrayList<String> list;
+    String[] scannedQR = new String[2];
     
     public RestoDon_Don(Form previous) {
         /*
@@ -87,6 +91,8 @@ public class RestoDon_Don extends SideMenuNov{
                 if ((tfDonator.getText().length()==0)||(tfMontant.getText().length()==0))
                     Dialog.show("Alert", "Veuillez remplir tous les champs s'il vous plait", new Command("OK"));
                 else{
+                  Command  dg = Dialog.show("Vérification", "Veuillez confirmer le pseudoname '" + tfDonator.getText() + "' et le montant '" + tfMontant.getText() + " dinars'", new Command("Annuler"), new Command("Confirmer"));
+                    if (dg.getCommandName().equalsIgnoreCase("Confirmer")){
                     try {
                         DonRestaurant don = new DonRestaurant(FLogIns_gui.userCon.getId(), tfDonator.getText(), Float.parseFloat(tfMontant.getText()));
                         list = ServiceDonRestaurant.getInstance().newMobileDon(don);
@@ -103,14 +109,66 @@ public class RestoDon_Don extends SideMenuNov{
                     } catch (NumberFormatException e) {
                         Dialog.show("ERREUR", "Le montant doit être numérique", new Command("OK"));
                     }
-               
+                    }else{}
                 }   
             }});
         
+        /*Button btnTest = new Button("test");
+        btnTest.addActionListener(e->{
+        String content = "simple-2.400";
+                String delimiter = "-";
+                StringTokenizer contentTokenizer = new StringTokenizer(content, delimiter);
+                int i = 0;
+                while (contentTokenizer.hasMoreTokens()) {
+                String element = contentTokenizer.nextToken();
+                scannedQR[i]= element; 
+                i++;
+                }
+                tfDonator.setText(scannedQR[0]);
+                tfMontant.setText(scannedQR[1]);
+        });*/
+        
 
         addAll(tfDonator,tfMontant,btnValider);
+        //add(btnTest);
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                 , e-> new RestoDon_HomeResto().showBack()); // Revenir vers l'interface précédente
+        
+         getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_CAMERA, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                
+                CodeScanner.getInstance().scanQRCode(new ScanResult() {
+
+        public void scanCompleted(String contents, String formatName, byte[] rawBytes) {
+            String content = contents;
+                String delimiter = "-";
+                StringTokenizer contentTokenizer = new StringTokenizer(content, delimiter);
+                int i = 0;
+                while (contentTokenizer.hasMoreTokens()) {
+                String element = contentTokenizer.nextToken();
+                scannedQR[i]= element; 
+                i++;
+                }
+                tfDonator.setText(scannedQR[0]);
+                tfMontant.setText(scannedQR[1]);
+            
+            
+        }
+
+        public void scanCanceled() {
+            System.out.println("cancelled");
+        }
+
+        public void scanError(int errorCode, String message) {
+            System.out.println("err " + message);
+        }
+    });
+                
+               
+                
+            }
+        });
                 
     }
     
