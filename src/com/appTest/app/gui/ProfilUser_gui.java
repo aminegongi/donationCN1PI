@@ -172,6 +172,16 @@ public class ProfilUser_gui extends SideMenuNov {
 
         }
         
+        Button chat = new Button("Chat");
+        chat.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                new Profil_ListConv().show();
+            }
+        });
+        add(chat);
+        
         btModifier.addActionListener(new ActionListener() {
 
             @Override
