@@ -70,7 +70,19 @@ public class ServicePublication {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return resultOK;
     }        
-            
+                    public boolean deletePublication(Publication t) {
+        String url = Statics.BASE_URL + "/RestoOrg/deletePublicationApi?"+"id="+t.getId();
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
+    }        
             
             
             
@@ -115,6 +127,7 @@ public class ServicePublication {
                     u.setUsername( content.get("username").toString());
                     u.setNumTel( content.get("numTel").toString());
                     u.setRoles(content.get("roles").toString());
+                    u.setImage(content.get("image").toString());
                     
                     t.setAjoutePar(u);
                 } catch (Exception e) {

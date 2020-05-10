@@ -4,137 +4,335 @@
     <image name="activation-background.jpg"  />
     <image name="activation-background.jpg1"  />
     <image name="activation-background.jpg11"  />
+    <image name="activation-background.jpg111"  />
+    <image name="activation-background.jpg12"  />
     <image name="activation-background.jpg2"  />
+    <image name="activation-background.jpg21"  />
     <image name="activation-background.jpg3"  />
+    <image name="activation-background.jpg31"  />
+    <image name="activation-background.jpg4"  />
+    <image name="back-command.png" type="multi"  />
     <image name="bgThankCard"  />
+    <image name="bgThankCard1"  />
     <image name="bgThankYou"  />
+    <image name="bgThankYou1"  />
     <image name="BleuD&#xe9;grad&#xe9;"  />
+    <image name="BleuD&#xe9;grad&#xe9;1"  />
+    <image name="border.png"  />
     <image name="Button.borderBottom_1.png" type="multi"  />
+    <image name="Button.borderBottom_1.png1" type="multi"  />
+    <image name="Button.borderBottom_3.png" type="multi"  />
     <image name="Button.borderBottomL_1.png" type="multi"  />
+    <image name="Button.borderBottomL_1.png1" type="multi"  />
+    <image name="Button.borderBottomL_3.png" type="multi"  />
     <image name="Button.borderBottomR_1.png" type="multi"  />
+    <image name="Button.borderBottomR_1.png1" type="multi"  />
+    <image name="Button.borderBottomR_3.png" type="multi"  />
     <image name="Button.borderCenter_1.png" type="multi"  />
+    <image name="Button.borderCenter_1.png1" type="multi"  />
+    <image name="Button.borderCenter_3.png" type="multi"  />
     <image name="Button.borderLeft_1.png" type="multi"  />
+    <image name="Button.borderLeft_1.png1" type="multi"  />
+    <image name="Button.borderLeft_3.png" type="multi"  />
     <image name="Button.borderRight_1.png" type="multi"  />
+    <image name="Button.borderRight_1.png1" type="multi"  />
+    <image name="Button.borderRight_3.png" type="multi"  />
     <image name="Button.borderTop_1.png" type="multi"  />
+    <image name="Button.borderTop_1.png1" type="multi"  />
+    <image name="Button.borderTop_3.png" type="multi"  />
     <image name="Button.borderTopL_1.png" type="multi"  />
+    <image name="Button.borderTopL_1.png1" type="multi"  />
+    <image name="Button.borderTopL_3.png" type="multi"  />
     <image name="Button.borderTopR_1.png" type="multi"  />
+    <image name="Button.borderTopR_1.png1" type="multi"  />
+    <image name="Button.borderTopR_3.png" type="multi"  />
+    <image name="Button.press#borderBottom_1.png" type="multi"  />
+    <image name="Button.press#borderBottomL_1.png" type="multi"  />
+    <image name="Button.press#borderBottomR_1.png" type="multi"  />
+    <image name="Button.press#borderCenter_1.png" type="multi"  />
+    <image name="Button.press#borderLeft_1.png" type="multi"  />
+    <image name="Button.press#borderRight_1.png" type="multi"  />
+    <image name="Button.press#borderTop_1.png" type="multi"  />
+    <image name="Button.press#borderTopL_1.png" type="multi"  />
+    <image name="Button.press#borderTopR_1.png" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottom_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottom_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottom_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottom_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottomL_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottomL_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottomL_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottomL_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottomR_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottomR_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderBottomR_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderBottomR_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderCenter_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderCenter_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderCenter_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderCenter_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderLeft_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderLeft_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderLeft_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderLeft_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderRight_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderRight_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderRight_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderRight_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTop_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTop_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTop_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTop_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTopL_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTopL_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTopL_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTopL_2.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTopR_1.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTopR_1.png1" type="multi"  />
     <image name="ButtonTranspareAmine.borderTopR_2.png" type="multi"  />
+    <image name="ButtonTranspareAmine.borderTopR_2.png1" type="multi"  />
+    <image name="cal_left_arrow.png" type="multi"  />
+    <image name="cal_right_arrow.png" type="multi"  />
     <image name="charityBg"  />
+    <image name="charityBg1"  />
+    <image name="Check-Box_Normal.png" type="multi"  />
+    <image name="Check-Box_Press.png" type="multi"  />
+    <image name="combo.png" type="multi"  />
+    <image name="ComboBox.borderBottom_1.png" type="multi"  />
     <image name="confirmation-background.jpg"  />
     <image name="confirmation-background.jpg1"  />
     <image name="confirmation-background.jpg11"  />
+    <image name="confirmation-background.jpg111"  />
+    <image name="confirmation-background.jpg12"  />
     <image name="confirmation-background.jpg2"  />
+    <image name="confirmation-background.jpg21"  />
     <image name="confirmation-background.jpg3"  />
+    <image name="confirmation-background.jpg31"  />
+    <image name="confirmation-background.jpg4"  />
+    <image name="Dialog.borderBottom_1.png" type="multi"  />
+    <image name="Dialog.borderBottomL_1.png" type="multi"  />
+    <image name="Dialog.borderBottomR_1.png" type="multi"  />
+    <image name="Dialog.borderCenter_1.png" type="multi"  />
+    <image name="Dialog.borderLeft_1.png" type="multi"  />
+    <image name="Dialog.borderRight_1.png" type="multi"  />
+    <image name="Dialog.borderTop_1.png" type="multi"  />
+    <image name="Dialog.borderTopL_1.png" type="multi"  />
+    <image name="Dialog.borderTopR_1.png" type="multi"  />
     <image name="dog.jpg"  />
     <image name="dog.jpg1"  />
     <image name="dog.jpg11"  />
+    <image name="dog.jpg111"  />
+    <image name="dog.jpg12"  />
     <image name="dog.jpg2"  />
+    <image name="dog.jpg21"  />
     <image name="dog.jpg3"  />
+    <image name="dog.jpg31"  />
+    <image name="dog.jpg4"  />
     <image name="facebook-logo.png" type="multi"  />
     <image name="facebook-logo.png1" type="multi"  />
     <image name="facebook-logo.png11" type="multi"  />
+    <image name="facebook-logo.png111" type="multi"  />
+    <image name="facebook-logo.png12" type="multi"  />
     <image name="facebook-logo.png2" type="multi"  />
+    <image name="facebook-logo.png21" type="multi"  />
     <image name="facebook-logo.png3" type="multi"  />
+    <image name="facebook-logo.png31" type="multi"  />
+    <image name="facebook-logo.png4" type="multi"  />
     <image name="Image 1"  />
+    <image name="Image 11"  />
     <image name="Image 2"  />
+    <image name="Image 21"  />
+    <image name="Image 92"  />
+    <image name="ImageAhmed"  />
+    <image name="img_bgr_side_bar_title.png"  />
+    <image name="img_bgr_tile.png"  />
     <image name="Logo.png" type="multi"  />
     <image name="Logo.png1" type="multi"  />
     <image name="Logo.png11" type="multi"  />
+    <image name="Logo.png111" type="multi"  />
+    <image name="Logo.png12" type="multi"  />
     <image name="Logo.png2" type="multi"  />
+    <image name="Logo.png21" type="multi"  />
     <image name="Logo.png3" type="multi"  />
+    <image name="Logo.png31" type="multi"  />
+    <image name="Logo.png4" type="multi"  />
+    <image name="Menu.borderBottom_1.png" type="multi"  />
+    <image name="Menu.borderBottomL_1.png" type="multi"  />
+    <image name="Menu.borderBottomR_1.png" type="multi"  />
+    <image name="Menu.borderCenter_1.png" type="multi"  />
+    <image name="Menu.borderLeft_1.png" type="multi"  />
+    <image name="Menu.borderRight_1.png" type="multi"  />
+    <image name="Menu.borderTop_1.png" type="multi"  />
+    <image name="Menu.borderTopL_1.png" type="multi"  />
+    <image name="Menu.borderTopR_1.png" type="multi"  />
     <image name="news-item-1.jpg"  />
     <image name="news-item-1.jpg1"  />
     <image name="news-item-1.jpg11"  />
+    <image name="news-item-1.jpg111"  />
+    <image name="news-item-1.jpg12"  />
     <image name="news-item-1.jpg2"  />
+    <image name="news-item-1.jpg21"  />
     <image name="news-item-1.jpg3"  />
+    <image name="news-item-1.jpg31"  />
+    <image name="news-item-1.jpg4"  />
     <image name="news-item-2.jpg"  />
     <image name="news-item-2.jpg1"  />
     <image name="news-item-2.jpg11"  />
+    <image name="news-item-2.jpg111"  />
+    <image name="news-item-2.jpg12"  />
     <image name="news-item-2.jpg2"  />
+    <image name="news-item-2.jpg21"  />
     <image name="news-item-2.jpg3"  />
+    <image name="news-item-2.jpg31"  />
+    <image name="news-item-2.jpg4"  />
     <image name="news-item-3.jpg"  />
     <image name="news-item-3.jpg1"  />
     <image name="news-item-3.jpg11"  />
+    <image name="news-item-3.jpg111"  />
+    <image name="news-item-3.jpg12"  />
     <image name="news-item-3.jpg2"  />
+    <image name="news-item-3.jpg21"  />
     <image name="news-item-3.jpg3"  />
+    <image name="news-item-3.jpg31"  />
+    <image name="news-item-3.jpg4"  />
     <image name="news-item-4.jpg"  />
     <image name="news-item-4.jpg1"  />
     <image name="news-item-4.jpg11"  />
+    <image name="news-item-4.jpg111"  />
+    <image name="news-item-4.jpg12"  />
     <image name="news-item-4.jpg2"  />
+    <image name="news-item-4.jpg21"  />
     <image name="news-item-4.jpg3"  />
+    <image name="news-item-4.jpg31"  />
+    <image name="news-item-4.jpg4"  />
     <image name="news-item.jpg"  />
     <image name="news-item.jpg1"  />
     <image name="news-item.jpg11"  />
+    <image name="news-item.jpg111"  />
+    <image name="news-item.jpg12"  />
     <image name="news-item.jpg2"  />
+    <image name="news-item.jpg21"  />
     <image name="news-item.jpg3"  />
+    <image name="news-item.jpg31"  />
+    <image name="news-item.jpg4"  />
     <image name="news-tab-down-arrow.png" type="multi"  />
     <image name="news-tab-down-arrow.png1" type="multi"  />
     <image name="news-tab-down-arrow.png11" type="multi"  />
+    <image name="news-tab-down-arrow.png111" type="multi"  />
+    <image name="news-tab-down-arrow.png12" type="multi"  />
     <image name="news-tab-down-arrow.png2" type="multi"  />
+    <image name="news-tab-down-arrow.png21" type="multi"  />
     <image name="news-tab-down-arrow.png3" type="multi"  />
+    <image name="news-tab-down-arrow.png31" type="multi"  />
+    <image name="news-tab-down-arrow.png4" type="multi"  />
     <image name="news-tab-down.png" type="multi"  />
     <image name="news-tab-down.png1" type="multi"  />
     <image name="news-tab-down.png11" type="multi"  />
+    <image name="news-tab-down.png111" type="multi"  />
+    <image name="news-tab-down.png12" type="multi"  />
     <image name="news-tab-down.png2" type="multi"  />
+    <image name="news-tab-down.png21" type="multi"  />
     <image name="news-tab-down.png3" type="multi"  />
+    <image name="news-tab-down.png31" type="multi"  />
+    <image name="news-tab-down.png4" type="multi"  />
     <image name="on-off-off.png" type="multi"  />
     <image name="on-off-off.png1" type="multi"  />
     <image name="on-off-off.png11" type="multi"  />
+    <image name="on-off-off.png111" type="multi"  />
+    <image name="on-off-off.png12" type="multi"  />
     <image name="on-off-off.png2" type="multi"  />
+    <image name="on-off-off.png21" type="multi"  />
     <image name="on-off-off.png3" type="multi"  />
+    <image name="on-off-off.png31" type="multi"  />
+    <image name="on-off-off.png4" type="multi"  />
     <image name="on-off-on.png" type="multi"  />
     <image name="on-off-on.png1" type="multi"  />
     <image name="on-off-on.png11" type="multi"  />
+    <image name="on-off-on.png111" type="multi"  />
+    <image name="on-off-on.png12" type="multi"  />
     <image name="on-off-on.png2" type="multi"  />
+    <image name="on-off-on.png21" type="multi"  />
     <image name="on-off-on.png3" type="multi"  />
+    <image name="on-off-on.png31" type="multi"  />
+    <image name="on-off-on.png4" type="multi"  />
     <image name="profile-background.jpg"  />
     <image name="profile-background.jpg1"  />
     <image name="profile-background.jpg11"  />
+    <image name="profile-background.jpg111"  />
+    <image name="profile-background.jpg12"  />
     <image name="profile-background.jpg2"  />
+    <image name="profile-background.jpg21"  />
     <image name="profile-background.jpg3"  />
+    <image name="profile-background.jpg31"  />
+    <image name="profile-background.jpg4"  />
     <image name="profile-pic.jpg" type="multi"  />
     <image name="profile-pic.jpg1" type="multi"  />
     <image name="profile-pic.jpg11" type="multi"  />
+    <image name="profile-pic.jpg111" type="multi"  />
+    <image name="profile-pic.jpg12" type="multi"  />
     <image name="profile-pic.jpg2" type="multi"  />
+    <image name="profile-pic.jpg21" type="multi"  />
     <image name="profile-pic.jpg3" type="multi"  />
+    <image name="profile-pic.jpg31" type="multi"  />
+    <image name="profile-pic.jpg4" type="multi"  />
+    <image name="Radio_btn_Normal.png" type="multi"  />
+    <image name="Radio_btn_Press.png" type="multi"  />
     <image name="SecCodeBack.jpg"  />
+    <image name="SecCodeBack.jpg1"  />
     <image name="signin-background.jpg"  />
     <image name="signin-background.jpg1"  />
     <image name="signin-background.jpg11"  />
+    <image name="signin-background.jpg111"  />
+    <image name="signin-background.jpg12"  />
     <image name="signin-background.jpg2"  />
+    <image name="signin-background.jpg21"  />
     <image name="signin-background.jpg3"  />
+    <image name="signin-background.jpg31"  />
+    <image name="signin-background.jpg4"  />
     <image name="signup-background.jpg"  />
     <image name="signup-background.jpg1"  />
     <image name="signup-background.jpg11"  />
+    <image name="signup-background.jpg111"  />
+    <image name="signup-background.jpg12"  />
     <image name="signup-background.jpg2"  />
+    <image name="signup-background.jpg21"  />
     <image name="signup-background.jpg3"  />
+    <image name="signup-background.jpg31"  />
+    <image name="signup-background.jpg4"  />
+    <image name="Slider.borderTop_2.png_veryHigh.png" type="multi"  />
+    <image name="Slider.borderTop_2.png_veryHigh_FULL.png" type="multi"  />
+    <image name="Slider.borderTopL_2.png_veryHigh.png" type="multi"  />
+    <image name="Slider.borderTopL_2.png_veryHigh_FULL.png" type="multi"  />
+    <image name="Slider.borderTopR_2.png_veryHigh.png" type="multi"  />
+    <image name="Slider.borderTopR_2.png_veryHigh_FULL.png" type="multi"  />
     <image name="smily.png" type="multi"  />
     <image name="smily.png1" type="multi"  />
     <image name="smily.png11" type="multi"  />
+    <image name="smily.png111" type="multi"  />
+    <image name="smily.png12" type="multi"  />
     <image name="smily.png2" type="multi"  />
+    <image name="smily.png21" type="multi"  />
     <image name="smily.png3" type="multi"  />
+    <image name="smily.png31" type="multi"  />
+    <image name="smily.png4" type="multi"  />
     <image name="SolBleuDeg"  />
+    <image name="SolBleuDeg1"  />
+    <image name="switch_mask.png" type="multi"  />
+    <image name="switch_off.png" type="multi"  />
+    <image name="switch_on.png" type="multi"  />
+    <image name="TextField.borderBottom_1.png" type="multi"  />
+    <image name="TextField.borderBottomL_1.png" type="multi"  />
+    <image name="TextField.borderBottomR_1.png" type="multi"  />
+    <image name="TextField.borderCenter_1.png" type="multi"  />
+    <image name="TextField.borderLeft_1.png" type="multi"  />
+    <image name="TextField.borderRight_1.png" type="multi"  />
+    <image name="TextField.borderTop_1.png" type="multi"  />
+    <image name="TextField.borderTopL_1.png" type="multi"  />
+    <image name="TextField.borderTopR_1.png" type="multi"  />
     <theme name="Theme">
         <val key="@includeNativeBool" value="true" />
         <val key="@tabPlacementInt" value="0" />
-        <val key="Activate.bgImage" value="activation-background.jpg" />
+        <val key="Activate.bgImage" value="activation-background.jpg4" />
         <val key="Activate.bgType" value="33" />
         <val key="Activate.margin" value="0.0,0.0,0.0,0.0" />
         <val key="Activate.padUnit" value="0,0,2,0" />
@@ -229,6 +427,14 @@
         <val key="ButtonInscriptionAmine.sel#margin" value="3.0,3.0,2.0,2.0" />
         <val key="ButtonInscriptionAmine.sel#padUnit" value="2,2,2,2" />
         <val key="ButtonInscriptionAmine.sel#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="ButtonResto.align" value="4" />
+        <border key="ButtonResto.border" type="round" roundBorderColor="2448048" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="ButtonResto.fgColor" value="ffffff" />
+        <font key="ButtonResto.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="ButtonResto.marUnit" value="2,2,2,2" />
+        <val key="ButtonResto.margin" value="3.0,3.0,2.0,2.0" />
+        <val key="ButtonResto.padUnit" value="2,2,2,2" />
+        <val key="ButtonResto.padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonTranspAmine.align" value="4" />
         <gradient key="ButtonTranspAmine.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
         <val key="ButtonTranspAmine.bgType" value="0" />
@@ -447,7 +653,7 @@
         <val key="RestoDon-btn.transparency" value="0" />
         <val key="SelectBar.align" value="4" />
         <val key="SelectBar.bgColor" value="ff2d55" />
-        <val key="SelectBar.bgImage" value="news-tab-down.png" />
+        <val key="SelectBar.bgImage" value="news-tab-down.png4" />
         <val key="SelectBar.bgType" value="30" />
         <border key="SelectBar.border" type="empty" />
         <val key="SelectBar.fgColor" value="feb2c1" />
@@ -457,7 +663,7 @@
         <val key="SelectBar.padding" value="2.0,3.0,0.0,0.0" />
         <val key="SelectBar.press#align" value="4" />
         <val key="SelectBar.press#bgColor" value="ff2d55" />
-        <val key="SelectBar.press#bgImage" value="news-tab-down.png" />
+        <val key="SelectBar.press#bgImage" value="news-tab-down.png4" />
         <val key="SelectBar.press#bgType" value="30" />
         <border key="SelectBar.press#border" type="empty" />
         <val key="SelectBar.press#fgColor" value="ffffff" />
@@ -468,7 +674,7 @@
         <val key="SelectBar.press#transparency" value="255" />
         <val key="SelectBar.sel#align" value="4" />
         <val key="SelectBar.sel#bgColor" value="ff2d55" />
-        <val key="SelectBar.sel#bgImage" value="news-tab-down.png" />
+        <val key="SelectBar.sel#bgImage" value="news-tab-down.png4" />
         <val key="SelectBar.sel#bgType" value="30" />
         <border key="SelectBar.sel#border" type="empty" />
         <val key="SelectBar.sel#fgColor" value="feb2c1" />
@@ -503,7 +709,7 @@
         <val key="SideCommand.transparency" value="0" />
         <val key="SideNavigationPanel.bgColor" value="ffffff" />
         <val key="SideNavigationPanel.transparency" value="255" />
-        <val key="SignIn.bgImage" value="signin-background.jpg" />
+        <val key="SignIn.bgImage" value="signin-background.jpg4" />
         <val key="SignIn.bgType" value="33" />
         <val key="SignIn.margin" value="0.0,0.0,0.0,0.0" />
         <val key="SignIn.padUnit" value="0,0,2,0" />
@@ -612,7 +818,7 @@
         <val key="Toolbar.transparency" value="0" />
         <gradient key="VioletBgBlanc.bgGradient" color1="7103487" color2="16777215" posX="0.5" posY="0.5" radius="1.0" />
         <val key="VioletBgBlanc.bgType" value="6" />
-        <val key="Welcome.bgImage" value="welcome-background.jpg" />
+        <val key="Welcome.bgImage" value="welcome-background.jpg4" />
         <val key="Welcome.bgType" value="33" />
         <val key="Welcome.margin" value="0.0,0.0,0.0,0.0" />
         <val key="Welcome.padUnit" value="0,0,2,0" />
@@ -634,30 +840,49 @@
         <val key="WhiteSeparator.margin" value="0.0,0.0,0.0,0.0" />
         <val key="WhiteSeparator.padding" value="1.0,1.0,1.0,1.0" />
         <val key="WhiteSeparator.transparency" value="26" />
-        <val key="bgBleuDegAmine.bgImage" value="SolBleuDeg" />
+        <val key="bgBleuDegAmine.bgImage" value="SolBleuDeg1" />
         <val key="bgBleuDegAmine.bgType" value="33" />
         <val key="bgBleuDegAmine.margin" value="0.0,0.0,0.0,0.0" />
         <val key="bgBleuDegAmine.padUnit" value="0,0,2,0" />
         <val key="bgBleuDegAmine.padding" value="0.0,3.0,0.0,0.0" />
         <val key="bgBleuDegAmine.transparency" value="255" />
-        <val key="bgInscriptionAmine.bgImage" value="charityBg" />
+        <val key="bgInscriptionAmine.bgImage" value="charityBg1" />
         <val key="bgInscriptionAmine.bgType" value="33" />
         <val key="bgInscriptionAmine.margin" value="0.0,0.0,0.0,0.0" />
         <val key="bgInscriptionAmine.padUnit" value="0,0,2,0" />
         <val key="bgInscriptionAmine.padding" value="0.0,3.0,0.0,0.0" />
         <val key="bgInscriptionAmine.transparency" value="255" />
-        <val key="bgSecCodeAmine.bgImage" value="Image 2" />
+        <val key="bgPub.bgImage" value="Image 92" />
+        <val key="bgPub.bgType" value="33" />
+        <val key="bgPub.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="bgPub.padUnit" value="0,0,2,0" />
+        <val key="bgPub.padding" value="0.0,3.0,0.0,0.0" />
+        <val key="bgPub.transparency" value="255" />
+        <val key="bgSecCodeAmine.bgImage" value="Image 21" />
         <val key="bgSecCodeAmine.bgType" value="33" />
         <val key="bgSecCodeAmine.margin" value="0.0,0.0,0.0,0.0" />
         <val key="bgSecCodeAmine.padUnit" value="0,0,2,0" />
         <val key="bgSecCodeAmine.padding" value="0.0,3.0,0.0,0.0" />
         <val key="bgSecCodeAmine.transparency" value="255" />
-        <val key="bgThankYouAmine.bgImage" value="bgThankCard" />
+        <val key="bgThankYouAmine.bgImage" value="bgThankCard1" />
         <val key="bgThankYouAmine.bgType" value="33" />
         <val key="bgThankYouAmine.margin" value="0.0,0.0,0.0,0.0" />
         <val key="bgThankYouAmine.padUnit" value="0,0,2,0" />
         <val key="bgThankYouAmine.padding" value="0.0,3.0,0.0,0.0" />
         <val key="bgThankYouAmine.transparency" value="255" />
+        <val key="containerPublication1.bgColor" value="ffffff" />
+        <val key="containerPublication1.bgImage" value="Button.borderTop_1.png1" />
+        <val key="containerPublication1.bgType" value="1" />
+        <val key="containerPublication1.fgColor" value="255ab0" />
+        <font key="containerPublication1.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="containerPublication1.marUnit" value="2,2,2,2" />
+        <val key="containerPublication1.margin" value="0.5,1.0,0.5,0.5" />
+        <val key="containerPublication1.padUnit" value="2,2,2,2" />
+        <val key="containerPublication1.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="editor.align" value="4" />
+        <gradient key="editor.bgGradient" color1="16777215" color2="16777204" posX="0.38" posY="0.78" radius="2.0" />
+        <val key="editor.bgType" value="7" />
+        <border key="editor.border" type="line" millimeters="false" thickness="2.0" color="2448048" />
         <val key="labelSidePictureAmine.fgColor" value="333333" />
         <font key="labelSidePictureAmine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="5.5" />
         <val key="labelSidePictureAmine.margin" value="4.5,0.0,1.0,0.0" />
@@ -733,36 +958,72 @@
         <val key="textfieldBgTranspRondAmine.sel#margin" value="3.0,3.0,2.0,2.0" />
         <val key="textfieldBgTranspRondAmine.sel#padUnit" value="2,2,2,2" />
         <val key="textfieldBgTranspRondAmine.sel#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="titreDesc.align" value="4" />
+        <val key="titreDesc.fgColor" value="cc0066" />
+        <font key="titreDesc.font" type="system" face="0" style="0" size="8" />
+        <val key="titrePub.align" value="4" />
+        <val key="titrePub.fgColor" value="ff6600" />
+        <font key="titrePub.font" type="system" face="0" style="0" size="0" />
         <val key="transparency" value="0" />
     </theme>
     <image name="timeline-background.jpg"  />
     <image name="timeline-background.jpg1"  />
     <image name="timeline-background.jpg11"  />
+    <image name="timeline-background.jpg111"  />
+    <image name="timeline-background.jpg12"  />
     <image name="timeline-background.jpg2"  />
+    <image name="timeline-background.jpg21"  />
     <image name="timeline-background.jpg3"  />
+    <image name="timeline-background.jpg31"  />
+    <image name="timeline-background.jpg4"  />
     <image name="twitter-logo.png" type="multi"  />
     <image name="twitter-logo.png1" type="multi"  />
     <image name="twitter-logo.png11" type="multi"  />
+    <image name="twitter-logo.png111" type="multi"  />
+    <image name="twitter-logo.png12" type="multi"  />
     <image name="twitter-logo.png2" type="multi"  />
+    <image name="twitter-logo.png21" type="multi"  />
     <image name="twitter-logo.png3" type="multi"  />
+    <image name="twitter-logo.png31" type="multi"  />
+    <image name="twitter-logo.png4" type="multi"  />
     <image name="welcome-background.jpg"  />
     <image name="welcome-background.jpg1"  />
     <image name="welcome-background.jpg11"  />
+    <image name="welcome-background.jpg111"  />
+    <image name="welcome-background.jpg12"  />
     <image name="welcome-background.jpg2"  />
+    <image name="welcome-background.jpg21"  />
     <image name="welcome-background.jpg3"  />
+    <image name="welcome-background.jpg31"  />
+    <image name="welcome-background.jpg4"  />
     <image name="welcome-slide-1.png" type="multi"  />
     <image name="welcome-slide-1.png1" type="multi"  />
     <image name="welcome-slide-1.png11" type="multi"  />
+    <image name="welcome-slide-1.png111" type="multi"  />
+    <image name="welcome-slide-1.png12" type="multi"  />
     <image name="welcome-slide-1.png2" type="multi"  />
+    <image name="welcome-slide-1.png21" type="multi"  />
     <image name="welcome-slide-1.png3" type="multi"  />
+    <image name="welcome-slide-1.png31" type="multi"  />
+    <image name="welcome-slide-1.png4" type="multi"  />
     <image name="welcome-slide-2.png" type="multi"  />
     <image name="welcome-slide-2.png1" type="multi"  />
     <image name="welcome-slide-2.png11" type="multi"  />
+    <image name="welcome-slide-2.png111" type="multi"  />
+    <image name="welcome-slide-2.png12" type="multi"  />
     <image name="welcome-slide-2.png2" type="multi"  />
+    <image name="welcome-slide-2.png21" type="multi"  />
     <image name="welcome-slide-2.png3" type="multi"  />
+    <image name="welcome-slide-2.png31" type="multi"  />
+    <image name="welcome-slide-2.png4" type="multi"  />
     <image name="welcome-slide-3.png" type="multi"  />
     <image name="welcome-slide-3.png1" type="multi"  />
     <image name="welcome-slide-3.png11" type="multi"  />
+    <image name="welcome-slide-3.png111" type="multi"  />
+    <image name="welcome-slide-3.png12" type="multi"  />
     <image name="welcome-slide-3.png2" type="multi"  />
+    <image name="welcome-slide-3.png21" type="multi"  />
     <image name="welcome-slide-3.png3" type="multi"  />
+    <image name="welcome-slide-3.png31" type="multi"  />
+    <image name="welcome-slide-3.png4" type="multi"  />
 </resource>
