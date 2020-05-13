@@ -43,6 +43,8 @@ public class Profil_Chat extends SideMenuNov {
     TextField tf ;
     
     public Profil_Chat(User u) {
+        getToolbar().setUIID("ToolbarAmine");
+        
         setTitle(u.getUsername());
         setLayout(new BorderLayout());
         tf = new TextField();
@@ -54,7 +56,7 @@ public class Profil_Chat extends SideMenuNov {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new Profil_ListConv().show();
+                new Profil_ListConv().showBack();
             }
         });
         
@@ -63,6 +65,8 @@ public class Profil_Chat extends SideMenuNov {
         
         Button bt = new Button(FontImage.MATERIAL_SEND);
         
+        tf.setUIID("TexteFieldPassAmine");
+        bt.setUIID("ButtonProfilAmine");
         tf.setHint("Votre message:");
         
         bt.addActionListener(new ActionListener() {

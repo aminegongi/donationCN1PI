@@ -295,6 +295,16 @@ public class User {
         this.genre = genre;
         this.dateNaissance = dateNaissance;
     }
+
+    public User(int id, String image, String pageFB, String siteWeb, String description, float longitude, float latitude) {
+        this.id = id;
+        this.image = image;
+        this.pageFB = pageFB;
+        this.siteWeb = siteWeb;
+        this.description = description;
+        this.longitude = longitude;
+        this.latitude = latitude;
+    }
     
     
 

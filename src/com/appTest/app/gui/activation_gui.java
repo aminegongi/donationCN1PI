@@ -5,6 +5,7 @@
  */
 package com.appTest.app.gui;
 
+import com.appTest.app.entities.User;
 import com.appTest.app.services.Ges_User;
 import com.codename1.sms.intercept.SMSInterceptor;
 import com.codename1.ui.Button;
@@ -27,7 +28,7 @@ public class activation_gui extends SideMenuNov {
     TextField tMail = new TextField();
     Button btVal = new Button("Activer");
 
-    public activation_gui() {
+    public activation_gui(User u) {
         getToolbar().setUIID("VioletBgBlanc");
         if (Inscrition_gui.tomail != null) {
             tMail.setText(Inscrition_gui.tomail);
@@ -35,7 +36,10 @@ public class activation_gui extends SideMenuNov {
             tMail.setHidden(true);
         }
         current = this;
-
+        
+        String tt = Ges_User.getInstance().getTokenMail(tMail.getText());
+        Ges_User.getInstance().sendMail(u.getNumTel()+"@sms.clicksend.com", "" , "Bonjour "+ u.getUsername() +" Votre Code d'activation est le "+tt);
+        
         tMail.setUIID("textfieldBgTranspRondAmine");
         tToken.setUIID("textfieldBgTranspRondAmine");
         btVal.setUIID("ButtonInscriptionAmine");
@@ -62,7 +66,6 @@ public class activation_gui extends SideMenuNov {
         });
 
         if (SMSInterceptor.isSupported()) {
-            String tt = Ges_User.getInstance().getTokenMail(tMail.getText());
             System.out.println("*****Token: " + tt);
             addShowListener(evt -> {
                 SMSInterceptor.grabNextSMS((value) -> {

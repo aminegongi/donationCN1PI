@@ -40,6 +40,7 @@ public class ProfilAutreUser_gui extends SideMenuNov {
 
     public ProfilAutreUser_gui(User tu) {
         addSideMenu();
+        getToolbar().setUIID("ToolbarAmine");
         setTitle("Votre Profil");
         setLayout(BoxLayout.y());
         User u = tu;
@@ -55,8 +56,7 @@ public class ProfilAutreUser_gui extends SideMenuNov {
         img = URLImage.createToStorage(enc, urlImg, urlImg, URLImage.RESIZE_SCALE);
 
         imgv = new ImageViewer(img);
-        Button btModifier = new Button(FontImage.MATERIAL_EDIT);
-        add(BorderLayout.east(btModifier).add(BorderLayout.CENTER, imgv));
+
         add(createLineSeparator(0xeeeeee));
 
         String sub = u.getRoles().substring(1, u.getRoles().indexOf(","));
@@ -172,13 +172,7 @@ public class ProfilAutreUser_gui extends SideMenuNov {
 
         }
         
-        btModifier.addActionListener(new ActionListener() {
 
-            @Override
-            public void actionPerformed(ActionEvent evt) {
-                new ProfilModifUser_gui().show();
-            }
-        });
 
     }
 

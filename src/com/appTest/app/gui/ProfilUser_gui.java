@@ -7,6 +7,7 @@ package com.appTest.app.gui;
 
 import com.appTest.app.entities.User;
 import com.appTest.app.utils.Statics;
+import com.codename1.components.FloatingActionButton;
 import com.codename1.components.ImageViewer;
 import com.codename1.components.Switch;
 import com.codename1.ui.Button;
@@ -40,6 +41,7 @@ public class ProfilUser_gui extends SideMenuNov {
 
     public ProfilUser_gui() {
         addSideMenu();
+        getToolbar().setUIID("ToolbarAmine");
         setTitle("Votre Profil");
         setLayout(BoxLayout.y());
         User u = FLogIns_gui.userCon;
@@ -56,6 +58,7 @@ public class ProfilUser_gui extends SideMenuNov {
 
         imgv = new ImageViewer(img);
         Button btModifier = new Button(FontImage.MATERIAL_EDIT);
+        btModifier.setUIID("ButtonProfilAmine");
         add(BorderLayout.east(btModifier).add(BorderLayout.CENTER, imgv));
         add(createLineSeparator(0xeeeeee));
 
@@ -154,39 +157,42 @@ public class ProfilUser_gui extends SideMenuNov {
             if(u.getAdresse().getPays() != null){
                 addStringValue("Adresse", tfAdresse);
             }
-            if (u.getPrenom() != null) {
-                addStringValue("Prénom", tfPageFb);
+            if (u.getPageFB()!= null) {
+                addStringValue("Facebook", tfPageFb);
             }
-            if (u.getPrenom() != null) {
-                addStringValue("Prénom", tfsWeb);
+            if (u.getSiteWeb()!= null) {
+                addStringValue("Site web", tfsWeb);
             }
-            if (u.getPrenom() != null) {
-                addStringValue("Prénom", tfDesc);
+            if (u.getDescription()!= null) {
+                addStringValue("Déscription", tfDesc);
             }
-            if (u.getPrenom() != null) {
-                addStringValue("Prénom", tfLong);
+            if (u.getLongitude() != 0) {
+                addStringValue("Longitude", tfLong);
             }
-            if (u.getPrenom() != null) {
-                addStringValue("Prénom", tfLat);
+            if (u.getLatitude()!= 0) {
+                addStringValue("Latitude", tfLat);
             }
 
         }
         
-        Button chat = new Button("Chat");
-        chat.addActionListener(new ActionListener() {
+       
+        FloatingActionButton chatFab = new FloatingActionButton(FontImage.MATERIAL_CHAT, "hello", "ProfilFABAmine", 5) {};
+        
+        chatFab.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
                 new Profil_ListConv().show();
             }
         });
-        add(chat);
+        
+        chatFab.bindFabToContainer(getContentPane());
         
         btModifier.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new ProfilModifUser_gui().show();
+                new ProfilModifUser_gui(null,null).show();
             }
         });
 

@@ -301,5 +301,44 @@ public class Ges_User {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return users;
     }
+    
+    public ArrayList<User> ModifierAutre(User u) {
+        String url = Statics.BASE_URL + "/user/api/modus?id="+u.getId()+"&im="+u.getImage()+"&fb="+u.getPageFB()+"&sw="+u.getSiteWeb()+"&de="+u.getDescription()+"&lo="+u.getLongitude()+"&la="+u.getLatitude(); //&pa="+u.getAdresse().getPays()+"&vi="+u.getAdresse().getVille()+"
+        req.setUrl(url);
 
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                String r = "["+new String(req.getResponseData())+"]";
+                users = JsonToUserParser(r);
+                req.removeResponseListener(this);
+            }
+        });
+
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return users;
+    }
+    
+    
+    public int sendMail(String to, String objet, String msg) {
+        String url = Statics.BASE_URL + "/user/sendMail?to="+to+"&objet="+objet+"&msg="+msg ;
+        req.setUrl(url);
+
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                res = new String(req.getResponseData());
+                if (res.contains("ok")) {
+                    actRes = 1;
+                } else {
+                    actRes = 0;
+                }
+                req.removeResponseListener(this);
+            }
+        });
+
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return actRes;
+    }
+    
 }

@@ -57,9 +57,16 @@ public class ProfilModifUser_gui extends SideMenuNov {
     FileUploader file;
     String fns;
     String imgp = null;
+    
+    TextField tfPageFb ;
+    TextField tfsWeb ;
+    TextField taDesc ;
+    TextField tfLong ;
+    TextField tfLat ;
 
-    public ProfilModifUser_gui() {
+    public ProfilModifUser_gui(String lat , String lon) {
         setTitle("Modification Profil");
+        getToolbar().setUIID("ToolbarAmine");
         setLayout(BoxLayout.y());
         User u = FLogIns_gui.userCon;
         sub = u.getRoles().substring(1, u.getRoles().indexOf(","));
@@ -80,6 +87,23 @@ public class ProfilModifUser_gui extends SideMenuNov {
             public void actionPerformed(ActionEvent evt) {
                 //el traitement t3awed ta3mel user + getUser FLoginC
                 System.out.println(sub);
+                
+                System.out.println(imgp);
+                if (imgp == null) {
+                    fns = FLogIns_gui.userCon.getImage();
+                } else {
+                    String l = imgp.toString();
+                    int p = l.indexOf("/", 2);
+                    String n = l.substring(p + 2, l.length());
+
+                    FileUploader f = new FileUploader(Statics.BASE_URL_Upload_Image_User);
+                    try {
+                        fns = f.upload(n);
+                    } catch (Exception ex) {
+                        System.out.println("errrrr");
+                    }
+                }
+
                 if (sub.equals("Utilisateur Simple")) {
                     String gg = new String();
                     if (sGenre.isOn()) {
@@ -87,30 +111,14 @@ public class ProfilModifUser_gui extends SideMenuNov {
                     } else if (sGenre.isOff()) {
                         gg = "Homme";
                     }
-                    System.out.println("********************Before");
-                    System.out.println(imgp);
-                    System.out.println("************************");
-                    System.out.println("********************");
-                    System.out.println(FLogIns_gui.userCon.getImage());
-                    System.out.println("************************");
-                    if (imgp == null) {
-                        fns = FLogIns_gui.userCon.getImage();
-                    } else {
-                        String l = imgp.toString();
-                        int p = l.indexOf("/", 2);
-                        String n = l.substring(p + 2, l.length());
 
-                        FileUploader f = new FileUploader(Statics.BASE_URL_Upload_Image_User);
-                        try {
-                            fns = f.upload(n);
-                        } catch (Exception ex) {
-                            System.out.println("errrrr");
-                        }
-                    }
-                    System.out.println("********************After");
-                    System.out.println(imgp);
                     User um = new User(FLogIns_gui.userCon.getId(), tfnom.getText(), null, fns, tfprenom.getText(), gg, null);
                     ArrayList<User> u = Ges_User.getInstance().ModifierUS(um);
+                    FLogIns_gui.userCon = u.get(0);
+                    new ProfilUser_gui().show();
+                } else {
+                    User um = new User(FLogIns_gui.userCon.getId() , fns ,tfPageFb.getText(), tfsWeb.getText(), taDesc.getText(), Float.valueOf(tfLong.getText()), Float.valueOf(tfLat.getText()));
+                    ArrayList<User> u = Ges_User.getInstance().ModifierAutre(um);
                     FLogIns_gui.userCon = u.get(0);
                     new ProfilUser_gui().show();
                 }
@@ -217,17 +225,39 @@ public class ProfilModifUser_gui extends SideMenuNov {
             add(xx);
 
         } else if (t == 2) {
-            TextField tfPageFb = new TextField(u.getPageFB(), "Facebook");
-            TextField tfsWeb = new TextField(u.getSiteWeb(), "Site Web");
-            TextField taDesc = new TextField(u.getDescription(), "Déscription");
-            TextField tfLong = new TextField(Float.toString(u.getLongitude()), "Longitude");
-            TextField tfLat = new TextField(Float.toString(u.getLatitude()), "Latitude");
+            tfPageFb = new TextField(u.getPageFB(), "Facebook");
+            tfsWeb = new TextField(u.getSiteWeb(), "Site Web");
+            taDesc = new TextField(u.getDescription(), "Déscription");
+            tfLong = new TextField(Float.toString(u.getLongitude()), "Longitude");
+            tfLat = new TextField(Float.toString(u.getLatitude()), "Latitude");
 
             addStringValue("Facebook", tfPageFb);
             addStringValue("Site Web", tfsWeb);
             addStringValue("Déscription", taDesc);
-            addStringValue("Longitude", tfLong);
-            addStringValue("latitude", tfLat);
+            
+            Button btMap = new Button(FontImage.MATERIAL_MAP);
+            btMap.setText("Localisation depusi la map");
+            btMap.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent evt) {
+                    new ProfilModifUser_Map_gui().show();
+                }
+            });
+            add(btMap);
+            if(lat == null && lon == null){
+                addStringValue("Longitude", tfLong);
+                addStringValue("latitude", tfLat);
+            }
+            else{
+                tfLong.setText(lon);
+                tfLat.setText(lat);
+                addStringValue("Longitude", tfLong);
+                addStringValue("latitude", tfLat);
+            }
+            
+            
+            
 
         }
 

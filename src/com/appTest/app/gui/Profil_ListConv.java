@@ -41,7 +41,11 @@ public class Profil_ListConv extends SideMenuNov {
     EncodedImage enc;
     ImageViewer imgv;
     Image img;
+    
+    ArrayList<UserConversation> convs ;
+    int i;
     public Profil_ListConv() {
+        getToolbar().setUIID("ToolbarAmine");
         setTitle(" Vos Conversations ");
         setLayout(BoxLayout.y());
         User u = FLogIns_gui.userCon;
@@ -50,16 +54,15 @@ public class Profil_ListConv extends SideMenuNov {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new ProfilUser_gui().show();
+                new ProfilUser_gui().showBack();
             }
         });
         
-        int idsend=-1;
-        ArrayList<UserConversation> convs = Ges_Conversation.getInstance().getConvs(u.getId());
-        for(int i=0 ; i<convs.size();i++){
+        convs = Ges_Conversation.getInstance().getConvs(u.getId());
+        for(i=0 ; i<convs.size();i++){
             if(convs.get(i).getSender().getId() != u.getId()){
                 add(convContainer(convs.get(i)));
-                idsend=convs.get(i).getSender().getId();
+                add(createLineSeparator(0xfeae06));
             }     
         }
         
@@ -80,15 +83,15 @@ public class Profil_ListConv extends SideMenuNov {
         String urlImg = Statics.BASE_URL_Image_User + uc.getSender().getImage();
         img = URLImage.createToStorage(enc, urlImg, urlImg, URLImage.RESIZE_SCALE);
         imgv = new ImageViewer(img);
-        Button btn =new Button(FontImage.MATERIAL_ARROW_RIGHT);
-        
+        Button btn =new Button(FontImage.MATERIAL_SEND);
+        btn.setUIID("ButtonInvProfilAmine");
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
                 new Profil_Chat(uc.getSender()).show();
             }
         });
-        
+                
         border.add(BorderLayout.WEST, imgv)
                 .add(BorderLayout.CENTER, y)
                 .add(BorderLayout.EAST, btn);

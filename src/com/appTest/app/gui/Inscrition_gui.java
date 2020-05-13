@@ -61,14 +61,14 @@ public class Inscrition_gui extends SideMenuNov {
     public static String tomail = null;
 
     public Inscrition_gui() {
-
+        
         current = this;
         getToolbar().setUIID("VioletBgBlanc");
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new FLogIns_gui().showBack();
+                new FLogIns_gui().showBack(); 
             }
         });
         setUIID("bgInscriptionAmine");
@@ -149,7 +149,7 @@ public class Inscrition_gui extends SideMenuNov {
                         Dialog.show("Bravo !", "Inscription reussi il ne vous rest qu'a le valider", new Command("OK"));
                         tomail = tMail.getText();
                         ip.dispose();
-                        new activation_gui().show();
+                        new activation_gui(u).show();
 
                     }
                     System.out.println(i);
