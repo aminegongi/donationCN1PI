@@ -125,7 +125,7 @@ public class SideMenuNov extends Form {
                 new Home_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Aide", FontImage.MATERIAL_KEYBOARD, (ActionListener) (ActionEvent evt) -> {
-                new Home_gui().show();
+                new ListeDmndAide_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Emploi", FontImage.MATERIAL_ANDROID, (ActionListener) (ActionEvent evt) -> {
                 new Home_gui().show();

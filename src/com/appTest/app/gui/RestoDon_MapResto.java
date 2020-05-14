@@ -41,6 +41,7 @@ import com.codename1.ui.URLImage;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.events.FocusListener;
+import com.codename1.ui.geom.Point;
 import com.codename1.ui.geom.Rectangle;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
@@ -59,12 +60,14 @@ import java.util.ArrayList;
  */
 public class RestoDon_MapResto extends SideMenuNov {
      Form current;
-    Boolean afficher = true;
+    Boolean afficher = false;
      Location location = LocationManager.getLocationManager().getCurrentLocationSync();
      ArrayList<RestoMapCoord> listMap;
      EncodedImage enc;
     ImageViewer imgv;
     Image img;
+    InteractionDialog dlg;
+    String clicked;
     
     public RestoDon_MapResto(){
         current = this;
@@ -121,21 +124,33 @@ public class RestoDon_MapResto extends SideMenuNov {
             String icon = resto.getIcon();
             float longitude = resto.getLongitude();
             float latitude = resto.getLatitude();
-                System.out.println(resto.toString());
+//                System.out.println(resto.toString());
             cnt.addMarker(
                     EncodedImage.createFromImage(restoImg, false),
                     new Coord(latitude, longitude),
                     resto.getUsername(),
                     "Optional long description",
                        evt -> {
+                           if (web.contains("web non définie")){
+                               
+                           }else{
                              Button WebButton = new Button("Site Web");
+                             WebButton.setUIID("RestoDon-btn");
                              WebButton.addActionListener(e -> {
                              new RestoDon_SiteWebResto(current, web, username).show();
                              });
                             Container wrapper = BoxLayout.encloseY(WebButton);
-                            InteractionDialog dlg = new InteractionDialog(username);
+                            InteractionDialog dlg1 = new InteractionDialog(username);
+                            dlg = dlg1;
+                            dlg.setTitle(username);
                             dlg.getContentPane().add(wrapper);
-                             WebButton.addFocusListener(new FocusListener() {
+                            
+                            if(afficher == true){
+                               afficher = false;
+                               dlg.disposeToTheLeft();
+                                 
+                               dlg.showPopupDialog(new Rectangle(200, 300, 10, 10));
+                              dlg.addFocusListener(new FocusListener() {
 
 
                                 @Override
@@ -151,7 +166,26 @@ public class RestoDon_MapResto extends SideMenuNov {
                                 }
                         });
                             
-                            if (afficher == true){
+                              afficher = true;
+                               
+                           }
+//                             WebButton.addFocusListener(new FocusListener() {
+//
+//
+//                                @Override
+//                                public void focusGained(Component cmp) {
+//                                    
+//                                }
+//
+//                                @Override
+//                                public void focusLost(Component cmp) {
+//                                    dlg.disposeToTheRight();
+//                                    dlg.getContentPane().removeComponent(wrapper);
+//                                    afficher = false;
+//                                }
+//                        });
+                            
+                            if (afficher == false){
                               dlg.showPopupDialog(new Rectangle(200, 300, 10, 10));
                               dlg.addFocusListener(new FocusListener() {
 
@@ -168,15 +202,22 @@ public class RestoDon_MapResto extends SideMenuNov {
                                     afficher = false;
                                 }
                         });
-                            } else {
+                            
                               afficher = true;
                           }
                                        }
+                        }
             );
             }
         }
         
-        
+        cnt.addTapListener(e->{
+        if (afficher == true){
+            dlg.dispose();
+            afficher = false;
+        }
+            
+        });
         
         Button btnMoveCamera = new Button("Centrer");
         btnMoveCamera.setUIID("RestoDon-btn");
@@ -193,7 +234,7 @@ public class RestoDon_MapResto extends SideMenuNov {
         
 //        Coord coordonnees = new Coord(location.getLatitude(), location.getLongitude());
         
-        Button btnLocation = new Button("Mon emplacement");
+        Button btnLocation = new Button("Ma localisation");
         btnLocation.setUIID("RestoDon-btn");
         btnLocation.addActionListener(e->{
             location = LocationManager.getLocationManager().getCurrentLocationSync();
@@ -204,7 +245,7 @@ public class RestoDon_MapResto extends SideMenuNov {
                     "you are here",
                     "Optional long description",
                      evt -> {
-                             Dialog.show("Nice", "You clicked the marker", "Done", null);
+                             
                      }
             );
 
@@ -212,56 +253,10 @@ public class RestoDon_MapResto extends SideMenuNov {
 
         
 
-        Button btnClearAll = new Button("Clear All");
-        btnClearAll.setUIID("RestoDon-btn");
-        btnClearAll.addActionListener(e->{
-            cnt.clearMapLayers();
-        });
-        
+       
         
 
-        cnt.addTapListener(e->{
-            
-           
-            TextField enterName = new TextField();
-            Container wrapper = BoxLayout.encloseY(new Label("Name:"), enterName);
-            InteractionDialog dlg = new InteractionDialog("Add Marker");
-            dlg.getContentPane().add(wrapper);
-             enterName.addFocusListener(new FocusListener() {
-            
-
-                @Override
-                public void focusGained(Component cmp) {
-                    
-                }
-
-                @Override
-                public void focusLost(Component cmp) {
-                    dlg.disposeToTheRight();
-                    dlg.getContentPane().removeComponent(wrapper);
-                    afficher = false;
-                }
-        });
-            enterName.setDoneListener(e2->{
-                String txt = enterName.getText();
-                cnt.addMarker(
-                        EncodedImage.createFromImage(markerImg, false),
-                        cnt.getCoordAtPosition(e.getX(), e.getY()),
-                        enterName.getText(),
-                        "",
-                        e3->{
-                                Dialog.show("Nice", "You clicked "+txt, "Done", null);
-                        }
-                );
-                dlg.dispose();
-            });
-          if (afficher == true){
-            dlg.showPopupDialog(new Rectangle(e.getX(), e.getY(), 10, 10));
-            enterName.startEditingAsync();
-          } else {
-            afficher = true;
-        }
-        });
+        
         
 //        FontImage animationImg = FontImage.createMaterial(FontImage.MATERIAL_CANCEL, s, 8);
 //        Button animationBtn = new Button();
@@ -282,19 +277,19 @@ public class RestoDon_MapResto extends SideMenuNov {
 //        topcnt.addAll(animationBtn, search, searchBtn) ;
 //        
         
-        
-        Container midTop= new Container() ;
-        midTop.setLayout(BoxLayout.xCenter());
-        midTop.addAll(btnClearAll, btnMoveCamera) ;
-        
-        Container midY= new Container() ;
-        midY.setLayout(BoxLayout.yCenter());
-        midY.addAll(midTop, btnLocation) ;
+//        
+//        Container midTop= new Container() ;
+//        midTop.setLayout(BoxLayout.xCenter());
+//        midTop.addAll(btnLocation, btnMoveCamera) ;
+//        
+//        Container midY= new Container() ;
+//        midY.setLayout(BoxLayout.yCenter());
+//        midY.addAll(midTop, btnLocation) ;
         
         Container root = LayeredLayout.encloseIn(
                 BorderLayout.center(cnt),
                 BorderLayout.south(
-                        FlowLayout.encloseCenterBottom(midY)
+                        FlowLayout.encloseCenterBottom(btnLocation, btnMoveCamera)
                 )
         );
 

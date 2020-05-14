@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<resource majorVersion="1" minorVersion="11" useXmlUI="false">
+<resource majorVersion="1" minorVersion="10" useXmlUI="false">
     <image name="activation-background.jpg"  />
     <image name="activation-background.jpg1"  />
     <image name="activation-background.jpg11"  />
@@ -11,6 +11,7 @@
     <image name="activation-background.jpg3"  />
     <image name="activation-background.jpg31"  />
     <image name="activation-background.jpg4"  />
+    <image name="activation-background.jpg5"  />
     <image name="back-command.png" type="multi"  />
     <image name="bgThankCard"  />
     <image name="bgThankCard1"  />
@@ -109,6 +110,7 @@
     <image name="confirmation-background.jpg3"  />
     <image name="confirmation-background.jpg31"  />
     <image name="confirmation-background.jpg4"  />
+    <image name="confirmation-background.jpg5"  />
     <image name="Dialog.borderBottom_1.png" type="multi"  />
     <image name="Dialog.borderBottomL_1.png" type="multi"  />
     <image name="Dialog.borderBottomR_1.png" type="multi"  />
@@ -128,6 +130,7 @@
     <image name="dog.jpg3"  />
     <image name="dog.jpg31"  />
     <image name="dog.jpg4"  />
+    <image name="dog.jpg5"  />
     <image name="facebook-logo.png" type="multi"  />
     <image name="facebook-logo.png1" type="multi"  />
     <image name="facebook-logo.png11" type="multi"  />
@@ -138,6 +141,7 @@
     <image name="facebook-logo.png3" type="multi"  />
     <image name="facebook-logo.png31" type="multi"  />
     <image name="facebook-logo.png4" type="multi"  />
+    <image name="facebook-logo.png5" type="multi"  />
     <image name="Image 1"  />
     <image name="Image 11"  />
     <image name="Image 2"  />
@@ -156,6 +160,7 @@
     <image name="Logo.png3" type="multi"  />
     <image name="Logo.png31" type="multi"  />
     <image name="Logo.png4" type="multi"  />
+    <image name="Logo.png5" type="multi"  />
     <image name="Menu.borderBottom_1.png" type="multi"  />
     <image name="Menu.borderBottomL_1.png" type="multi"  />
     <image name="Menu.borderBottomR_1.png" type="multi"  />
@@ -175,6 +180,7 @@
     <image name="news-item-1.jpg3"  />
     <image name="news-item-1.jpg31"  />
     <image name="news-item-1.jpg4"  />
+    <image name="news-item-1.jpg5"  />
     <image name="news-item-2.jpg"  />
     <image name="news-item-2.jpg1"  />
     <image name="news-item-2.jpg11"  />
@@ -185,6 +191,7 @@
     <image name="news-item-2.jpg3"  />
     <image name="news-item-2.jpg31"  />
     <image name="news-item-2.jpg4"  />
+    <image name="news-item-2.jpg5"  />
     <image name="news-item-3.jpg"  />
     <image name="news-item-3.jpg1"  />
     <image name="news-item-3.jpg11"  />
@@ -195,6 +202,7 @@
     <image name="news-item-3.jpg3"  />
     <image name="news-item-3.jpg31"  />
     <image name="news-item-3.jpg4"  />
+    <image name="news-item-3.jpg5"  />
     <image name="news-item-4.jpg"  />
     <image name="news-item-4.jpg1"  />
     <image name="news-item-4.jpg11"  />
@@ -205,6 +213,7 @@
     <image name="news-item-4.jpg3"  />
     <image name="news-item-4.jpg31"  />
     <image name="news-item-4.jpg4"  />
+    <image name="news-item-4.jpg5"  />
     <image name="news-item.jpg"  />
     <image name="news-item.jpg1"  />
     <image name="news-item.jpg11"  />
@@ -215,6 +224,7 @@
     <image name="news-item.jpg3"  />
     <image name="news-item.jpg31"  />
     <image name="news-item.jpg4"  />
+    <image name="news-item.jpg5"  />
     <image name="news-tab-down-arrow.png" type="multi"  />
     <image name="news-tab-down-arrow.png1" type="multi"  />
     <image name="news-tab-down-arrow.png11" type="multi"  />
@@ -225,6 +235,7 @@
     <image name="news-tab-down-arrow.png3" type="multi"  />
     <image name="news-tab-down-arrow.png31" type="multi"  />
     <image name="news-tab-down-arrow.png4" type="multi"  />
+    <image name="news-tab-down-arrow.png5" type="multi"  />
     <image name="news-tab-down.png" type="multi"  />
     <image name="news-tab-down.png1" type="multi"  />
     <image name="news-tab-down.png11" type="multi"  />
@@ -235,6 +246,7 @@
     <image name="news-tab-down.png3" type="multi"  />
     <image name="news-tab-down.png31" type="multi"  />
     <image name="news-tab-down.png4" type="multi"  />
+    <image name="news-tab-down.png5" type="multi"  />
     <image name="on-off-off.png" type="multi"  />
     <image name="on-off-off.png1" type="multi"  />
     <image name="on-off-off.png11" type="multi"  />
@@ -245,6 +257,7 @@
     <image name="on-off-off.png3" type="multi"  />
     <image name="on-off-off.png31" type="multi"  />
     <image name="on-off-off.png4" type="multi"  />
+    <image name="on-off-off.png5" type="multi"  />
     <image name="on-off-on.png" type="multi"  />
     <image name="on-off-on.png1" type="multi"  />
     <image name="on-off-on.png11" type="multi"  />
@@ -255,6 +268,7 @@
     <image name="on-off-on.png3" type="multi"  />
     <image name="on-off-on.png31" type="multi"  />
     <image name="on-off-on.png4" type="multi"  />
+    <image name="on-off-on.png5" type="multi"  />
     <image name="profile-background.jpg"  />
     <image name="profile-background.jpg1"  />
     <image name="profile-background.jpg11"  />
@@ -265,6 +279,7 @@
     <image name="profile-background.jpg3"  />
     <image name="profile-background.jpg31"  />
     <image name="profile-background.jpg4"  />
+    <image name="profile-background.jpg5"  />
     <image name="profile-pic.jpg" type="multi"  />
     <image name="profile-pic.jpg1" type="multi"  />
     <image name="profile-pic.jpg11" type="multi"  />
@@ -275,6 +290,7 @@
     <image name="profile-pic.jpg3" type="multi"  />
     <image name="profile-pic.jpg31" type="multi"  />
     <image name="profile-pic.jpg4" type="multi"  />
+    <image name="profile-pic.jpg5" type="multi"  />
     <image name="Radio_btn_Normal.png" type="multi"  />
     <image name="Radio_btn_Press.png" type="multi"  />
     <image name="SecCodeBack.jpg"  />
@@ -289,6 +305,7 @@
     <image name="signin-background.jpg3"  />
     <image name="signin-background.jpg31"  />
     <image name="signin-background.jpg4"  />
+    <image name="signin-background.jpg5"  />
     <image name="signup-background.jpg"  />
     <image name="signup-background.jpg1"  />
     <image name="signup-background.jpg11"  />
@@ -299,6 +316,7 @@
     <image name="signup-background.jpg3"  />
     <image name="signup-background.jpg31"  />
     <image name="signup-background.jpg4"  />
+    <image name="signup-background.jpg5"  />
     <image name="Slider.borderTop_2.png_veryHigh.png" type="multi"  />
     <image name="Slider.borderTop_2.png_veryHigh_FULL.png" type="multi"  />
     <image name="Slider.borderTopL_2.png_veryHigh.png" type="multi"  />
@@ -315,6 +333,7 @@
     <image name="smily.png3" type="multi"  />
     <image name="smily.png31" type="multi"  />
     <image name="smily.png4" type="multi"  />
+    <image name="smily.png5" type="multi"  />
     <image name="SolBleuDeg"  />
     <image name="SolBleuDeg1"  />
     <image name="switch_mask.png" type="multi"  />
@@ -371,7 +390,7 @@
         <val key="Button.sel#padUnit" value="2,2,2,2" />
         <val key="Button.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonCode.align" value="4" />
-        <border key="ButtonCode.border" type="round" roundBorderColor="16777215" opacity="0" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonCode.border" type="round" roundBorderColor="16777215" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonCode.fgColor" value="ffffff" />
         <font key="ButtonCode.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
         <val key="ButtonCode.marUnit" value="2,2,2,2" />
@@ -381,7 +400,7 @@
         <val key="ButtonCode.press#align" value="4" />
         <gradient key="ButtonCode.press#bgGradient" color1="7741438" color2="4898301" posX="0.5" posY="0.5" radius="1.0" />
         <val key="ButtonCode.press#bgType" value="7" />
-        <border key="ButtonCode.press#border" type="round" roundBorderColor="7741438" opacity="180" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonCode.press#border" type="round" roundBorderColor="7741438" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonCode.press#fgColor" value="f0f0f0" />
         <font key="ButtonCode.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
         <val key="ButtonCode.press#marUnit" value="2,2,2,2" />
@@ -396,9 +415,9 @@
         <val key="ButtonCode.sel#padUnit" value="2,2,2,2" />
         <val key="ButtonCode.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonInscriptionAmine.align" value="4" />
-        <border key="ButtonInscriptionAmine.border" type="round" roundBorderColor="7103487" opacity="180" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonInscriptionAmine.border" type="round" roundBorderColor="7103487" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonInscriptionAmine.dis#align" value="4" />
-        <border key="ButtonInscriptionAmine.dis#border" type="round" roundBorderColor="13421772" opacity="180" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonInscriptionAmine.dis#border" type="round" roundBorderColor="13421772" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonInscriptionAmine.dis#fgColor" value="ffffff" />
         <font key="ButtonInscriptionAmine.dis#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="ButtonInscriptionAmine.dis#marUnit" value="2,2,2,2" />
@@ -429,7 +448,7 @@
         <val key="ButtonInscriptionAmine.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonInvProfilAmine.align" value="4" />
         <val key="ButtonInvProfilAmine.bgColor" value="feae06" />
-        <border key="ButtonInvProfilAmine.border" type="round" roundBorderColor="16690694" opacity="0" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonInvProfilAmine.border" type="round" roundBorderColor="16690694" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonInvProfilAmine.fgColor" value="feae06" />
         <font key="ButtonInvProfilAmine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="ButtonInvProfilAmine.marUnit" value="2,2,2,2" />
@@ -437,7 +456,7 @@
         <val key="ButtonInvProfilAmine.padUnit" value="2,2,2,2" />
         <val key="ButtonInvProfilAmine.padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonProfilAmine.align" value="4" />
-        <border key="ButtonProfilAmine.border" type="round" roundBorderColor="16690694" opacity="180" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonProfilAmine.border" type="round" roundBorderColor="16690694" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonProfilAmine.dis#derive" value="ButtonProfilAmine" />
         <val key="ButtonProfilAmine.fgColor" value="ffffff" />
         <font key="ButtonProfilAmine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
@@ -875,6 +894,166 @@
         <val key="WhiteSeparator.margin" value="0.0,0.0,0.0,0.0" />
         <val key="WhiteSeparator.padding" value="1.0,1.0,1.0,1.0" />
         <val key="WhiteSeparator.transparency" value="26" />
+        <val key="aide-FAB.align" value="4" />
+        <val key="aide-FAB.bgColor" value="ff9900" />
+        <gradient key="aide-FAB.bgGradient" color1="16750386" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide-FAB.bgType" value="8" />
+        <val key="aide-FAB.dis#derive" value="aide-FAB" />
+        <val key="aide-FAB.fgColor" value="ffffff" />
+        <val key="aide-FAB.press#derive" value="aide-FAB" />
+        <val key="aide-FAB.sel#derive" value="aide-FAB" />
+        <val key="aide_Dialog.align" value="4" />
+        <val key="aide_Dialog.bgColor" value="ff9900" />
+        <gradient key="aide_Dialog.bgGradient" color1="16750848" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_Dialog.bgType" value="8" />
+        <val key="aide_Dialog.dis#derive" value="aide_Dialog" />
+        <val key="aide_Dialog.fgColor" value="ff9900" />
+        <val key="aide_Dialog.press#derive" value="aide_Dialog" />
+        <val key="aide_Dialog.sel#derive" value="aide_Dialog" />
+        <val key="aide_DownStyle.bgColor" value="ffffff" />
+        <gradient key="aide_DownStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_DownStyle.bgType" value="0" />
+        <val key="aide_DownStyle.dis#derive" value="aide_DownStyle" />
+        <val key="aide_DownStyle.fgColor" value="ff9900" />
+        <val key="aide_DownStyle.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_DownStyle.press#derive" value="aide_DownStyle" />
+        <val key="aide_DownStyle.sel#derive" value="aide_DownStyle" />
+        <val key="aide_FloatingHint.align" value="4" />
+        <val key="aide_FloatingHint.dis#derive" value="aide_FloatingHint" />
+        <val key="aide_FloatingHint.press#derive" value="aide_FloatingHint" />
+        <val key="aide_FloatingHint.sel#derive" value="aide_FloatingHint" />
+        <val key="aide_Multi.align" value="4" />
+        <val key="aide_Multi.bgColor" value="ff9900" />
+        <gradient key="aide_Multi.bgGradient" color1="16750848" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_Multi.bgType" value="8" />
+        <border key="aide_Multi.border" type="underline"  millimeters="false" thickness="3.0" color="16777215" />
+        <val key="aide_Multi.dis#derive" value="aide_Multi" />
+        <val key="aide_Multi.fgColor" value="ff9900" />
+        <val key="aide_Multi.press#derive" value="aide_Multi" />
+        <val key="aide_Multi.sel#derive" value="aide_Multi" />
+        <val key="aide_MultiTxt.bgColor" value="ff9900" />
+        <gradient key="aide_MultiTxt.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_MultiTxt.bgType" value="0" />
+        <val key="aide_MultiTxt.dis#derive" value="aide_MultiTxt" />
+        <val key="aide_MultiTxt.fgColor" value="ffffff" />
+        <font key="aide_MultiTxt.font" type="ttf" face="0" style="1" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <val key="aide_MultiTxt.margin" value="5.0,0.0,0.0,0.0" />
+        <val key="aide_MultiTxt.press#derive" value="aide_MultiTxt" />
+        <val key="aide_MultiTxt.sel#derive" value="aide_MultiTxt" />
+        <val key="aide_NbReact.bgColor" value="ffffff" />
+        <gradient key="aide_NbReact.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_NbReact.bgType" value="0" />
+        <val key="aide_NbReact.dis#derive" value="aide_NbReact" />
+        <val key="aide_NbReact.fgColor" value="ff9900" />
+        <font key="aide_NbReact.font" type="ttf" face="0" style="1" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <val key="aide_NbReact.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_NbReact.press#derive" value="aide_NbReact" />
+        <val key="aide_NbReact.sel#derive" value="aide_NbReact" />
+        <val key="aide_NotPartBtn.align" value="4" />
+        <border key="aide_NotPartBtn.border" type="round" roundBorderColor="16777215" opacity="255" strokeColor="16750848" strokeOpacity="255" strokeThickness="6.0" strokeMM="false" shadowSpread="0" shadowOpacity="0" shadowX="0.0" shadowY="0.0" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_NotPartBtn.dis#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartBtn.fgColor" value="ff9900" />
+        <font key="aide_NotPartBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_NotPartBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_NotPartBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_NotPartBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_NotPartBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_NotPartBtn.press#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartBtn.sel#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartStyle.bgColor" value="ffffff" />
+        <gradient key="aide_NotPartStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_NotPartStyle.bgType" value="0" />
+        <val key="aide_NotPartStyle.dis#derive" value="aide_NotPartStyle" />
+        <val key="aide_NotPartStyle.fgColor" value="ff9900" />
+        <val key="aide_NotPartStyle.press#derive" value="aide_NotPartStyle" />
+        <val key="aide_NotPartStyle.sel#derive" value="aide_NotPartStyle" />
+        <val key="aide_PartBtn.align" value="4" />
+        <border key="aide_PartBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_PartBtn.dis#derive" value="aide_PartBtn" />
+        <val key="aide_PartBtn.fgColor" value="ffffff" />
+        <font key="aide_PartBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_PartBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_PartBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_PartBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_PartBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_PartBtn.press#derive" value="aide_PartBtn" />
+        <val key="aide_PartBtn.sel#derive" value="aide_PartBtn" />
+        <val key="aide_PartStyle.bgColor" value="ff9900" />
+        <gradient key="aide_PartStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_PartStyle.bgType" value="0" />
+        <val key="aide_PartStyle.dis#derive" value="aide_PartStyle" />
+        <val key="aide_PartStyle.fgColor" value="ffffff" />
+        <val key="aide_PartStyle.press#derive" value="aide_PartStyle" />
+        <val key="aide_PartStyle.sel#derive" value="aide_PartStyle" />
+        <val key="aide_PhotoBtn.align" value="4" />
+        <border key="aide_PhotoBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_PhotoBtn.dis#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoBtn.fgColor" value="ffffff" />
+        <font key="aide_PhotoBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_PhotoBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_PhotoBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_PhotoBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_PhotoBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_PhotoBtn.press#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoBtn.sel#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoStyle.bgColor" value="ff9900" />
+        <gradient key="aide_PhotoStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_PhotoStyle.bgType" value="0" />
+        <val key="aide_PhotoStyle.dis#derive" value="aide_PhotoStyle" />
+        <val key="aide_PhotoStyle.fgColor" value="ffffff" />
+        <val key="aide_PhotoStyle.press#derive" value="aide_PhotoStyle" />
+        <val key="aide_PhotoStyle.sel#derive" value="aide_PhotoStyle" />
+        <val key="aide_ReactStyle.dis#derive" value="aide_ReactStyle" />
+        <val key="aide_ReactStyle.margin" value="20.0,3.0,50.0,0.0" />
+        <val key="aide_ReactStyle.press#derive" value="aide_ReactStyle" />
+        <val key="aide_ReactStyle.sel#derive" value="aide_ReactStyle" />
+        <val key="aide_ShareBtn.align" value="4" />
+        <border key="aide_ShareBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_ShareBtn.dis#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareBtn.fgColor" value="ffffff" />
+        <font key="aide_ShareBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_ShareBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_ShareBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_ShareBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_ShareBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_ShareBtn.press#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareBtn.sel#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareStyle.bgColor" value="ff9900" />
+        <gradient key="aide_ShareStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_ShareStyle.bgType" value="0" />
+        <val key="aide_ShareStyle.dis#derive" value="aide_ShareStyle" />
+        <val key="aide_ShareStyle.fgColor" value="ffffff" />
+        <val key="aide_ShareStyle.press#derive" value="aide_ShareStyle" />
+        <val key="aide_ShareStyle.sel#derive" value="aide_ShareStyle" />
+        <gradient key="aide_Toolbar.bgGradient" color1="16750848" color2="16733501" posX="0.54" posY="0.6" radius="1.0" />
+        <val key="aide_Toolbar.bgType" value="7" />
+        <border key="aide_Toolbar.border" type="empty" />
+        <val key="aide_Toolbar.dis#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.press#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.sel#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.transparency" value="0" />
+        <val key="aide_UpStyle.bgColor" value="ffffff" />
+        <gradient key="aide_UpStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_UpStyle.bgType" value="0" />
+        <val key="aide_UpStyle.dis#derive" value="aide_UpStyle" />
+        <val key="aide_UpStyle.fgColor" value="ff9900" />
+        <val key="aide_UpStyle.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_UpStyle.press#derive" value="aide_UpStyle" />
+        <val key="aide_UpStyle.sel#derive" value="aide_UpStyle" />
+        <val key="aide_ValiderBtn.align" value="4" />
+        <val key="aide_ValiderBtn.bgColor" value="ff553d" />
+        <gradient key="aide_ValiderBtn.bgGradient" color1="16733501" color2="16733501" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_ValiderBtn.bgType" value="8" />
+        <border key="aide_ValiderBtn.border" type="round" roundBorderColor="16733501" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_ValiderBtn.dis#derive" value="aide_ValiderBtn" />
+        <val key="aide_ValiderBtn.fgColor" value="ffffff" />
+        <font key="aide_ValiderBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_ValiderBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_ValiderBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_ValiderBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_ValiderBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_ValiderBtn.press#derive" value="aide_ValiderBtn" />
+        <val key="aide_ValiderBtn.sel#derive" value="aide_ValiderBtn" />
         <val key="bgBleuDegAmine.bgImage" value="SolBleuDeg1" />
         <val key="bgBleuDegAmine.bgType" value="33" />
         <val key="bgBleuDegAmine.margin" value="0.0,0.0,0.0,0.0" />
@@ -914,6 +1093,39 @@
         <val key="containerPublication1.margin" value="0.5,1.0,0.5,0.5" />
         <val key="containerPublication1.padUnit" value="2,2,2,2" />
         <val key="containerPublication1.padding" value="0.0,0.0,0.0,0.0" />
+        <gradient key="dmdAide_BackgroundList.bgGradient" color1="102" color2="10027161" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmdAide_BackgroundList.bgType" value="6" />
+        <val key="dmdAide_BackgroundList.dis#derive" value="dmdAide_BackgroundList" />
+        <val key="dmdAide_BackgroundList.press#derive" value="dmdAide_BackgroundList" />
+        <val key="dmdAide_BackgroundList.sel#derive" value="dmdAide_BackgroundList" />
+        <val key="dmdAide_ShowBtn.align" value="3" />
+        <gradient key="dmdAide_ShowBtn.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmdAide_ShowBtn.bgType" value="0" />
+        <val key="dmdAide_ShowBtn.dis#derive" value="dmdAide_ShowBtn" />
+        <val key="dmdAide_ShowBtn.press#derive" value="dmdAide_ShowBtn" />
+        <val key="dmdAide_ShowBtn.sel#derive" value="dmdAide_ShowBtn" />
+        <val key="dmndAideBox.bgColor" value="cccccc" />
+        <gradient key="dmndAideBox.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmndAideBox.bgType" value="0" />
+        <val key="dmndAideBox.dis#derive" value="dmndAideBox" />
+        <val key="dmndAideBox.press#derive" value="dmndAideBox" />
+        <val key="dmndAideBox.sel#derive" value="dmndAideBox" />
+        <val key="dmndAideItem_Title.align" value="4" />
+        <val key="dmndAideItem_Title.dis#derive" value="dmndAideItem_Title" />
+        <val key="dmndAideItem_Title.fgColor" value="ff553d" />
+        <font key="dmndAideItem_Title.font" type="system" face="32" style="1" size="16" />
+        <val key="dmndAideItem_Title.padding" value="10.0,0.0,0.0,0.0" />
+        <val key="dmndAideItem_Title.press#derive" value="dmndAideItem_Title" />
+        <val key="dmndAideItem_Title.sel#derive" value="dmndAideItem_Title" />
+        <val key="dmndAideItem_Title.textDecoration" value="0" />
+        <val key="dmndAideItem_desc.align" value="1" />
+        <val key="dmndAideItem_desc.dis#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.fgColor" value="666666" />
+        <font key="dmndAideItem_desc.font" type="system" face="0" style="0" size="0" />
+        <val key="dmndAideItem_desc.padding" value="0.0,30.0,20.0,0.0" />
+        <val key="dmndAideItem_desc.press#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.sel#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.textDecoration" value="0" />
         <val key="editor.align" value="4" />
         <gradient key="editor.bgGradient" color1="16777215" color2="16777204" posX="0.38" posY="0.78" radius="2.0" />
         <val key="editor.bgType" value="7" />
@@ -921,6 +1133,16 @@
         <val key="labelSidePictureAmine.fgColor" value="333333" />
         <font key="labelSidePictureAmine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="5.5" />
         <val key="labelSidePictureAmine.margin" value="4.5,0.0,1.0,0.0" />
+        <val key="multiBtn_Aide.align" value="4" />
+        <val key="multiBtn_Aide.bgColor" value="ff9900" />
+        <val key="multiBtn_Aide.dis#derive" value="multiBtn_Aide" />
+        <val key="multiBtn_Aide.fgColor" value="ff9900" />
+        <font key="multiBtn_Aide.font" type="system" face="0" style="0" size="8" />
+        <val key="multiBtn_Aide.padUnit" value="0,1,0,1" />
+        <val key="multiBtn_Aide.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="multiBtn_Aide.press#derive" value="multiBtn_Aide" />
+        <val key="multiBtn_Aide.sel#derive" value="multiBtn_Aide" />
+        <val key="multiBtn_Aide.textDecoration" value="0" />
         <val key="textfieldAmine.fgColor" value="f0f0f0" />
         <font key="textfieldAmine.font" type="system" face="0" style="0" size="0" />
         <val key="textfieldBgBlancRondAmine.align" value="1" />
@@ -1001,6 +1223,499 @@
         <font key="titrePub.font" type="system" face="0" style="0" size="0" />
         <val key="transparency" value="0" />
     </theme>
+    <theme name="Theme1">
+        <val key="@includeNativeBool" value="true" />
+        <val key="@tabPlacementInt" value="0" />
+        <val key="Activate.bgImage" value="activation-background.jpg5" />
+        <val key="Activate.bgType" value="33" />
+        <val key="Activate.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="Activate.padUnit" value="0,0,2,0" />
+        <val key="Activate.padding" value="0.0,3.0,0.0,0.0" />
+        <val key="Activate.transparency" value="255" />
+        <val key="BottomPad.align" value="4" />
+        <val key="BottomPad.fgColor" value="a2a1b8" />
+        <font key="BottomPad.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.0" />
+        <val key="BottomPad.marUnit" value="0,0,2,0" />
+        <val key="BottomPad.margin" value="0.0,6.0,0.0,0.0" />
+        <val key="BottomPad.padUnit" value="0,0,2,0" />
+        <val key="BottomPad.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="BottomPad.transparency" value="0" />
+        <val key="Button.align" value="4" />
+        <border key="Button.border" type="round" roundBorderColor="16723285" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="Button.fgColor" value="ffffff" />
+        <font key="Button.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Button.marUnit" value="2,2,2,2" />
+        <val key="Button.margin" value="3.0,3.0,2.0,2.0" />
+        <val key="Button.padUnit" value="2,2,2,2" />
+        <val key="Button.padding" value="2.0,2.0,2.0,2.0" />
+        <val key="Button.press#align" value="4" />
+        <border key="Button.press#border" type="round" roundBorderColor="12982329" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="Button.press#fgColor" value="ffffff" />
+        <font key="Button.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.0" />
+        <val key="Button.press#marUnit" value="2,2,2,2" />
+        <val key="Button.press#margin" value="3.0,3.0,2.0,2.0" />
+        <val key="Button.press#padUnit" value="2,2,2,2" />
+        <val key="Button.press#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="Button.sel#align" value="4" />
+        <border key="Button.sel#border" type="round" roundBorderColor="16723285" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="Button.sel#fgColor" value="ffffff" />
+        <font key="Button.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Button.sel#marUnit" value="2,2,2,2" />
+        <val key="Button.sel#margin" value="3.0,3.0,2.0,2.0" />
+        <val key="Button.sel#padUnit" value="2,2,2,2" />
+        <val key="Button.sel#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="CenterLabel.align" value="4" />
+        <val key="CenterLabel.derive" value="Label" />
+        <val key="CenterLink.align" value="4" />
+        <val key="CenterLink.fgColor" value="ffffff" />
+        <font key="CenterLink.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="CenterLink.padUnit" value="2,2,2,2" />
+        <val key="CenterLink.padding" value="2.0,2.0,1.0,1.0" />
+        <val key="CenterLink.transparency" value="0" />
+        <val key="DatePickerDay.align" value="4" />
+        <val key="DatePickerDay.fgColor" value="ffffff" />
+        <font key="DatePickerDay.font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="3" actualSize="4.5" />
+        <val key="DatePickerDay.sel#align" value="4" />
+        <val key="DatePickerDay.sel#fgColor" value="777777" />
+        <font key="DatePickerDay.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="3" actualSize="4.5" />
+        <val key="DatePickerDay.sel#transparency" value="0" />
+        <val key="DatePickerDay.transparency" value="0" />
+        <val key="DatePickerEvent.align" value="4" />
+        <val key="DatePickerEvent.fgColor" value="cccccc" />
+        <font key="DatePickerEvent.font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="3" actualSize="4.5" />
+        <val key="DatePickerEvent.sel#align" value="4" />
+        <val key="DatePickerEvent.sel#fgColor" value="777777" />
+        <font key="DatePickerEvent.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainThin" family="native:MainThin" sizeSettings="3" actualSize="4.5" />
+        <val key="DatePickerEvent.sel#transparency" value="0" />
+        <val key="DatePickerEvent.transparency" value="0" />
+        <val key="DatePickerMonth.align" value="4" />
+        <val key="DatePickerMonth.fgColor" value="ffffff" />
+        <font key="DatePickerMonth.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="DatePickerMonth.sel#align" value="4" />
+        <val key="DatePickerMonth.sel#fgColor" value="777777" />
+        <font key="DatePickerMonth.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="DatePickerMonth.sel#transparency" value="0" />
+        <val key="DatePickerMonth.transparency" value="0" />
+        <val key="FloatingHint.align" value="4" />
+        <val key="FloatingHint.fgColor" value="a2a1b8" />
+        <font key="FloatingHint.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="FloatingHint.transparency" value="0" />
+        <val key="Form.bgColor" value="ffffff" />
+        <gradient key="Form.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="Form.bgType" value="0" />
+        <val key="Form.transparency" value="255" />
+        <val key="ImageOverlay.bgColor" value="14134b" />
+        <val key="ImageOverlay.transparency" value="60" />
+        <val key="Label.fgColor" value="a2a1b8" />
+        <font key="Label.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Label.transparency" value="0" />
+        <val key="LargeWhiteText.align" value="1" />
+        <val key="LargeWhiteText.fgColor" value="ffffff" />
+        <font key="LargeWhiteText.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
+        <val key="Link.fgColor" value="ffffff" />
+        <font key="Link.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Link.press#fgColor" value="ffffff" />
+        <font key="Link.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Link.press#transparency" value="0" />
+        <val key="Link.sel#fgColor" value="ffffff" />
+        <font key="Link.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="Link.sel#transparency" value="0" />
+        <val key="Link.transparency" value="0" />
+        <val key="LogoLabel.align" value="4" />
+        <val key="LogoLabel.fgColor" value="ffffff" />
+        <font key="LogoLabel.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="LogoLabel.padUnit" value="2,0,2,0" />
+        <val key="LogoLabel.padding" value="3.0,3.0,0.0,0.0" />
+        <val key="LogoLabel.transparency" value="0" />
+        <val key="MenuButton.fgColor" value="ffffff" />
+        <font key="MenuButton.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="MenuButton.padUnit" value="2,2,2,2" />
+        <val key="MenuButton.padding" value="2.0,2.0,2.0,2.0" />
+        <val key="MenuButton.press#fgColor" value="ffffff" />
+        <font key="MenuButton.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="MenuButton.press#padUnit" value="2,2,2,2" />
+        <val key="MenuButton.press#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="MenuButton.press#transparency" value="0" />
+        <val key="MenuButton.sel#fgColor" value="ffffff" />
+        <font key="MenuButton.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="MenuButton.sel#padUnit" value="2,2,2,2" />
+        <val key="MenuButton.sel#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="MenuButton.sel#transparency" value="0" />
+        <val key="MenuButton.transparency" value="0" />
+        <val key="MultiButtonhedi.derive" value="MultiButton" />
+        <val key="MultiButtonhedi.fgColor" value="cc33ff" />
+        <font key="MultiButtonhedi.font" type="system" face="0" style="0" size="0" />
+        <val key="NewsBottomLine.fgColor" value="a2a1b8" />
+        <font key="NewsBottomLine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="1.5" />
+        <val key="NewsBottomLine.press#fgColor" value="a2a1b8" />
+        <font key="NewsBottomLine.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="1.5" />
+        <val key="NewsBottomLine.press#transparency" value="0" />
+        <val key="NewsBottomLine.sel#fgColor" value="a2a1b8" />
+        <font key="NewsBottomLine.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="1.5" />
+        <val key="NewsBottomLine.sel#transparency" value="0" />
+        <val key="NewsBottomLine.transparency" value="0" />
+        <val key="NewsTopLine.fgColor" value="0" />
+        <font key="NewsTopLine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.0" />
+        <val key="NewsTopLine.press#fgColor" value="0" />
+        <font key="NewsTopLine.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.0" />
+        <val key="NewsTopLine.press#transparency" value="0" />
+        <val key="NewsTopLine.sel#fgColor" value="0" />
+        <font key="NewsTopLine.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.0" />
+        <val key="NewsTopLine.sel#transparency" value="0" />
+        <val key="NewsTopLine.transparency" value="0" />
+        <val key="PaddedLabel.fgColor" value="a2a1b8" />
+        <font key="PaddedLabel.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="PaddedLabel.padUnit" value="2,2,2,2" />
+        <val key="PaddedLabel.padding" value="2.0,2.0,2.0,2.0" />
+        <val key="PaddedLabel.transparency" value="0" />
+        <val key="PictureWhiteBackgrond.bgColor" value="ffffff" />
+        <val key="PictureWhiteBackgrond.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="PictureWhiteBackgrond.padUnit" value="2,2,2,2" />
+        <val key="PictureWhiteBackgrond.padding" value="1.0,1.0,1.0,1.0" />
+        <val key="PictureWhiteBackgrond.transparency" value="255" />
+        <val key="SelectBar.align" value="4" />
+        <val key="SelectBar.bgColor" value="ff2d55" />
+        <val key="SelectBar.bgImage" value="news-tab-down.png5" />
+        <val key="SelectBar.bgType" value="30" />
+        <border key="SelectBar.border" type="empty" />
+        <val key="SelectBar.fgColor" value="feb2c1" />
+        <font key="SelectBar.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="SelectBar.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SelectBar.padUnit" value="2,0,2,0" />
+        <val key="SelectBar.padding" value="2.0,3.0,0.0,0.0" />
+        <val key="SelectBar.press#align" value="4" />
+        <val key="SelectBar.press#bgColor" value="ff2d55" />
+        <val key="SelectBar.press#bgImage" value="news-tab-down.png5" />
+        <val key="SelectBar.press#bgType" value="30" />
+        <border key="SelectBar.press#border" type="empty" />
+        <val key="SelectBar.press#fgColor" value="ffffff" />
+        <font key="SelectBar.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="SelectBar.press#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SelectBar.press#padUnit" value="2,0,2,0" />
+        <val key="SelectBar.press#padding" value="2.0,3.0,0.0,0.0" />
+        <val key="SelectBar.press#transparency" value="255" />
+        <val key="SelectBar.sel#align" value="4" />
+        <val key="SelectBar.sel#bgColor" value="ff2d55" />
+        <val key="SelectBar.sel#bgImage" value="news-tab-down.png5" />
+        <val key="SelectBar.sel#bgType" value="30" />
+        <border key="SelectBar.sel#border" type="empty" />
+        <val key="SelectBar.sel#fgColor" value="feb2c1" />
+        <font key="SelectBar.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
+        <val key="SelectBar.sel#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SelectBar.sel#padUnit" value="2,0,2,0" />
+        <val key="SelectBar.sel#padding" value="2.0,3.0,0.0,0.0" />
+        <val key="SelectBar.sel#transparency" value="255" />
+        <val key="SelectBar.transparency" value="255" />
+        <border key="SideCommand.border" type="empty" />
+        <val key="SideCommand.fgColor" value="0" />
+        <font key="SideCommand.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="SideCommand.padUnit" value="2,2,2,2" />
+        <val key="SideCommand.padding" value="2.0,2.0,3.0,1.0" />
+        <val key="SideCommand.press#bgColor" value="e2e2ff" />
+        <border key="SideCommand.press#border" type="empty" />
+        <val key="SideCommand.press#fgColor" value="0" />
+        <font key="SideCommand.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="SideCommand.press#padUnit" value="2,2,2,2" />
+        <val key="SideCommand.press#padding" value="2.0,2.0,3.0,1.0" />
+        <val key="SideCommand.press#textDecoration" value="0" />
+        <val key="SideCommand.press#transparency" value="255" />
+        <val key="SideCommand.sel#bgColor" value="e2e2ff" />
+        <border key="SideCommand.sel#border" type="empty" />
+        <val key="SideCommand.sel#fgColor" value="0" />
+        <font key="SideCommand.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="SideCommand.sel#padUnit" value="2,2,2,2" />
+        <val key="SideCommand.sel#padding" value="2.0,2.0,3.0,1.0" />
+        <val key="SideCommand.sel#textDecoration" value="0" />
+        <val key="SideCommand.sel#transparency" value="255" />
+        <val key="SideCommand.textDecoration" value="0" />
+        <val key="SideCommand.transparency" value="0" />
+        <val key="SideNavigationPanel.bgColor" value="ffffff" />
+        <val key="SideNavigationPanel.transparency" value="255" />
+        <val key="SignIn.bgImage" value="signin-background.jpg5" />
+        <val key="SignIn.bgType" value="33" />
+        <val key="SignIn.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SignIn.padUnit" value="0,0,2,0" />
+        <val key="SignIn.padding" value="0.0,3.0,0.0,0.0" />
+        <val key="SignIn.transparency" value="255" />
+        <val key="SkipButton.fgColor" value="a2a1b8" />
+        <font key="SkipButton.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
+        <val key="SkipButton.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SkipButton.padUnit" value="2,2,2,2" />
+        <val key="SkipButton.padding" value="1.0,1.0,1.0,1.0" />
+        <val key="SkipButton.press#fgColor" value="a2a1b8" />
+        <font key="SkipButton.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
+        <val key="SkipButton.press#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SkipButton.press#padUnit" value="2,2,2,2" />
+        <val key="SkipButton.press#padding" value="1.0,1.0,1.0,1.0" />
+        <val key="SkipButton.press#transparency" value="0" />
+        <val key="SkipButton.sel#fgColor" value="a2a1b8" />
+        <font key="SkipButton.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
+        <val key="SkipButton.sel#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="SkipButton.sel#padUnit" value="2,2,2,2" />
+        <val key="SkipButton.sel#padding" value="1.0,1.0,1.0,1.0" />
+        <val key="SkipButton.sel#transparency" value="0" />
+        <val key="SkipButton.transparency" value="0" />
+        <val key="StatusBarSideMenu.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="StatusBarSideMenu.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="TextField.align" value="3" />
+        <border key="TextField.border" type="empty" />
+        <val key="TextField.fgColor" value="0" />
+        <val key="TextField.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="TextField.padUnit" value="2,2,2,2" />
+        <val key="TextField.padding" value="2.0,2.0,2.0,2.0" />
+        <val key="TextField.sel#align" value="3" />
+        <border key="TextField.sel#border" type="empty" />
+        <val key="TextField.sel#fgColor" value="ffffff" />
+        <val key="TextField.sel#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="TextField.sel#padUnit" value="2,2,2,2" />
+        <val key="TextField.sel#padding" value="3.0,3.0,2.0,2.0" />
+        <val key="TextField.sel#transparency" value="0" />
+        <val key="TextField.transparency" value="0" />
+        <val key="TextFieldBlack.align" value="3" />
+        <border key="TextFieldBlack.border" type="empty" />
+        <val key="TextFieldBlack.fgColor" value="0" />
+        <val key="TextFieldBlack.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="TextFieldBlack.padUnit" value="2,2,2,2" />
+        <val key="TextFieldBlack.padding" value="1.0,1.0,1.0,1.0" />
+        <val key="TextFieldBlack.sel#align" value="3" />
+        <border key="TextFieldBlack.sel#border" type="empty" />
+        <val key="TextFieldBlack.sel#fgColor" value="0" />
+        <val key="TextFieldBlack.sel#margin" value="0.0,0.0,0.0,0.0" />
+        <val key="TextFieldBlack.sel#padUnit" value="2,2,2,2" />
+        <val key="TextFieldBlack.sel#padding" value="1.0,1.0,1.0,1.0" />
+        <val key="TextFieldBlack.sel#transparency" value="0" />
+        <val key="TextFieldBlack.transparency" value="0" />
+        <val key="TextHint.align" value="4" />
+        <val key="TextHint.sel#align" value="4" />
+        <val key="Title.align" value="4" />
+        <val key="Title.fgColor" value="ffffff" />
+        <font key="Title.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="Title.textDecoration" value="0" />
+        <val key="TitleCommand.fgColor" value="ffffff" />
+        <font key="TitleCommand.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="TitleCommand.padUnit" value="2,2,2,2" />
+        <val key="TitleCommand.padding" value="2.0,2.0,2.0,2.0" />
+        <val key="TitleCommand.press#fgColor" value="ffffff" />
+        <font key="TitleCommand.press#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="TitleCommand.press#padUnit" value="2,2,2,2" />
+        <val key="TitleCommand.press#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="TitleCommand.press#transparency" value="0" />
+        <val key="TitleCommand.sel#fgColor" value="ffffff" />
+        <font key="TitleCommand.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.0" />
+        <val key="TitleCommand.sel#padUnit" value="2,2,2,2" />
+        <val key="TitleCommand.sel#padding" value="2.0,2.0,2.0,2.0" />
+        <val key="TitleCommand.sel#transparency" value="0" />
+        <val key="TitleCommand.transparency" value="0" />
+        <gradient key="Toolbar.bgGradient" color1="16750386" color2="16733501" posX="0.54" posY="0.6" radius="1.0" />
+        <val key="Toolbar.bgType" value="7" />
+        <border key="Toolbar.border" type="empty" />
+        <val key="Toolbar.transparency" value="0" />
+        <val key="Welcome.bgImage" value="welcome-background.jpg5" />
+        <val key="Welcome.bgType" value="33" />
+        <val key="Welcome.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="Welcome.padUnit" value="0,0,2,0" />
+        <val key="Welcome.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="Welcome.transparency" value="255" />
+        <val key="WelcomeMessage.align" value="4" />
+        <val key="WelcomeMessage.fgColor" value="0" />
+        <font key="WelcomeMessage.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
+        <val key="WelcomeMessage.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="WelcomeMessage.padUnit" value="2,2,2,2" />
+        <val key="WelcomeMessage.padding" value="1.0,2.0,1.0,1.0" />
+        <val key="WelcomeMessage.transparency" value="0" />
+        <val key="WelcomeNoteArea.bgColor" value="ffffff" />
+        <val key="WelcomeNoteArea.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="WelcomeNoteArea.padUnit" value="2,2,2,2" />
+        <val key="WelcomeNoteArea.padding" value="5.0,5.0,0.0,0.0" />
+        <val key="WelcomeNoteArea.transparency" value="255" />
+        <val key="WhiteSeparator.bgColor" value="ffffff" />
+        <val key="WhiteSeparator.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="WhiteSeparator.padding" value="1.0,1.0,1.0,1.0" />
+        <val key="WhiteSeparator.transparency" value="26" />
+        <val key="aide-FAB.align" value="4" />
+        <val key="aide-FAB.bgColor" value="ff9900" />
+        <gradient key="aide-FAB.bgGradient" color1="16750386" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide-FAB.bgType" value="8" />
+        <val key="aide-FAB.fgColor" value="ffffff" />
+        <val key="aide_Dialog.align" value="4" />
+        <val key="aide_Dialog.bgColor" value="ff9900" />
+        <gradient key="aide_Dialog.bgGradient" color1="16750848" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_Dialog.bgType" value="8" />
+        <val key="aide_Dialog.dis#derive" value="aide_Dialog" />
+        <val key="aide_Dialog.fgColor" value="ff9900" />
+        <val key="aide_Dialog.press#derive" value="aide_Dialog" />
+        <val key="aide_Dialog.sel#derive" value="aide_Dialog" />
+        <val key="aide_DownStyle.bgColor" value="ffffff" />
+        <gradient key="aide_DownStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_DownStyle.bgType" value="0" />
+        <val key="aide_DownStyle.dis#derive" value="aide_DownStyle" />
+        <val key="aide_DownStyle.fgColor" value="ff9900" />
+        <val key="aide_DownStyle.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_DownStyle.press#derive" value="aide_DownStyle" />
+        <val key="aide_DownStyle.sel#derive" value="aide_DownStyle" />
+        <val key="aide_FloatingHint.align" value="4" />
+        <val key="aide_FloatingHint.dis#derive" value="aide_FloatingHint" />
+        <val key="aide_FloatingHint.press#derive" value="aide_FloatingHint" />
+        <val key="aide_FloatingHint.sel#derive" value="aide_FloatingHint" />
+        <val key="aide_Multi.align" value="4" />
+        <val key="aide_Multi.bgColor" value="ff9900" />
+        <gradient key="aide_Multi.bgGradient" color1="16750848" color2="16750848" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_Multi.bgType" value="8" />
+        <border key="aide_Multi.border" type="underline"  millimeters="false" thickness="3.0" color="16777215" />
+        <val key="aide_Multi.dis#derive" value="aide_Multi" />
+        <val key="aide_Multi.fgColor" value="ff9900" />
+        <val key="aide_Multi.press#derive" value="aide_Multi" />
+        <val key="aide_Multi.sel#derive" value="aide_Multi" />
+        <val key="aide_MultiTxt.bgColor" value="ff9900" />
+        <gradient key="aide_MultiTxt.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_MultiTxt.bgType" value="0" />
+        <val key="aide_MultiTxt.dis#derive" value="aide_MultiTxt" />
+        <val key="aide_MultiTxt.fgColor" value="ffffff" />
+        <font key="aide_MultiTxt.font" type="ttf" face="0" style="1" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <val key="aide_MultiTxt.margin" value="5.0,0.0,0.0,0.0" />
+        <val key="aide_MultiTxt.press#derive" value="aide_MultiTxt" />
+        <val key="aide_MultiTxt.sel#derive" value="aide_MultiTxt" />
+        <val key="aide_NbReact.bgColor" value="ffffff" />
+        <gradient key="aide_NbReact.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_NbReact.bgType" value="0" />
+        <val key="aide_NbReact.dis#derive" value="aide_NbReact" />
+        <val key="aide_NbReact.fgColor" value="ff9900" />
+        <font key="aide_NbReact.font" type="ttf" face="0" style="1" size="16" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="60.0" />
+        <val key="aide_NbReact.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_NbReact.press#derive" value="aide_NbReact" />
+        <val key="aide_NbReact.sel#derive" value="aide_NbReact" />
+        <val key="aide_NotPartBtn.align" value="4" />
+        <border key="aide_NotPartBtn.border" type="round" roundBorderColor="16777215" opacity="255" strokeColor="16750848" strokeOpacity="255" strokeThickness="6.0" strokeMM="false" shadowSpread="0" shadowOpacity="0" shadowX="0.0" shadowY="0.0" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_NotPartBtn.dis#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartBtn.fgColor" value="ff9900" />
+        <font key="aide_NotPartBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_NotPartBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_NotPartBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_NotPartBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_NotPartBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_NotPartBtn.press#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartBtn.sel#derive" value="aide_NotPartBtn" />
+        <val key="aide_NotPartStyle.bgColor" value="ffffff" />
+        <gradient key="aide_NotPartStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_NotPartStyle.bgType" value="0" />
+        <val key="aide_NotPartStyle.dis#derive" value="aide_NotPartStyle" />
+        <val key="aide_NotPartStyle.fgColor" value="ff9900" />
+        <val key="aide_NotPartStyle.press#derive" value="aide_NotPartStyle" />
+        <val key="aide_NotPartStyle.sel#derive" value="aide_NotPartStyle" />
+        <val key="aide_PartBtn.align" value="4" />
+        <border key="aide_PartBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_PartBtn.dis#derive" value="aide_PartBtn" />
+        <val key="aide_PartBtn.fgColor" value="ffffff" />
+        <font key="aide_PartBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_PartBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_PartBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_PartBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_PartBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_PartBtn.press#derive" value="aide_PartBtn" />
+        <val key="aide_PartBtn.sel#derive" value="aide_PartBtn" />
+        <val key="aide_PartStyle.bgColor" value="ff9900" />
+        <gradient key="aide_PartStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_PartStyle.bgType" value="0" />
+        <val key="aide_PartStyle.dis#derive" value="aide_PartStyle" />
+        <val key="aide_PartStyle.fgColor" value="ffffff" />
+        <val key="aide_PartStyle.press#derive" value="aide_PartStyle" />
+        <val key="aide_PartStyle.sel#derive" value="aide_PartStyle" />
+        <val key="aide_PhotoBtn.align" value="4" />
+        <border key="aide_PhotoBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_PhotoBtn.dis#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoBtn.fgColor" value="ffffff" />
+        <font key="aide_PhotoBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_PhotoBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_PhotoBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_PhotoBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_PhotoBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_PhotoBtn.press#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoBtn.sel#derive" value="aide_PhotoBtn" />
+        <val key="aide_PhotoStyle.bgColor" value="ff9900" />
+        <gradient key="aide_PhotoStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_PhotoStyle.bgType" value="0" />
+        <val key="aide_PhotoStyle.dis#derive" value="aide_PhotoStyle" />
+        <val key="aide_PhotoStyle.fgColor" value="ffffff" />
+        <val key="aide_PhotoStyle.press#derive" value="aide_PhotoStyle" />
+        <val key="aide_PhotoStyle.sel#derive" value="aide_PhotoStyle" />
+        <val key="aide_ReactStyle.dis#derive" value="aide_ReactStyle" />
+        <val key="aide_ReactStyle.margin" value="20.0,3.0,50.0,0.0" />
+        <val key="aide_ReactStyle.press#derive" value="aide_ReactStyle" />
+        <val key="aide_ReactStyle.sel#derive" value="aide_ReactStyle" />
+        <val key="aide_ShareBtn.align" value="4" />
+        <border key="aide_ShareBtn.border" type="round" roundBorderColor="16750848" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_ShareBtn.dis#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareBtn.fgColor" value="ffffff" />
+        <font key="aide_ShareBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_ShareBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_ShareBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_ShareBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_ShareBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <val key="aide_ShareBtn.press#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareBtn.sel#derive" value="aide_ShareBtn" />
+        <val key="aide_ShareStyle.bgColor" value="ff9900" />
+        <gradient key="aide_ShareStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_ShareStyle.bgType" value="0" />
+        <val key="aide_ShareStyle.dis#derive" value="aide_ShareStyle" />
+        <val key="aide_ShareStyle.fgColor" value="ffffff" />
+        <val key="aide_ShareStyle.press#derive" value="aide_ShareStyle" />
+        <val key="aide_ShareStyle.sel#derive" value="aide_ShareStyle" />
+        <gradient key="aide_Toolbar.bgGradient" color1="16750848" color2="16733501" posX="0.54" posY="0.6" radius="1.0" />
+        <val key="aide_Toolbar.bgType" value="7" />
+        <border key="aide_Toolbar.border" type="empty" />
+        <val key="aide_Toolbar.dis#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.press#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.sel#derive" value="aide_Toolbar" />
+        <val key="aide_Toolbar.transparency" value="0" />
+        <val key="aide_UpStyle.bgColor" value="ffffff" />
+        <gradient key="aide_UpStyle.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_UpStyle.bgType" value="0" />
+        <val key="aide_UpStyle.dis#derive" value="aide_UpStyle" />
+        <val key="aide_UpStyle.fgColor" value="ff9900" />
+        <val key="aide_UpStyle.margin" value="15.0,0.0,0.0,0.0" />
+        <val key="aide_UpStyle.press#derive" value="aide_UpStyle" />
+        <val key="aide_UpStyle.sel#derive" value="aide_UpStyle" />
+        <val key="aide_ValiderBtn.align" value="4" />
+        <val key="aide_ValiderBtn.bgColor" value="ff553d" />
+        <gradient key="aide_ValiderBtn.bgGradient" color1="16733501" color2="16733501" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="aide_ValiderBtn.bgType" value="8" />
+        <border key="aide_ValiderBtn.border" type="round" roundBorderColor="16733501" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <val key="aide_ValiderBtn.fgColor" value="ffffff" />
+        <font key="aide_ValiderBtn.font" type="ttf" face="0" style="0" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="4" actualSize="47.0" />
+        <val key="aide_ValiderBtn.marUnit" value="2,2,2,2" />
+        <val key="aide_ValiderBtn.margin" value="0.0,3.0,2.0,2.0" />
+        <val key="aide_ValiderBtn.padUnit" value="2,0,2,0" />
+        <val key="aide_ValiderBtn.padding" value="2.0,2.0,20.0,20.0" />
+        <gradient key="dmdAide_BackgroundList.bgGradient" color1="102" color2="10027161" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmdAide_BackgroundList.bgType" value="6" />
+        <val key="dmdAide_ShowBtn.align" value="3" />
+        <gradient key="dmdAide_ShowBtn.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmdAide_ShowBtn.bgType" value="0" />
+        <val key="dmndAideBox.bgColor" value="cccccc" />
+        <gradient key="dmndAideBox.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="dmndAideBox.bgType" value="0" />
+        <val key="dmndAideItem_Title.align" value="4" />
+        <val key="dmndAideItem_Title.fgColor" value="ff553d" />
+        <font key="dmndAideItem_Title.font" type="system" face="32" style="1" size="16" />
+        <val key="dmndAideItem_Title.padding" value="10.0,0.0,0.0,0.0" />
+        <val key="dmndAideItem_Title.textDecoration" value="0" />
+        <val key="dmndAideItem_desc.align" value="1" />
+        <val key="dmndAideItem_desc.dis#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.fgColor" value="666666" />
+        <font key="dmndAideItem_desc.font" type="system" face="0" style="0" size="0" />
+        <val key="dmndAideItem_desc.padding" value="0.0,30.0,20.0,0.0" />
+        <val key="dmndAideItem_desc.press#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.sel#derive" value="dmndAideItem_desc" />
+        <val key="dmndAideItem_desc.textDecoration" value="0" />
+        <val key="multiBtn_Aide.align" value="4" />
+        <val key="multiBtn_Aide.bgColor" value="ff9900" />
+        <val key="multiBtn_Aide.fgColor" value="ff9900" />
+        <font key="multiBtn_Aide.font" type="system" face="0" style="0" size="8" />
+        <val key="multiBtn_Aide.padUnit" value="0,1,0,1" />
+        <val key="multiBtn_Aide.padding" value="0.0,0.0,0.0,0.0" />
+        <val key="multiBtn_Aide.textDecoration" value="0" />
+        <val key="transparency" value="0" />
+    </theme>
     <image name="timeline-background.jpg"  />
     <image name="timeline-background.jpg1"  />
     <image name="timeline-background.jpg11"  />
@@ -1011,6 +1726,7 @@
     <image name="timeline-background.jpg3"  />
     <image name="timeline-background.jpg31"  />
     <image name="timeline-background.jpg4"  />
+    <image name="timeline-background.jpg5"  />
     <image name="twitter-logo.png" type="multi"  />
     <image name="twitter-logo.png1" type="multi"  />
     <image name="twitter-logo.png11" type="multi"  />
@@ -1021,6 +1737,7 @@
     <image name="twitter-logo.png3" type="multi"  />
     <image name="twitter-logo.png31" type="multi"  />
     <image name="twitter-logo.png4" type="multi"  />
+    <image name="twitter-logo.png5" type="multi"  />
     <image name="welcome-background.jpg"  />
     <image name="welcome-background.jpg1"  />
     <image name="welcome-background.jpg11"  />
@@ -1031,6 +1748,7 @@
     <image name="welcome-background.jpg3"  />
     <image name="welcome-background.jpg31"  />
     <image name="welcome-background.jpg4"  />
+    <image name="welcome-background.jpg5"  />
     <image name="welcome-slide-1.png" type="multi"  />
     <image name="welcome-slide-1.png1" type="multi"  />
     <image name="welcome-slide-1.png11" type="multi"  />
@@ -1041,6 +1759,7 @@
     <image name="welcome-slide-1.png3" type="multi"  />
     <image name="welcome-slide-1.png31" type="multi"  />
     <image name="welcome-slide-1.png4" type="multi"  />
+    <image name="welcome-slide-1.png5" type="multi"  />
     <image name="welcome-slide-2.png" type="multi"  />
     <image name="welcome-slide-2.png1" type="multi"  />
     <image name="welcome-slide-2.png11" type="multi"  />
@@ -1051,6 +1770,7 @@
     <image name="welcome-slide-2.png3" type="multi"  />
     <image name="welcome-slide-2.png31" type="multi"  />
     <image name="welcome-slide-2.png4" type="multi"  />
+    <image name="welcome-slide-2.png5" type="multi"  />
     <image name="welcome-slide-3.png" type="multi"  />
     <image name="welcome-slide-3.png1" type="multi"  />
     <image name="welcome-slide-3.png11" type="multi"  />
@@ -1061,4 +1781,5 @@
     <image name="welcome-slide-3.png3" type="multi"  />
     <image name="welcome-slide-3.png31" type="multi"  />
     <image name="welcome-slide-3.png4" type="multi"  />
+    <image name="welcome-slide-3.png5" type="multi"  />
 </resource>
