@@ -194,7 +194,7 @@ b.addActionListener(e -> {
             
             
             
-            new HomeAide_gui().show();
+            new ListeDmndAide_gui().show();
         });
         
         /*
