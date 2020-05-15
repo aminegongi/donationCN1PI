@@ -121,24 +121,25 @@ public class SideMenuNov extends Form {
             tb.addMaterialCommandToSideMenu(" Profil", FontImage.MATERIAL_PEOPLE, (ActionListener) (ActionEvent evt) -> {
                 new ProfilUser_gui().show();
             });
-            tb.addMaterialCommandToSideMenu(" Cagnotte", FontImage.MATERIAL_ALARM, (ActionListener) (ActionEvent evt) -> {
+            tb.addMaterialCommandToSideMenu(" Cagnotte", FontImage.MATERIAL_PAYMENT, (ActionListener) (ActionEvent evt) -> {
                 new Home_gui().show();
             });
-            tb.addMaterialCommandToSideMenu(" Aide", FontImage.MATERIAL_KEYBOARD, (ActionListener) (ActionEvent evt) -> {
+            tb.addMaterialCommandToSideMenu(" Aide", FontImage.MATERIAL_HEARING, (ActionListener) (ActionEvent evt) -> {
                 new ListeDmndAide_gui().show();
             });
-            tb.addMaterialCommandToSideMenu(" Emploi", FontImage.MATERIAL_ANDROID, (ActionListener) (ActionEvent evt) -> {
+            tb.addMaterialCommandToSideMenu(" Emploi", FontImage.MATERIAL_WORK, (ActionListener) (ActionEvent evt) -> {
                 new Home_gui().show();
             });
-            tb.addMaterialCommandToSideMenu(" Resto Don", FontImage.MATERIAL_MAIL, (ActionListener) (ActionEvent evt) -> {
+            tb.addMaterialCommandToSideMenu(" Resto Don", FontImage.MATERIAL_CARD_GIFTCARD, (ActionListener) (ActionEvent evt) -> {
                 if(FLogIns_gui.userCon.getRoles().contains("RES")){
                     new RestoDon_HomeResto().show();
                 }else{
                 new RestoDon_MapResto().show();
                 }
             });
-            tb.addMaterialCommandToSideMenu(" Resto Organisation", FontImage.MATERIAL_HELP, (ActionListener) (ActionEvent evt) -> {
-                new PubForm(new ListPublicationsForm()).show();
+            tb.addMaterialCommandToSideMenu(" Resto Organisation", FontImage.MATERIAL_RESTAURANT, (ActionListener) (ActionEvent evt) -> {
+                //new PubForm(new ListPublicationsForm()).show();
+                new ListPublicationsForm().show();
             });
             tb.addMaterialCommandToSideMenu(" LogOut", FontImage.MATERIAL_LOGOUT, (ActionListener) (ActionEvent evt) -> {
                 FLogIns_gui.userCon = null;

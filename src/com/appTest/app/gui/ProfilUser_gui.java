@@ -148,6 +148,13 @@ public class ProfilUser_gui extends SideMenuNov {
             TextField tfLong = new TextField(Float.toString(u.getLongitude()), "Longitude");
             TextField tfLat = new TextField(Float.toString(u.getLatitude()), "Latitude");
             
+            tfPageFb.setUIID("TextFieldBlack");
+            tfsWeb.setUIID("TextFieldBlack");
+            tfDesc.setUIID("TextFieldBlack");
+            tfLat.setUIID("TextFieldBlack");
+            tfLong.setUIID("TextFieldBlack");
+            
+            
             tfPageFb.setEditable(false);
             tfsWeb.setEditable(false);
             tfDesc.setEditable(false);

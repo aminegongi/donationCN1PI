@@ -11,6 +11,7 @@ import com.appTest.app.entities.ReactionAide;
 import com.appTest.app.services.ServiceDemandeAide;
 import com.appTest.app.services.ServiceParticipationAide;
 import com.appTest.app.services.ServiceReactionAide;
+import com.appTest.app.utils.Statics;
 import com.codename1.components.FloatingActionButton;
 import com.codename1.components.ImageViewer;
 import com.codename1.components.ScaleImageButton;
@@ -237,7 +238,7 @@ if(partBtn.getText().equals("Participer")){
                
             }
             
-            String url = "http://localhost/donationwebpidev/web/uploads/imagesAide/"+photo;
+            String url = Statics.BASE_URL_Image_Aide + photo;
         
             URLImage imageDmnd = URLImage.createToStorage(placeholder, url,
             url, URLImage.RESIZE_SCALE);

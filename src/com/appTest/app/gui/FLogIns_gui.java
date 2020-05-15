@@ -14,6 +14,7 @@ import com.codename1.ui.Label;
 import com.codename1.ui.animations.CommonTransitions;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
+import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.GridLayout;
 import java.util.ArrayList;
@@ -29,8 +30,10 @@ public class FLogIns_gui extends Form {
 
     public FLogIns_gui() {
         current = this;
-
-        setLayout(BoxLayout.y());
+        setUIID("bgWelcomeAmine");
+        getToolbar().setUIID("LabelCenterBlancTranspAmine");
+        setTitle("DoNation");
+        setLayout(new BorderLayout());
 
         Button btInscri = new Button("Inscription");
         Button btLogin = new Button("Login");
@@ -46,7 +49,7 @@ public class FLogIns_gui extends Form {
             });
         } else {
             System.out.println("fama 7aja idu: " + cor);
-            btLogin.setText("open Account");
+            btLogin.setText("Mon Compte");
             btLogin.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
@@ -66,7 +69,7 @@ public class FLogIns_gui extends Form {
         Button fb = new Button("Se connecter avec FaceBook");
         Button google = new Button("Se connecter avec Google");
         
-        Container xx = new Container(GridLayout.autoFit());
+        Container xx = new Container(BoxLayout.xCenter());
 
         btInscri.addActionListener(new ActionListener() {
             @Override
@@ -76,8 +79,11 @@ public class FLogIns_gui extends Form {
             }
         });
         //setTransitionOutAnimator(CommonTransitions.createFade(200));
+        btLogin.setUIID("ButtonInscriptionAmine");
+        btInscri.setUIID("ButtonInscriptionAmine");
         xx.addAll(btLogin, btInscri);
-        addAll(xx, fb, google);
+        //addAll(xx, fb, google);
+        add(BorderLayout.SOUTH,xx);
     }
 
 }

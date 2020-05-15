@@ -67,6 +67,7 @@ public class AddDmndAide_gui extends SideMenuNov {
         current.setLayout(BoxLayout.y());
         
         tfTitre.setHint("Titre De La Demande");
+        tfTitre.setUIID("TextFieldBlack");
         tfDesc.setHint("Description");
         tfDesc.setRows(5);
         

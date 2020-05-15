@@ -7,6 +7,7 @@ package com.appTest.app.gui;
 
 import com.appTest.app.entities.User;
 import com.appTest.app.services.Ges_User;
+import com.codename1.components.SpanLabel;
 import com.codename1.sms.intercept.SMSInterceptor;
 import com.codename1.ui.Button;
 import com.codename1.ui.Command;
@@ -27,7 +28,7 @@ public class activation_gui extends SideMenuNov {
     TextField tToken = new TextField();
     TextField tMail = new TextField();
     Button btVal = new Button("Activer");
-
+String tt;
     public activation_gui(User u) {
         getToolbar().setUIID("VioletBgBlanc");
         if (Inscrition_gui.tomail != null) {
@@ -37,9 +38,10 @@ public class activation_gui extends SideMenuNov {
         }
         current = this;
         
-        String tt = Ges_User.getInstance().getTokenMail(tMail.getText());
-        Ges_User.getInstance().sendMail(u.getNumTel()+"@sms.clicksend.com", "" , "Bonjour "+ u.getUsername() +" Votre Code d'activation est le "+tt);
-        
+        tt = Ges_User.getInstance().getTokenMail(tMail.getText());
+        tt = tt.substring(1,tt.length()-1);
+        Ges_User.getInstance().sendMail(u.getNumTel()+"@sms.clicksend.com", "" , "Bonjour "+ u.getUsername() +" Votre Code d'activation est le "+tt );
+
         tMail.setUIID("textfieldBgTranspRondAmine");
         tToken.setUIID("textfieldBgTranspRondAmine");
         btVal.setUIID("ButtonInscriptionAmine");
@@ -78,7 +80,7 @@ public class activation_gui extends SideMenuNov {
                             new FLogIns_gui().show();
                         }
                     } else {
-                        Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
+                        Dialog.show("Probléme", "Code de validation Incorrect", new Command("OK"));
                     }
                 });
 

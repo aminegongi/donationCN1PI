@@ -21,6 +21,7 @@ import com.codename1.ui.ComponentGroup;
 import com.codename1.ui.Container;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.FontImage;
+import com.codename1.ui.Form;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.TextArea;
@@ -42,7 +43,7 @@ public class Profil_Chat extends SideMenuNov {
 
     TextField tf ;
     
-    public Profil_Chat(User u) {
+    public Profil_Chat(User u, Form prev) {
         getToolbar().setUIID("ToolbarAmine");
         
         setTitle(u.getUsername());
@@ -56,7 +57,7 @@ public class Profil_Chat extends SideMenuNov {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new Profil_ListConv().showBack();
+                prev.showBack();
             }
         });
         

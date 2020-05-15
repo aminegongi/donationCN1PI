@@ -124,7 +124,7 @@ public class ListeParticipationsAide_gui extends SideMenuNov{
 
             
             mb.addActionListener((evt) -> {
-                 new Profil_Chat(part).show();
+                 new Profil_Chat(part,current).show();
             });
         
 
@@ -137,7 +137,7 @@ Image[] pictures = {
 
 */
 
-     mb.setIcon(URLImage.createToStorage(placeholder, part.getUsername(),part.getImage()));
+     mb.setIcon(URLImage.createToStorage(placeholder, url,url));
        
                
                

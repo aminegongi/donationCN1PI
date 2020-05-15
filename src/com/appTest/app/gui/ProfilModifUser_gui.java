@@ -230,13 +230,21 @@ public class ProfilModifUser_gui extends SideMenuNov {
             taDesc = new TextField(u.getDescription(), "Déscription");
             tfLong = new TextField(Float.toString(u.getLongitude()), "Longitude");
             tfLat = new TextField(Float.toString(u.getLatitude()), "Latitude");
+                       
+            tfPageFb.setUIID("TextFieldBlack");
+            tfsWeb.setUIID("TextFieldBlack");
+            taDesc.setUIID("TextFieldBlack");
+            tfLong.setUIID("TextFieldBlack");
+            tfLat.setUIID("TextFieldBlack");
 
+            
             addStringValue("Facebook", tfPageFb);
             addStringValue("Site Web", tfsWeb);
             addStringValue("Déscription", taDesc);
             
             Button btMap = new Button(FontImage.MATERIAL_MAP);
-            btMap.setText("Localisation depusi la map");
+            btMap.setText("Localisation depuis la map");
+            btMap.setUIID("ButtonProfilAmine");
             btMap.addActionListener(new ActionListener() {
 
                 @Override

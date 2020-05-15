@@ -19,6 +19,7 @@ import com.codename1.ui.ComponentGroup;
 import com.codename1.ui.Container;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.FontImage;
+import com.codename1.ui.Form;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.TextArea;
@@ -41,10 +42,11 @@ public class Profil_ListConv extends SideMenuNov {
     EncodedImage enc;
     ImageViewer imgv;
     Image img;
-    
+    Form current ;
     ArrayList<UserConversation> convs ;
     int i;
     public Profil_ListConv() {
+        current= this;
         getToolbar().setUIID("ToolbarAmine");
         setTitle(" Vos Conversations ");
         setLayout(BoxLayout.y());
@@ -88,7 +90,7 @@ public class Profil_ListConv extends SideMenuNov {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                new Profil_Chat(uc.getSender()).show();
+                new Profil_Chat(uc.getSender(),current).show();
             }
         });
                 

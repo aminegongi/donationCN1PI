@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<resource majorVersion="1" minorVersion="10" useXmlUI="false">
+<resource majorVersion="1" minorVersion="11" useXmlUI="false">
     <image name="activation-background.jpg"  />
     <image name="activation-background.jpg1"  />
     <image name="activation-background.jpg11"  />
@@ -390,7 +390,7 @@
         <val key="Button.sel#padUnit" value="2,2,2,2" />
         <val key="Button.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonCode.align" value="4" />
-        <border key="ButtonCode.border" type="round" roundBorderColor="16777215" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonCode.border" type="round" roundBorderColor="16777215" opacity="0" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonCode.fgColor" value="ffffff" />
         <font key="ButtonCode.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="3.5" />
         <val key="ButtonCode.marUnit" value="2,2,2,2" />
@@ -448,7 +448,7 @@
         <val key="ButtonInscriptionAmine.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonInvProfilAmine.align" value="4" />
         <val key="ButtonInvProfilAmine.bgColor" value="feae06" />
-        <border key="ButtonInvProfilAmine.border" type="round" roundBorderColor="16690694" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonInvProfilAmine.border" type="round" roundBorderColor="16690694" opacity="0" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonInvProfilAmine.fgColor" value="feae06" />
         <font key="ButtonInvProfilAmine.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="ButtonInvProfilAmine.marUnit" value="2,2,2,2" />
@@ -467,7 +467,7 @@
         <val key="ButtonProfilAmine.press#derive" value="ButtonProfilAmine" />
         <val key="ButtonProfilAmine.sel#derive" value="ButtonProfilAmine" />
         <val key="ButtonResto.align" value="4" />
-        <border key="ButtonResto.border" type="round" roundBorderColor="2448048" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
+        <border key="ButtonResto.border" type="round" roundBorderColor="5867773" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonResto.fgColor" value="ffffff" />
         <font key="ButtonResto.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="ButtonResto.marUnit" value="2,2,2,2" />
@@ -870,6 +870,11 @@
         <border key="ToolbarAmine.border" type="empty" />
         <val key="ToolbarAmine.fgColor" value="ffffff" />
         <val key="ToolbarAmine.transparency" value="0" />
+        <gradient key="ToolbarFourati.bgGradient" color1="5867773" color2="4772351" posX="0.54" posY="0.6" radius="1.0" />
+        <val key="ToolbarFourati.bgType" value="7" />
+        <border key="ToolbarFourati.border" type="empty" />
+        <val key="ToolbarFourati.fgColor" value="ffffff" />
+        <val key="ToolbarFourati.transparency" value="0" />
         <gradient key="VioletBgBlanc.bgGradient" color1="7103487" color2="16777215" posX="0.5" posY="0.5" radius="1.0" />
         <val key="VioletBgBlanc.bgType" value="6" />
         <val key="Welcome.bgImage" value="welcome-background.jpg4" />
@@ -1084,6 +1089,12 @@
         <val key="bgThankYouAmine.padUnit" value="0,0,2,0" />
         <val key="bgThankYouAmine.padding" value="0.0,3.0,0.0,0.0" />
         <val key="bgThankYouAmine.transparency" value="255" />
+        <val key="bgWelcomeAmine.bgImage" value="welcomeBgAmine" />
+        <val key="bgWelcomeAmine.bgType" value="33" />
+        <val key="bgWelcomeAmine.margin" value="0.0,0.0,0.0,0.0" />
+        <val key="bgWelcomeAmine.padUnit" value="0,0,2,0" />
+        <val key="bgWelcomeAmine.padding" value="0.0,3.0,0.0,0.0" />
+        <val key="bgWelcomeAmine.transparency" value="255" />
         <val key="containerPublication1.bgColor" value="ffffff" />
         <val key="containerPublication1.bgImage" value="Button.borderTop_1.png1" />
         <val key="containerPublication1.bgType" value="1" />
@@ -1782,4 +1793,5 @@
     <image name="welcome-slide-3.png31" type="multi"  />
     <image name="welcome-slide-3.png4" type="multi"  />
     <image name="welcome-slide-3.png5" type="multi"  />
+    <image name="welcomeBgAmine"  />
 </resource>
