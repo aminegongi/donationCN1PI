@@ -45,6 +45,7 @@ public class EditPublicationForm extends SideMenuNov{
         editor.setUIID("editor");
         editor.initAndWait();
         TB = getToolbar();
+        TB.setUIID("ToolbarFourati");
                 TB.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, (ActionListener) (ActionEvent evt) -> {
             new ListPublicationsForm().showBack();
         });

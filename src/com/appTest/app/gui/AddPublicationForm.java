@@ -38,6 +38,7 @@ public class AddPublicationForm extends SideMenuNov{
         setLayout(new BorderLayout());
         setTitle("Ajouter une publication");
         TB = getToolbar();
+        TB.setUIID("ToolbarFourati");
         TB.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, (ActionListener) (ActionEvent evt) -> {
             new ListPublicationsForm().showBack();
         });

@@ -72,13 +72,13 @@ String tt;
             addShowListener(evt -> {
                 SMSInterceptor.grabNextSMS((value) -> {
                     if (value.contains(tt)) {
-                        int i = Ges_User.getInstance().activerCompte(tMail.getText(), tToken.getText());
-                        if (i == -1) {
-                            Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
-                        } else {
+                        //int i = Ges_User.getInstance().activerCompte(tMail.getText(), tToken.getText());
+                        //if (i == -1) {
+                        //    Dialog.show("Erreur", "Code Incorrect", new Command("OK"));
+                        //} else {
                             Dialog.show("Bravo", "Compte Activer", new Command("OK"));
                             new FLogIns_gui().show();
-                        }
+                        //}
                     } else {
                         Dialog.show("Probléme", "Code de validation Incorrect", new Command("OK"));
                     }

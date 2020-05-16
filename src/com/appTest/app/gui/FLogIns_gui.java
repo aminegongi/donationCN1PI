@@ -32,7 +32,7 @@ public class FLogIns_gui extends Form {
         current = this;
         setUIID("bgWelcomeAmine");
         getToolbar().setUIID("LabelCenterBlancTranspAmine");
-        setTitle("DoNation");
+        setTitle("");
         setLayout(new BorderLayout());
 
         Button btInscri = new Button("Inscription");
@@ -69,7 +69,7 @@ public class FLogIns_gui extends Form {
         Button fb = new Button("Se connecter avec FaceBook");
         Button google = new Button("Se connecter avec Google");
         
-        Container xx = new Container(BoxLayout.xCenter());
+        Container xx = new Container(new GridLayout(1, 2));
 
         btInscri.addActionListener(new ActionListener() {
             @Override
