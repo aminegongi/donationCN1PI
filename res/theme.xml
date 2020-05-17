@@ -415,9 +415,9 @@
         <val key="ButtonCode.sel#padUnit" value="2,2,2,2" />
         <val key="ButtonCode.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonHome.align" value="4" />
-        <gradient key="ButtonHome.bgGradient" color1="16734317" color2="16734317" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHome.bgType" value="7" />
-        <border key="ButtonHome.border" type="empty" />
+        <val key="ButtonHome.bgColor" value="000000" />
+        <gradient key="ButtonHome.bgGradient" color1="0" color2="0" posX="0.5" posY="0.5" radius="1.0" />
+        <val key="ButtonHome.bgType" value="8" />
         <val key="ButtonHome.fgColor" value="ffffff" />
         <font key="ButtonHome.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
         <val key="ButtonHome.marUnit" value="1,1,1,1" />
@@ -425,78 +425,6 @@
         <val key="ButtonHome.padUnit" value="1,1,1,1" />
         <val key="ButtonHome.padding" value="2.0,2.0,2.0,2.0" />
         <val key="ButtonHome.transparency" value="255" />
-        <val key="ButtonHomeA.align" value="4" />
-        <gradient key="ButtonHomeA.bgGradient" color1="16690694" color2="16690694" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeA.bgType" value="7" />
-        <border key="ButtonHomeA.border" type="empty" />
-        <val key="ButtonHomeA.dis#derive" value="ButtonHomeA" />
-        <val key="ButtonHomeA.fgColor" value="ffffff" />
-        <font key="ButtonHomeA.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
-        <val key="ButtonHomeA.marUnit" value="1,1,1,1" />
-        <val key="ButtonHomeA.margin" value="1.0,0.0,1.0,1.0" />
-        <val key="ButtonHomeA.padUnit" value="1,1,1,1" />
-        <val key="ButtonHomeA.padding" value="2.0,2.0,2.0,2.0" />
-        <val key="ButtonHomeA.press#derive" value="ButtonHomeA" />
-        <gradient key="ButtonHomeA.sel#bgGradient" color1="16685839" color2="16685839" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeA.sel#bgType" value="7" />
-        <val key="ButtonHomeA.sel#derive" value="ButtonHomeA" />
-        <val key="ButtonHomeA.transparency" value="255" />
-        <val key="ButtonHomeC.align" value="4" />
-        <gradient key="ButtonHomeC.bgGradient" color1="16734317" color2="16734317" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeC.bgType" value="7" />
-        <border key="ButtonHomeC.border" type="empty" />
-        <val key="ButtonHomeC.dis#derive" value="ButtonHomeC" />
-        <val key="ButtonHomeC.fgColor" value="ffffff" />
-        <font key="ButtonHomeC.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
-        <val key="ButtonHomeC.marUnit" value="1,1,1,1" />
-        <val key="ButtonHomeC.margin" value="1.0,0.0,1.0,1.0" />
-        <val key="ButtonHomeC.padUnit" value="1,1,1,1" />
-        <val key="ButtonHomeC.padding" value="2.0,2.0,2.0,2.0" />
-        <val key="ButtonHomeC.press#derive" value="ButtonHomeC" />
-        <val key="ButtonHomeC.sel#derive" value="ButtonHomeC" />
-        <val key="ButtonHomeC.transparency" value="255" />
-        <val key="ButtonHomeE.align" value="4" />
-        <gradient key="ButtonHomeE.bgGradient" color1="12910768" color2="12910768" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeE.bgType" value="7" />
-        <border key="ButtonHomeE.border" type="empty" />
-        <val key="ButtonHomeE.dis#derive" value="ButtonHomeE" />
-        <val key="ButtonHomeE.fgColor" value="ffffff" />
-        <font key="ButtonHomeE.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
-        <val key="ButtonHomeE.marUnit" value="1,1,1,1" />
-        <val key="ButtonHomeE.margin" value="1.0,0.0,1.0,1.0" />
-        <val key="ButtonHomeE.padUnit" value="1,1,1,1" />
-        <val key="ButtonHomeE.padding" value="2.0,2.0,2.0,2.0" />
-        <val key="ButtonHomeE.press#derive" value="ButtonHomeE" />
-        <val key="ButtonHomeE.sel#derive" value="ButtonHomeE" />
-        <val key="ButtonHomeE.transparency" value="255" />
-        <val key="ButtonHomeRD.align" value="4" />
-        <gradient key="ButtonHomeRD.bgGradient" color1="7990956" color2="7990956" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeRD.bgType" value="7" />
-        <border key="ButtonHomeRD.border" type="empty" />
-        <val key="ButtonHomeRD.dis#derive" value="ButtonHomeRD" />
-        <val key="ButtonHomeRD.fgColor" value="ffffff" />
-        <font key="ButtonHomeRD.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
-        <val key="ButtonHomeRD.marUnit" value="1,1,1,1" />
-        <val key="ButtonHomeRD.margin" value="1.0,0.0,1.0,1.0" />
-        <val key="ButtonHomeRD.padUnit" value="1,1,1,1" />
-        <val key="ButtonHomeRD.padding" value="2.0,2.0,2.0,2.0" />
-        <val key="ButtonHomeRD.press#derive" value="ButtonHomeRD" />
-        <val key="ButtonHomeRD.sel#derive" value="ButtonHomeRD" />
-        <val key="ButtonHomeRD.transparency" value="255" />
-        <val key="ButtonHomeRO.align" value="4" />
-        <gradient key="ButtonHomeRO.bgGradient" color1="5867773" color2="5867773" posX="0.5" posY="0.5" radius="1.0" />
-        <val key="ButtonHomeRO.bgType" value="7" />
-        <border key="ButtonHomeRO.border" type="empty" />
-        <val key="ButtonHomeRO.dis#derive" value="ButtonHomeRO" />
-        <val key="ButtonHomeRO.fgColor" value="ffffff" />
-        <font key="ButtonHomeRO.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="3" actualSize="2.5" />
-        <val key="ButtonHomeRO.marUnit" value="1,1,1,1" />
-        <val key="ButtonHomeRO.margin" value="1.0,0.0,1.0,1.0" />
-        <val key="ButtonHomeRO.padUnit" value="1,1,1,1" />
-        <val key="ButtonHomeRO.padding" value="2.0,2.0,2.0,2.0" />
-        <val key="ButtonHomeRO.press#derive" value="ButtonHomeRO" />
-        <val key="ButtonHomeRO.sel#derive" value="ButtonHomeRO" />
-        <val key="ButtonHomeRO.transparency" value="255" />
         <val key="ButtonInscriptionAmine.align" value="4" />
         <border key="ButtonInscriptionAmine.border" type="round" roundBorderColor="7103487" opacity="255" strokeColor="0" strokeOpacity="255" strokeThickness="0.0" strokeMM="false" shadowSpread="10" shadowOpacity="0" shadowX="0.5" shadowY="0.5" shadowBlur="10.0" shadowMM="false" rectangle="true" />
         <val key="ButtonInscriptionAmine.dis#align" value="4" />
