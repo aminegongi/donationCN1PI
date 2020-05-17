@@ -42,6 +42,7 @@ public class PubForm extends Form  {
         setUIID("bgPub");
         tb= getToolbar();
         setTitle("Espace Publicité");
+        tb.setUIID("ToolbarFourati");
         setLayout(new BorderLayout());
         ArrayList<Pub> tab=ServicePub.getInstance().getPub(3);
         System.out.println(tab.get(0));

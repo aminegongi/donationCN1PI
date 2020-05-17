@@ -28,7 +28,7 @@ public String upload(String img){
 String l = img;
 int p = l.indexOf("/",2);
 String n = l.substring(p+2 , l.length());
-FileUploader f = new FileUploader("https://www.amine.ukla.tn/uploads/imagesAide/");
+FileUploader f = new FileUploader("https://donation.tn/uploads/imagesAide/");
 try {
 fns = f.upload(n);
 System.out.println("image uploaded successfully");

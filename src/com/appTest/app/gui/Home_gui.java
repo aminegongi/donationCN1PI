@@ -69,7 +69,7 @@ public class Home_gui extends SideMenuNov {
         y.add(restoDon);
         y.add(restoOrg);
 
-        add(BorderLayout.SOUTH, y);
+        //add(BorderLayout.SOUTH, y);
 
     }
 
