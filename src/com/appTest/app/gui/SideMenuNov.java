@@ -128,7 +128,7 @@ public class SideMenuNov extends Form {
                 new ListeDmndAide_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Emploi", FontImage.MATERIAL_WORK, (ActionListener) (ActionEvent evt) -> {
-                new Home_gui().show();
+                new h_listeEmploi_emploi().show();
             });
             tb.addMaterialCommandToSideMenu(" Resto Don", FontImage.MATERIAL_CARD_GIFTCARD, (ActionListener) (ActionEvent evt) -> {
                 if(FLogIns_gui.userCon.getRoles().contains("RES")){
