@@ -122,7 +122,7 @@ public class SideMenuNov extends Form {
                 new ProfilUser_gui().show();
             });
             tb.addMaterialCommandToSideMenu(" Cagnotte", FontImage.MATERIAL_PAYMENT, (ActionListener) (ActionEvent evt) -> {
-                new Home_gui().show();
+                new Cagnotte_Home().show();
             });
             tb.addMaterialCommandToSideMenu(" Aide", FontImage.MATERIAL_HEARING, (ActionListener) (ActionEvent evt) -> {
                 new ListeDmndAide_gui().show();

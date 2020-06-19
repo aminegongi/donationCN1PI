@@ -43,7 +43,7 @@ public class Home_gui extends SideMenuNov {
         restoOrg.setUIID("ButtonHomeRO");
         
         cagnotte.addActionListener((ActionListener) (ActionEvent evt) -> {
-            new Home_gui().show();
+            new Cagnotte_Home().show();
         });
         aide.addActionListener((ActionListener) (ActionEvent evt) -> {
             new ListeDmndAide_gui().show();
